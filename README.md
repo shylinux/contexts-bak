@@ -1,1 +1,1 @@
-usr/local/wiki/自然/index.md
+hello ice world

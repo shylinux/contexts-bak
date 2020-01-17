@@ -150,8 +150,8 @@ ShyHelp() {
 ShyInit() {
     [ "$ctx_begin" = "" ] && ctx_begin=`history|tail -n1|awk '{print $1}'`
 
-    case "$SHELL" in
-        "/bin/zsh")
+    case "${SHELL##*/}" in
+        "zsh")
             PROMPT='%![%*]%c$ '
             ;;
         *)
