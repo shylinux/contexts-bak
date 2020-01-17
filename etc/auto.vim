@@ -9,7 +9,6 @@ call ShyDefine("g:ShyLog", "shy.log")
 fun! ShyLog(...)
     call writefile([strftime("%Y-%m-%d %H:%M:%S ") . join(a:000, " ")], g:ShyLog, "a")
 endfun
-command -nargs=+ ShyLog call writefile([strftime("%Y-%m-%d %H:%M:%S ") . join([<f-args>], " ")], g:ShyLog, "a")
 
 " 后端通信
 call ShyDefine("g:ctx_sid", "")
@@ -120,7 +119,6 @@ endfun
 fun! ShyTrans(code)
     return split(ShySend({"cmd": "trans", "arg": a:code, "pre": getline("."), "row": line("."), "col": col(".")}), "\n")
 endfun
-
 fun! ShyInput()
     call ShyLog("input", v:char, line("."), col("."))
 endfun
@@ -146,6 +144,38 @@ fun! ShyComplete(firststart, base)
 endfun
 set completefunc=ShyComplete
 
+" 自动刷新
+let ShyComeList = {}
+fun! ShyCome(buf, row, action, extra)
+    if a:action == "refresh"
+        " 清空历史
+        if a:extra["count"] > 0 | call deletebufline(a:buf, a:row+1, a:row+a:extra["count"]) | endif
+        let a:extra["count"] = 0
+    endif
+    " 刷新命令
+    for line in reverse(split(trim(ShySend({"cmd": "trans", "arg": getbufline(a:buf, a:row)[0]})), "\n"))
+        call appendbufline(a:buf, a:row, line)
+        let a:extra["count"] += 1
+    endfor
+    " 插入表头
+    call appendbufline(a:buf, a:row, strftime(" ~~ %Y-%m-%d %H:%M:%S"))
+    let a:extra["count"] += 1
+endfun
+fun! ShyUpdate(timer)
+    let what = g:ShyComeList[a:timer]
+    call ShyLog("timer", a:timer, what)
+    call ShyCome(what["buf"], what["row"], what["action"], what)
+endfun
+fun! ShyComes(action)
+    if !exists("b:timer") | let b:timer = -1 | endif
+    " 清除定时
+    if b:timer > 0 | call timer_stop(b:timer) | let b:timer = -2 | return | endif
+    " 添加定时
+    let b:timer = timer_start(1000, funcref('ShyUpdate'), {"repeat": -1})
+    let g:ShyComeList[b:timer] = {"buf": bufname(), "row": line("."), "pre": getline("."), "action": a:action, "count": 0}
+    call ShyLog("new timer", b:timer)
+endfun
+
 " 帮助信息
 fun! ShyHelp()
     echo ShySend({"cmd": "help"})
@@ -167,6 +197,6 @@ nnoremap <C-G><C-R> :call ShyCheck("cache")<CR>
 nnoremap <C-G><C-F> :call ShyFavor()<CR>
 nnoremap <C-G>f :call ShyFavors()<CR>
 nnoremap <C-G><C-T> :call ShyTask()<CR>
+nnoremap <C-G><C-K> :call ShyComes("refresh")<CR>
 inoremap <C-K> <C-X><C-U>
-vnoremap <C-K> :call ShyTrans()
 
