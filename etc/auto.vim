@@ -129,7 +129,6 @@ fun! ShyComplete(firststart, base)
         " 命令位置
         if match(trim(line), "ice ") == 0 | return match(line, "ice ") | endif
         " 符号位置
-        call ShyLog("what", line[start-1], line[start-1] !~ '\a')
         if line[start-1] !~ '\a' | return start - 1 | end
         " 单词位置
         while start > 0 && line[start - 1] =~ '\a' | let start -= 1 | endwhile
@@ -139,8 +138,11 @@ fun! ShyComplete(firststart, base)
     " 符号转换
     if a:base == "," | return ["，", ","] | end
     if a:base == "." | return ["。", "."] | end
+    if a:base == "\\" | return ["、", "\\"] | end
     " 单词转换
-    return ShyTrans(a:base)
+    let list = ShyTrans(a:base)
+    call ShyLog("trans", a:base, list)
+    return list
 endfun
 set completefunc=ShyComplete
 
