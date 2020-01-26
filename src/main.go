@@ -12,6 +12,8 @@ import (
 	_ "github.com/shylinux/icebergs/misc/mp"
 	_ "github.com/shylinux/icebergs/misc/pi"
 	_ "github.com/shylinux/icebergs/misc/wx"
+
+	_ "github.com/shylinux/contexts/src/support/wuhan"
 )
 
 func main() {

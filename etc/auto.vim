@@ -127,7 +127,7 @@ endfun
 fun! ShyComplete(firststart, base)
     if a:firststart | let line = getline('.') | let start = col('.') - 1
         " 命令位置
-        if match(trim(line), "ice ") == 0 | return match(line, "ice ") | endif
+        if match(line, '\s*ice ') == 0 | return match(line, "ice ") | endif
         " 符号位置
         if line[start-1] !~ '\a' | return start - 1 | end
         " 单词位置
@@ -155,7 +155,7 @@ fun! ShyCome(buf, row, action, extra)
         let a:extra["count"] = 0
     endif
     " 刷新命令
-    for line in reverse(split(trim(ShySend({"cmd": "trans", "arg": getbufline(a:buf, a:row)[0]})), "\n"))
+    for line in reverse(split(ShySend({"cmd": "trans", "arg": getbufline(a:buf, a:row)[0]}), "\n"))
         call appendbufline(a:buf, a:row, line)
         let a:extra["count"] += 1
     endfor
@@ -169,12 +169,19 @@ fun! ShyUpdate(timer)
     call ShyCome(what["buf"], what["row"], what["action"], what)
 endfun
 fun! ShyComes(action)
+    " 低配命令
+    if !exists("appendbufline")
+        for line in reverse(split(ShySend({"cmd": "trans", "arg": getline(".")}), "\n"))
+            call append(".", line)
+        endfor
+        return
+    endif
     if !exists("b:timer") | let b:timer = -1 | endif
     " 清除定时
     if b:timer > 0 | call timer_stop(b:timer) | let b:timer = -2 | return | endif
     " 添加定时
     let b:timer = timer_start(1000, funcref('ShyUpdate'), {"repeat": -1})
-    let g:ShyComeList[b:timer] = {"buf": bufname(), "row": line("."), "pre": getline("."), "action": a:action, "count": 0}
+    let g:ShyComeList[b:timer] = {"buf": bufname("."), "row": line("."), "pre": getline("."), "action": a:action, "count": 0}
     call ShyLog("new timer", b:timer)
 endfun
 
