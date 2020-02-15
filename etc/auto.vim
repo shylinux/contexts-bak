@@ -4,8 +4,7 @@ func! ShyDefine(name, value)
 endfunc
 
 " 输出日志
-" call ShyDefine("g:ShyLog", "/dev/null")
-call ShyDefine("g:ShyLog", "shy.log")
+call ShyDefine("g:ShyLog", "/dev/null")
 fun! ShyLog(...)
     call writefile([strftime("%Y-%m-%d %H:%M:%S ") . join(a:000, " ")], g:ShyLog, "a")
 endfun
