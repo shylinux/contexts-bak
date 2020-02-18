@@ -10,6 +10,6 @@ require (
 
 replace (
 	github.com/shylinux/contexts => ./
-	github.com/shylinux/icebergs => ../icebergs
-	github.com/shylinux/toolkits => ../toolkits
+	github.com/shylinux/icebergs => ./usr/icebergs
+	github.com/shylinux/toolkits => ./usr/toolkits
 )
