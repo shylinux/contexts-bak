@@ -1,5 +1,12 @@
 
-set foldmarker={{,}}
+set foldmethod=indent
+syn match Comment	    "#.*$"
+syn match Comment	    "\"[^\"]*\""
+
+highlight shyString     ctermfg=magenta
+syn match shyString	    "\`[^\`]*\`"
+syn region shyString	start="`" end="`"
+
 highlight shyContext    ctermfg=yellow
 syntax match shyContext '^\.[a-z\.]*'
 
@@ -15,10 +22,4 @@ syntax match shyTitle "^section"
 highlight shySpark    ctermbg=darkgreen ctermfg=white
 syntax match shySpark "^brief"
 syntax match shySpark "^spark"
-
-highlight shyString     ctermfg=magenta
-syn match shyString	    "\`[^\`]*\`"
-syn region shyString	start="`" end="`"
-
-syn match Comment	    "\"[^\"]*\""
 

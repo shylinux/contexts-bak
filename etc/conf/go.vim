@@ -1,3 +1,4 @@
+syntax match Comment "#.*$"
 syntax match Comment "Name: \"[^\"]*\""
 syntax match Comment "Help: \"[^\"]*\""
 
