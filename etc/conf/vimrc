@@ -136,6 +136,8 @@ function! Config(type)
     elseif a:type == "txt"
         set noexpandtab
     elseif a:type == "js"
+        set filetype=javascript
+        source ~/.vim/syntax/javascript.vim
         set foldmethod=marker
         set foldmarker={,}
     endif
