@@ -1,0 +1,26 @@
+~web.code
+    publish etc/auto.sh
+    publish etc/auto.vim
+
+~web.code.tmux
+    init
+
+~web.code.docker
+    init
+
+~web.code.git
+    repos toolkits usr/toolkits
+    repos icebergs usr/icebergs
+    repos learning usr/learning
+    repos wubi-dict usr/wubi-dict
+    init
+
+~web.code.input
+    load usr/wubi-dict/person
+    load
+
+~web.wiki
+    config word meta.path usr/learning
+
+~ssh
+    source etc/local.shy

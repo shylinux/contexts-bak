@@ -7,12 +7,11 @@ import (
 	_ "github.com/shylinux/icebergs/misc"
 
 	_ "github.com/shylinux/icebergs/misc/alpha"
+	_ "github.com/shylinux/icebergs/misc/chrome"
 	_ "github.com/shylinux/icebergs/misc/lark"
 	_ "github.com/shylinux/icebergs/misc/mp"
 	_ "github.com/shylinux/icebergs/misc/pi"
 	_ "github.com/shylinux/icebergs/misc/wx"
-
-	_ "github.com/shylinux/contexts/src/support/wuhan"
 )
 
 func main() {

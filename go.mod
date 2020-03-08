@@ -1,15 +1,9 @@
-module miss
+module contexts
 
 go 1.13
 
-require (
-	github.com/shylinux/contexts v0.0.0-00010101000000-000000000000
-	github.com/shylinux/icebergs v0.1.9
-	github.com/shylinux/toolkits v0.1.0
-)
+require github.com/shylinux/icebergs v0.1.15 // indirect
 
-replace (
-	github.com/shylinux/contexts => ./
-	github.com/shylinux/icebergs => ./usr/icebergs
-	github.com/shylinux/toolkits => ./usr/toolkits
-)
+replace github.com/shylinux/icebergs => ./usr/icebergs
+
+replace github.com/shylinux/toolkits => ./usr/toolkits

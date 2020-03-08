@@ -23,4 +23,4 @@
 pkg/
 var/
 usr/publish
-etc/init.shy
+etc/local.shy
