@@ -1,4 +1,7 @@
 ~web.code
+    publish bin/ice.sh
+    publish usr/icebergs/template.sh
+    publish usr/icebergs/template.sh
     publish usr/icebergs/misc/zsh/auto.sh
     publish usr/icebergs/misc/vim/auto.vim
 
