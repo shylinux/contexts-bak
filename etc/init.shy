@@ -1,6 +1,6 @@
 ~web.code
-    publish etc/auto.sh
-    publish etc/auto.vim
+    publish usr/icebergs/misc/zsh/auto.sh
+    publish usr/icebergs/misc/vim/auto.vim
 
 ~web.code.tmux
     init
