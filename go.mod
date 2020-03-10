@@ -6,4 +6,4 @@ require github.com/shylinux/icebergs v0.1.18 // indirect
 
 replace github.com/shylinux/icebergs => ./usr/icebergs
 
-// replace github.com/shylinux/toolkits => ./usr/toolkits
+replace github.com/shylinux/toolkits => ./usr/toolkits
