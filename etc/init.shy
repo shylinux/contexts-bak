@@ -3,6 +3,7 @@
     publish usr/icebergs/template.sh
     publish usr/icebergs/misc/zsh/auto.sh
     publish usr/icebergs/misc/vim/auto.vim
+    publish usr/icebergs/misc/tmux/auto.tmux
 
 ~web.code.tmux
     init
