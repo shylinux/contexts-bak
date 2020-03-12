@@ -13,7 +13,7 @@ import (
 	_ "github.com/shylinux/icebergs/misc/pi"
 	_ "github.com/shylinux/icebergs/misc/wx"
 
-	_ "github.com/shylinux/icebergs/misc/auth"
+	_ "github.com/shylinux/icebergs/misc/totp"
 )
 
 func main() {
