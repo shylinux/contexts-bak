@@ -7,12 +7,16 @@ highlight shyString     ctermfg=magenta
 syn match shyString	    "\`[^\`]*\`"
 syn region shyString	start="`" end="`"
 
-highlight shyContext    ctermfg=yellow
-syntax match shyContext '^\.[a-z\.]*'
+highlight shyContext    ctermfg=red
+syntax match shyContext "\~[a-z\.]\+"
 
-highlight shyCommand    ctermfg=yellow
-syntax match shyCommand "^\a*"
+highlight shyCommand    ctermfg=green
 syntax match shyCommand "^    \a*"
+syntax match shyCommand "^\a\+"
+
+highlight shyConfig    ctermfg=yellow
+syntax match shyConfig "^    config"
+
 
 highlight shyTitle    ctermbg=darkred ctermfg=white
 syntax match shyTitle "^title"
