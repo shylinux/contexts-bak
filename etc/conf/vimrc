@@ -170,3 +170,12 @@ highlight PmenuSel ctermfg=darkblue ctermbg=cyan
 "
 nnoremap <F3> :NERDTreeToggle<CR>
 
+" " miss
+" highlight StatusLine ctermfg=white ctermbg=black
+" highlight LineNr ctermfg=white ctermbg=black
+" highlight CursorLineNr ctermfg=white ctermbg=black
+"
+" highlight kitMiss    ctermfg=white
+" syntax match kitMiss ".*"
+" syntax match kitMiss "\".*\""
+
