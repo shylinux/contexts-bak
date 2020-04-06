@@ -16,6 +16,7 @@ syntax match shyCommand "^\a\+"
 
 highlight shyConfig    ctermfg=yellow
 syntax match shyConfig "^    config"
+syntax match shyConfig "^source"
 
 
 highlight shyTitle    ctermbg=darkred ctermfg=white
