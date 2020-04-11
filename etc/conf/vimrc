@@ -156,7 +156,7 @@ autocmd BufNewFile,BufReadPost *.js call Config("js")
 
 autocmd BufReadPost * normal `"
 
-if filereadable("~/.vim_local")
+if filereadable(expand("~/.vim_local"))
     source ~/.vim_local
 endif
 
