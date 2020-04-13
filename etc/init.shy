@@ -16,13 +16,18 @@
     repos icebergs usr/icebergs
     repos learning usr/learning
     repos wubi-dict usr/wubi-dict
+    # repos word-dict usr/word-dict
     init
 
 ~web.code.input
     load usr/wubi-dict/person
     load
 
+# ~web.wiki.alpha
+#     load
+#
 ~web.wiki
+    config draw meta.path usr/learning
     config word meta.path usr/learning
 
 ~ssh

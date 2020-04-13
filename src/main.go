@@ -17,6 +17,4 @@ import (
 	_ "github.com/shylinux/icebergs/misc/totp"
 )
 
-func main() {
-	println(ice.Run())
-}
+func main() { println(ice.Run()) }
