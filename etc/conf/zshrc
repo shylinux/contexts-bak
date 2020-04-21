@@ -89,15 +89,8 @@ source ~/.oh-my-zsh/plugins/z/z.sh
 export PROMPT=$LOCAL_PROMPT'%![%*]%c$ '
 export EDITOR=vim
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zsh_local ] && source ~/.zsh_local
-
-alias RR="source ~/.zshrc"
-
-alias t='tmux'
-alias d='docker'
-alias g='git'
-alias v='vim'
+[ -f ~/.ishrc ] && source ~/.ishrc
 
 bindkey -e
 bindkey jk accept-line
@@ -105,8 +98,3 @@ bindkey "^N" down-line-or-beginning-search
 bindkey "^P" up-line-or-beginning-search
 bindkey -M vicmd j down-line-or-beginning-search
 bindkey -M vicmd k up-line-or-beginning-search
-
-# preexec() {
-#     # bench web.code.counter nexec 1 >/dev/null
-# }
-#
