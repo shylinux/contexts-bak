@@ -4,7 +4,7 @@ ISH_LOG=${ISH_LOG:="/dev/null"}
 ISH_PATH=${ISH_PATH:="$PWD/.ish/pluged"}
 ISH_ROOT=${ISH_ROOT:="$HOME/.ish/pluged"}
 ISH_HUB=${ISH_HUB:="github.com"}
-ISH_FTP=${ISH_FTP:="https"}
+ISH_FTP=${ISH_FTP:="https|http"}
 ISH_INIT=${ISH_INIT:="init.sh"}
 ISH_EXIT=${ISH_EXIT:="exit.sh"}
 ISH_ORDER=${ISH_ORDER:=0}
@@ -21,13 +21,9 @@ require() {
 
     # 下载脚本
     local p="${name%%/*}" && p=${p%:} && case "$p" in
-        ${ISH_FTP})
-            local pp=$ISH_PATH/$(_name $name)
-            if ! [ -f $pp/$init ]; then
-                mkdir -p $pp && wget $name/$init -O $pp/$init
-            fi
-            name=$(_name $name)
-            ;;
+        ${ISH_FTP}) local pp=$ISH_PATH/$(_name $name)
+            if ! [ -f $pp/$init ]; then mkdir -p $pp && wget $name/$init -O $pp/$init; fi
+            name=$(_name $name) ;;
         $ISH_HUB) [ -d "$ISH_PATH/$name/.git" ] || git clone https://$name $ISH_PATH/$name;;
     esac
 

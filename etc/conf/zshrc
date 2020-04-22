@@ -90,7 +90,7 @@ export PROMPT=$LOCAL_PROMPT'%![%*]%c$ '
 export EDITOR=vim
 
 [ -f ~/.zsh_local ] && source ~/.zsh_local
-[ -f ~/.ishrc ] && source ~/.ishrc
+[ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh
 
 bindkey -e
 bindkey jk accept-line
