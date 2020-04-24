@@ -91,8 +91,10 @@ export EDITOR=vim
 
 [ -f ~/.zsh_local ] && source ~/.zsh_local
 
-[ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh
-[ -f ~/.ish/conf.sh ] && source ~/.ish/conf.sh
+if [ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh; then
+    require conf.sh
+    # require as miss github.com/shylinux/shell misc/miss/miss.sh
+fi
 
 bindkey -e
 bindkey jk accept-line
