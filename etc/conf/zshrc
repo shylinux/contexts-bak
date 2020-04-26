@@ -93,6 +93,7 @@ export EDITOR=vim
 
 if [ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh; then
     require conf.sh
+
     # require as miss github.com/shylinux/shell misc/miss/miss.sh
 fi
 
