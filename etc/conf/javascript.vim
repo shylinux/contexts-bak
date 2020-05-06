@@ -1,5 +1,6 @@
 syntax match Comment "\<Volcanos(\"[^\"]*\""
 syntax match Comment "\<shy(\"[^\"]*\""
+syntax match Comment "\<name: \"[^\"]*\""
 syntax match Comment "\<help: \"[^\"]*\""
 
 highlight canConst    ctermfg=yellow

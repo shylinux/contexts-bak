@@ -1,8 +1,12 @@
 ~web
-    config share meta.repos github.com/shylinux/contexts
+    config serve meta.title github.com/shylinux/contexts
+    config serve meta.legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
+    config serve meta.legal.1 "京ICP备15046864号-1"
+
+    # config share meta.repos github.com/shylinux/contexts
     config share meta.domain https://shylinux.com
-    config share meta.legal "京ICP备15046864号-1"
-    config share meta.email `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
+    # config share meta.legal "京ICP备15046864号-1"
+    # config share meta.email `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
 
 ~web.code
     publish bin/ice.sh
