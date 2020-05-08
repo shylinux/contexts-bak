@@ -5,10 +5,11 @@
 require show.sh
 require help.sh
 require miss.sh
-cd $ISH_CONF_TASK
+# cd $ISH_CONF_TASK
 
 ish_miss_prepare_compile
 ish_miss_prepare_install
+ish_miss_prepare_session miss
 
 ish_miss_prepare_volcanos
 ish_miss_prepare_icebergs
