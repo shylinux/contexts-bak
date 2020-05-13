@@ -1,5 +1,5 @@
 #!/bin/sh
-
+ISH_CONF_WORK=~/usr/local/work
 if [ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh; then
     require conf.sh
 
