@@ -5,8 +5,9 @@ Volcanos("onengine", { river: {
                 {type: "text", name: "one"},
                 {type: "button", name: "one"},
             ], engine: function(event, can, msg, pane, cmds, cb) {
-                msg.Echo("hello world")
-                typeof cb == "function" && cb(msg)
+                can.onappend.toast(can, "hello", "world");
+                msg.Echo("hello world");
+                typeof cb == "function" && cb(msg);
             }},
         ]},
         "world": {name: "应用2", action: [
