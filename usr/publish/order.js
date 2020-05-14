@@ -1,5 +1,28 @@
 Volcanos("onengine", { river: {
-    "one": {name: "第一组", storm: {
+    "main": {name: "main", storm: {
+        "main": {name: "main", action: [
+            {name: "free", help: "内存", inputs: [
+                {type: "text", name: "name", value: "free"},
+                {type: "text", name: "value", value: "-h"},
+                {type: "button", name: "查看"},
+            ], index: "cli.system"},
+            {name: "df", help: "磁盘", inputs: [
+                {type: "text", name: "name", value: "df"},
+                {type: "text", name: "value", value: "-h"},
+                {type: "button", name: "查看"},
+            ], index: "cli.system"},
+            {name: "ps", help: "进程", inputs: [
+                {type: "text", name: "name", value: "ps"},
+                {type: "button", name: "查看"},
+            ], index: "cli.system"},
+            {name: "ls", help: "文件", inputs: [
+                {type: "text", name: "name", value: "ls"},
+                {type: "text", name: "value", value: "-l"},
+                {type: "button", name: "查看"},
+            ], index: "cli.system"},
+            {name: "ifconfig", help: "网卡", index: "tcp.ifconfig"},
+        ]},
+
         "hello": {name: "应用1", action: [
             {name: "some", help: "some", inputs: [
                 {type: "text", name: "one"},
