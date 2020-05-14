@@ -156,11 +156,8 @@ autocmd BufNewFile,BufReadPost *.js call Config("js")
 
 autocmd BufReadPost * normal `"
 
-if filereadable(expand("~/.vim_local"))
-    source ~/.vim_local
-endif
-
-cnoremap RR :source ~/.vimrc<CR>
+if filereadable(expand("~/.vim_local")) | source ~/.vim_local | endif
+if filereadable(expand("./etc/miss.vim")) | source ./etc/miss.vim | endif
 
 colorscheme torte
 highlight Comment ctermfg=cyan ctermbg=darkblue
