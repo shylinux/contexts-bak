@@ -1,26 +1,15 @@
 Volcanos("onengine", { river: {
     "main": {name: "main", storm: {
         "main": {name: "main", action: [
-            {name: "free", help: "内存", inputs: [
-                {type: "text", name: "name", value: "free"},
-                {type: "text", name: "value", value: "-h"},
-                {type: "button", name: "查看"},
-            ], index: "cli.system"},
-            {name: "df", help: "磁盘", inputs: [
-                {type: "text", name: "name", value: "df"},
-                {type: "text", name: "value", value: "-h"},
-                {type: "button", name: "查看"},
-            ], index: "cli.system"},
-            {name: "ps", help: "进程", inputs: [
-                {type: "text", name: "name", value: "ps"},
-                {type: "button", name: "查看"},
-            ], index: "cli.system"},
-            {name: "ls", help: "文件", inputs: [
-                {type: "text", name: "name", value: "ls"},
-                {type: "text", name: "value", value: "-l"},
-                {type: "button", name: "查看"},
-            ], index: "cli.system"},
-            {name: "ifconfig", help: "网卡", index: "tcp.ifconfig"},
+            {name: "route", help: "路由", index: "route"},
+            {name: "status", help: "源码", index: "web.code.git.status"},
+        ]},
+        "word": {name: "word", action: [
+            {name: "trans", help: "词汇", inputs: [
+                {type: "text", name: "word", value: "miss"},
+                {type: "text", name: "method", value: ""},
+                {type: "button", name: "翻译"},
+            ], group: "web.wiki.alpha", index: "trans"},
         ]},
 
         "hello": {name: "应用1", action: [
@@ -38,13 +27,6 @@ Volcanos("onengine", { river: {
                 {type: "text", name: "one", value: "pwd"},
                 {type: "button", name: "one"},
             ], group: "cli", index: "system"},
-        ]},
-        "word": {name: "word", action: [
-            {name: "trans", help: "词汇", inputs: [
-                {type: "text", name: "word", value: "miss"},
-                {type: "text", name: "method", value: ""},
-                {type: "button", name: "翻译"},
-            ], group: "web.wiki.alpha", index: "trans"},
         ]},
     }},
 }, })
