@@ -9,10 +9,12 @@ syntax match canConst "\<sub\>"
 syntax match canConst "\<sup\>"
 syntax match canConst "\<you\>"
 syntax match canConst "\<msg\>"
+syntax match canConst "\<res\>"
 
 highlight msgConst    ctermfg=cyan
 syntax match msgConst "\<m\.[a-z0-9A-Z_.]*"
 syntax match msgConst "\<msg\.[a-z0-9A-Z_.]*"
+syntax match msgConst "\<res\.[a-z0-9A-Z_.]*"
 syntax match msgConst "\<can\.[a-z0-9A-Z_]*"
 syntax match msgConst "\<sub\.[a-z0-9A-Z_.]*"
 syntax match msgConst "\<sup\.[a-z0-9A-Z_.]*"
