@@ -21,11 +21,11 @@ Volcanos("onengine", { river: {
         ]},
 
         "main": {name: "main", action: [
-            {name: "editor", help: "编辑器", inputs: [
-                {type: "text", name: "path", action: "auto"},
-                {type: "button", name: "打开", action: "auto"},
+            {name: "hello", help: "world", inputs: [
+                {type: "text", name: "path", value: "自然/编程/hi.shy", action: "auto"},
+                {type: "button", name: "查看", action: "auto"},
                 {type: "button", name: "返回"},
-            ], index: "web.wiki.inner", feature: {display: "/plugin/inner.js"}},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
             {name: "route", help: "路由", index: "route"},
             {name: "status", help: "源码", index: "web.code.git.status"},
         ]},
