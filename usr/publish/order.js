@@ -2,7 +2,8 @@ Volcanos("onengine", { river: {
     "main": {name: "main", storm: {
         "IDE": {name: "IDE", action: [
             {name: "editor", help: "编辑器", inputs: [
-                {type: "text", name: "path", value: "hi.go", action: "auto"},
+                {type: "text", name: "path", action: "auto"},
+                {type: "text", name: "name", value: "hi.go", action: "auto"},
                 {type: "button", name: "打开", action: "auto"},
                 {type: "button", name: "返回"},
             ], index: "web.wiki.inner", feature: {display: "/plugin/inner.js"}},
