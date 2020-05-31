@@ -3,7 +3,7 @@ Volcanos("onengine", { river: {
         "main": {name: "main", action: [
             {name: "IDE", help: "集成开发环境", inputs: [
                 {type: "text", name: "path", value: "tmp", action: "auto"},
-                {type: "text", name: "name", value: "hi.go", action: "auto"},
+                {type: "text", name: "name", value: "hi.qrc", action: "auto"},
                 {type: "text", name: "key", value: "", action: "auto"},
                 {type: "button", name: "打开", action: "auto"},
                 {type: "button", name: "返回"},
