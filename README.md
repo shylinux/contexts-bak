@@ -15,6 +15,7 @@ contexts通过模块化、自动化，可以在各种设备上，快速搭建起
 git clone https://github.com/shylinux/contexts
 cd contexts
 make
+source etc/miss.sh
 bin/ice.sh
 curl localhost:9020
 ```

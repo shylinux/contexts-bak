@@ -14,8 +14,8 @@ ish_miss_prepare_session miss
 ish_miss_prepare_volcanos
 ish_miss_prepare_icebergs
 ish_miss_prepare_intshell
-ish_miss_prepare toolkits
-ish_miss_prepare learning
+# ish_miss_prepare toolkits
+# ish_miss_prepare learning
 
-ish_miss_prepare wubi-dict
-ish_miss_prepare word-dict
+# ish_miss_prepare wubi-dict
+# ish_miss_prepare word-dict
