@@ -16,6 +16,6 @@ git clone https://github.com/shylinux/contexts
 cd contexts
 make
 source etc/miss.sh
-bin/ice.sh
+ish_miss_serve
 curl localhost:9020
 ```
