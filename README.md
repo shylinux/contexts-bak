@@ -13,8 +13,8 @@ contexts通过模块化、自动化，可以在各种设备上，快速搭建起
 
 ```sh
 git clone https://github.com/shylinux/contexts
-cd contexts && make
-source etc/miss.sh && ish_miss_serve
+cd contexts && source etc/miss.sh
+make && ish_miss_serve
 ```
 
 ## 访问服务
