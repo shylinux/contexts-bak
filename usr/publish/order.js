@@ -7,8 +7,8 @@ Volcanos("onengine", { river: {
                 {type: "text", name: "key", value: "", action: "auto"},
                 {type: "button", name: "打开", action: "auto"},
                 {type: "button", name: "返回"},
-                {type: "button", name: "提交"},
                 {type: "button", name: "历史"},
+                {type: "button", name: "复盘"},
             ], index: "web.wiki.inner", feature: {display: "/plugin/inner.js", style: "editor"}},
         ]},
         "word": {name: "word", action: [
@@ -19,6 +19,11 @@ Volcanos("onengine", { river: {
             ], group: "web.wiki.alpha", index: "trans"},
         ]},
         "hello": {name: "应用1", action: [
+            {name: "route", help: "路由", inputs: [
+                {type: "text", name: "name", value: "", action: "auto"},
+                {type: "text", name: "cmd"},
+                {type: "button", name: "查看", action: "auto"},
+            ], index: "web.route"},
             {name: "some", help: "some", inputs: [
                 {type: "text", name: "one"},
                 {type: "button", name: "one"},
