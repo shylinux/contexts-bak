@@ -20,11 +20,14 @@ ish_miss_prepare toolkits
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
 
+repos=(volcanos icebergs intshell contexts toolkits learning)
 ish_miss_pull() {
-    cd usr/volcanos && pwd && git pull; cd -
-    cd usr/icebergs && pwd && git pull; cd -
-    cd usr/toolkits && pwd && git pull; cd -
-    cd usr/learning && pwd && git pull; cd -
-    cd usr/intshell && pwd && git pull; cd -
-    cd usr/contexts && pwd && git pull; cd -
+    for repos in $repos; do
+        cd usr/$repos && pwd && git pull; cd -
+    done
+}
+ish_miss_status() {
+    for repos in $repos; do
+        cd usr/$repos && pwd && git status; cd -
+    done
 }

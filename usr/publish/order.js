@@ -10,6 +10,11 @@ Volcanos("onengine", { river: {
                 {type: "button", name: "历史"},
                 {type: "button", name: "复盘"},
             ], index: "web.wiki.inner", feature: {display: "/plugin/inner.js", style: "editor"}},
+            {name: "word", help: "文档", inputs: [
+                {type: "text", name: "path", value: "自然/编程/hi.shy", action: "auto"},
+                {type: "button", name: "查看", action: "auto"},
+                {type: "button", name: "返回"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
         ]},
         "word": {name: "word", action: [
             {name: "trans", help: "词汇", inputs: [
