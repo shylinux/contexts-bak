@@ -1,5 +1,6 @@
 ~aaa
     role white void tmp
+    role white void web.wiki.inner
 ~web
     config serve meta.title github.com/shylinux/contexts
     config serve meta.legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
