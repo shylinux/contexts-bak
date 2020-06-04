@@ -22,12 +22,12 @@ ish_miss_prepare toolkits
 
 repos=(volcanos icebergs intshell contexts toolkits learning)
 ish_miss_pull() {
-    for repos in $repos; do
-        cd usr/$repos && pwd && git pull; cd -
+    for p in $repos; do
+        cd usr/$p && pwd && git pull; cd -
     done
 }
 ish_miss_status() {
-    for repos in $repos; do
-        cd usr/$repos && pwd && git status; cd -
+    for p in $repos; do
+        cd usr/$p && pwd && git status; cd -
     done
 }
