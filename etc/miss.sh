@@ -13,9 +13,18 @@ ish_miss_prepare_session miss
 
 ish_miss_prepare_volcanos
 ish_miss_prepare_icebergs
-ish_miss_prepare_intshell
-# ish_miss_prepare toolkits
+ish_miss_prepare toolkits
+# ish_miss_prepare_intshell
 # ish_miss_prepare learning
 
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
+
+ish_miss_pull() {
+    cd usr/volcanos && pwd && git pull; cd -
+    cd usr/icebergs && pwd && git pull; cd -
+    cd usr/toolkits && pwd && git pull; cd -
+    cd usr/learning && pwd && git pull; cd -
+    cd usr/intshell && pwd && git pull; cd -
+    cd usr/contexts && pwd && git pull; cd -
+}
