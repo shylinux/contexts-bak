@@ -35,3 +35,15 @@ ish_miss_status() {
         cd -
     done
 }
+ish_miss_build() {
+    local target=bin/ice.bin source=src/main.go
+    ish_log_debug build $source
+	go build -v -o $target $source && chmod u+x $target && ./bin/ice.sh restart
+    ish_log_debug build $target
+}
+ish_miss_build_windows() {
+    local target=usr/publish/ice.windows.amd64 source=src/main.go
+    ish_log_debug build $source
+    GOOS=windows go build -v -o $target $source && chmod u+x $target
+    ish_log_debug build $target
+}

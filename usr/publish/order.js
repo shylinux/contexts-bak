@@ -16,12 +16,9 @@ Volcanos("onengine", { river: {
                 {type: "button", name: "返回"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
         ]},
-        "word": {name: "word", action: [
-            {name: "trans", help: "词汇", inputs: [
-                {type: "text", name: "word", value: "miss"},
-                {type: "text", name: "method", value: ""},
-                {type: "button", name: "翻译"},
-            ], group: "web.wiki.alpha", index: "trans"},
+        "task": {name: "task", index: [
+            "web.team.task",
+            "web.team.plan",
         ]},
         "hello": {name: "应用1", action: [
             {name: "route", help: "路由", inputs: [
