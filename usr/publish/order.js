@@ -17,8 +17,9 @@ Volcanos("onengine", { river: {
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
         ]},
         "task": {name: "task", index: [
-            "web.team.task",
             "web.team.plan",
+            "web.team.task",
+            "web.team.miss",
             "web.code.git.status",
         ]},
         "relay": {name: "relay", index: [
