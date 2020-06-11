@@ -1,7 +1,7 @@
 Volcanos("onengine", { river: {
     "main": {name: "main", storm: {
         "main": {name: "main", index: [
-            "web.wiki.inner",
+            "web.code.inner",
             "web.code.git.status",
         ]},
         "task": {name: "task", index: [
