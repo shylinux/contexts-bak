@@ -12,6 +12,17 @@ Volcanos("onengine", { river: {
             "aaa.totp.get",
             "web.route",
         ]},
+        "trans": {name: "翻译", action: [
+            {name: "english", help: "英文", inputs: [
+                {type: "text", name: "word", value: "miss"},
+                {type: "button", name: "翻译"},
+            ], index: "web.wiki.alpha.trans"},
+            {name: "chinese", help: "中文", inputs: [
+                {type: "text", name: "word", value: "miss"},
+                {type: "text", name: "method", value: "line"},
+                {type: "button", name: "翻译"},
+            ], index: "web.wiki.alpha.trans"},
+        ]},
         "hello": {name: "应用1", action: [
             {name: "some", help: "some", inputs: [
                 {type: "text", name: "one"},
