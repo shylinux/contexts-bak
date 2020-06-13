@@ -6,8 +6,8 @@ Volcanos("onengine", { river: {
         ]},
         "task": {name: "task", index: [
             "web.team.plan",
+            "web.wiki.draw.draw",
             "web.wiki.word",
-            "web.wiki.draw",
         ]},
         "relay": {name: "relay", index: [
             "aaa.totp.get",

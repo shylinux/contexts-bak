@@ -39,8 +39,9 @@
 # ~web.wiki.alpha
 #     load
 #
-~web.wiki
+~web.wiki.draw
     config draw meta.path usr/learning
+~web.wiki
     config word meta.path usr/learning
 
 ~ssh
