@@ -33,8 +33,7 @@
     init
 
 ~web.code.input
-    load usr/wubi-dict/person
-    load
+    # import usr/wubi-dict/person
 
 # ~web.wiki.alpha
 #     load
@@ -46,3 +45,4 @@
 
 ~ssh
     source etc/local.shy
+    target web.code.input.load

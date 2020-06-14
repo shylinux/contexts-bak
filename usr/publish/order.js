@@ -13,6 +13,10 @@ Volcanos("onengine", { river: {
             "aaa.totp.get",
             "web.route",
         ]},
+        "性能": {name: "性能", index: [
+            "web.code.bench",
+            "web.code.pprof",
+        ]},
         "trans": {name: "翻译", action: [
             {name: "english", help: "英文", inputs: [
                 {type: "text", name: "word", value: "miss"},

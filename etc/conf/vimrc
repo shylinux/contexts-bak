@@ -121,6 +121,8 @@ function! Config(type)
     elseif a:type == "shy"
         set filetype=shy
         set commentstring=#%s
+    elseif a:type == "son"
+        set commentstring=#%s
     elseif a:type == "tmpl"
         set foldmethod=indent
     elseif a:type == "conf"
@@ -157,7 +159,7 @@ autocmd BufNewFile,BufReadPost *.js call Config("js")
 autocmd BufReadPost * normal `"
 
 if filereadable(expand("~/.vim_local")) | source ~/.vim_local | endif
-if filereadable(expand("./etc/miss.vim")) | source ./etc/miss.vim | endif
+if filereadable(expand("usr/publish/auto.vim")) | source usr/publish/auto.vim | endif
 
 colorscheme torte
 highlight Comment ctermfg=cyan ctermbg=darkblue
@@ -175,4 +177,5 @@ nnoremap <F3> :NERDTreeToggle<CR>
 " highlight kitMiss    ctermfg=white
 " syntax match kitMiss ".*"
 " syntax match kitMiss "\".*\""
+
 
