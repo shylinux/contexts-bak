@@ -16,8 +16,9 @@ Volcanos("onengine", { river: {
         "性能": {name: "性能", index: [
             "web.code.bench",
             "web.code.pprof",
-            "web.favor",
             "web.share",
+            "web.favor",
+            "web.cache",
         ]},
         "trans": {name: "翻译", action: [
             {name: "english", help: "英文", inputs: [

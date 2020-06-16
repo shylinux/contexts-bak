@@ -21,8 +21,8 @@
     bench action insert "demo" http config
 
     pprof action create "demo" bin/ice.bin http://localhost:9020/code/pprof/profile 3
-    pprof action insert "demo" bench config
-    pprof action insert "demo" shell pwd
+    pprof action insert "demo" bench config "" nconn 3 nreqs 3
+    pprof action insert "demo" shell pwd pwd
 
 ~web.code.tmux
     init
