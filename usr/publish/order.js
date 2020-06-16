@@ -14,11 +14,11 @@ Volcanos("onengine", { river: {
             "web.route",
         ]},
         "性能": {name: "性能", index: [
-            "web.code.bench",
             "web.code.pprof",
-            "web.share",
+            "web.code.bench",
             "web.favor",
             "web.cache",
+            "web.share",
         ]},
         "trans": {name: "翻译", action: [
             {name: "english", help: "英文", inputs: [
