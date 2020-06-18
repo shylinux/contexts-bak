@@ -3,6 +3,7 @@ Volcanos("onengine", { river: {
         "main": {name: "main", index: [
             "web.code.inner",
             "web.code.git.status",
+            "web.code.git.total",
         ]},
         "task": {name: "task", index: [
             "web.team.plan",
