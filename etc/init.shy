@@ -31,14 +31,6 @@
     init
 
 ~web.code.git
-    # repos intshell usr/intshell
-    # repos icebergs usr/icebergs
-    # repos volcanos usr/volcanos
-    #
-    # repos toolkits usr/toolkits
-    # repos learning usr/learning
-    # repos wubi-dict usr/wubi-dict
-    # repos word-dict usr/word-dict
     init
 
 ~web.code.input
@@ -57,3 +49,4 @@
     source etc/local.shy
     target web.code.input.load
     target web.code.bench
+    target web.wiki.alpha.load

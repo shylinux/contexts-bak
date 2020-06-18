@@ -25,12 +25,16 @@ Volcanos("onengine", { river: {
             {name: "english", help: "英文", inputs: [
                 {type: "text", name: "word", value: "miss"},
                 {type: "button", name: "翻译"},
-            ], index: "web.wiki.alpha.trans"},
+            ], index: "web.wiki.alpha.find"},
+            {name: "english", help: "英文", inputs: [
+                {type: "text", name: "word", value: "miss"},
+                {type: "button", name: "翻译"},
+            ], index: "web.wiki.alpha.find2"},
             {name: "chinese", help: "中文", inputs: [
                 {type: "text", name: "word", value: "miss"},
                 {type: "text", name: "method", value: "line"},
                 {type: "button", name: "翻译"},
-            ], index: "web.wiki.alpha.trans"},
+            ], index: "web.wiki.alpha.find"},
         ]},
         "hello": {name: "应用1", action: [
             {name: "some", help: "some", inputs: [
