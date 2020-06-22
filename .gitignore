@@ -24,6 +24,5 @@
 bin/
 pkg/
 var/
-usr/install
-usr/publish
+usr/
 etc/local.shy
