@@ -21,6 +21,11 @@ Volcanos("onengine", { river: {
             "web.cache",
             "web.share",
         ]},
+        "wiki": {name: "wiki", index: [
+            // "web.wiki.draw.draw",
+            "web.wiki.feel",
+            "web.wiki.data",
+        ]},
         "trans": {name: "翻译", action: [
             {name: "english", help: "英文", inputs: [
                 {type: "text", name: "word", value: "miss"},
