@@ -23,8 +23,9 @@
 
 ~web.code
     bench create "demo"
-    bench insert "demo" http command
-    bench insert "demo" http config
+    bench insert "demo" bench command
+    bench insert "demo" bench "GET,SET" redis://localhost:8291
+    bench insert "demo" shell pwd pwd
 
     pprof create "demo" bin/ice.bin http://localhost:9020/code/pprof/profile 3
     pprof insert "demo" bench config "" nconn 3 nreqs 3
