@@ -21,6 +21,10 @@ Volcanos("onengine", { river: {
             "web.cache",
             "web.share",
         ]},
+        "docker": {name: "docker", index: [
+            "web.code.docker.image",
+            "web.code.docker.container",
+        ]},
         "wiki": {name: "wiki", index: [
             // "web.wiki.draw.draw",
             "web.wiki.feel",
