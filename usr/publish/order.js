@@ -1,5 +1,11 @@
 Volcanos("onengine", { river: {
     "main": {name: "main", storm: {
+        "dream": {name: "dream", index: [
+            "web.space",
+            "web.dream",
+            "web.code.docker.container",
+            "web.code.tmux.session",
+        ]},
         "main": {name: "main", index: [
             "web.code.inner",
             "web.code.git.status",
@@ -24,6 +30,12 @@ Volcanos("onengine", { river: {
         "docker": {name: "docker", index: [
             "web.code.docker.image",
             "web.code.docker.container",
+            "web.code.docker.command",
+        ]},
+        "tmux": {name: "tmux", index: [
+            "web.code.tmux.text",
+            "web.code.tmux.buffer",
+            "web.code.tmux.session",
         ]},
         "wiki": {name: "wiki", index: [
             // "web.wiki.draw.draw",

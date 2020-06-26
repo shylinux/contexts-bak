@@ -1,6 +1,6 @@
-export CGO_ENABLED=0
-export GOPRIVATE=github.com
 export GOPROXY=https://goproxy.cn
+export GOPRIVATE=github.com
+export CGO_ENABLED=0
 
 all:
 	@echo && date
