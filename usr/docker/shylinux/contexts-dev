@@ -1,0 +1,22 @@
+FROM centos
+
+RUN curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo
+RUN yum makecache
+
+RUN mkdir /root/src /root/etc /root/bin /root/var /root/usr
+RUN mkdir -p /root/.vim/autoload
+RUN curl -o /root/etc/miss.sh http://192.168.0.103:9020/publish/miss.sh
+RUN curl -o /root/.vim/autoload/plug.vim http://192.168.0.103:9020/publish/plug.vim
+RUN curl -o /root/.vimrc http://192.168.0.103:9020/publish/vimrc
+RUN cd /root && source etc/miss.sh
+
+ENV ctx_dev http://192.168.0.103:9020
+ENV ctx_user shaoying
+ENV GOROOT /usr/local/go
+ENV PATH /usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+RUN cd /root && source etc/miss.sh
+
+EXPOSE 9020
+
+WORKDIR /root
