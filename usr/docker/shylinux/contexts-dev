@@ -1,22 +1,31 @@
 FROM centos
 
-RUN curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo
+ADD http://mirrors.aliyun.com/repo/Centos-8.repo /etc/yum.repos.d/CentOS-Base.repo
 RUN yum makecache
 
 RUN mkdir /root/src /root/etc /root/bin /root/var /root/usr
-RUN mkdir -p /root/.vim/autoload
-RUN curl -o /root/etc/miss.sh http://192.168.0.103:9020/publish/miss.sh
-RUN curl -o /root/.vim/autoload/plug.vim http://192.168.0.103:9020/publish/plug.vim
-RUN curl -o /root/.vimrc http://192.168.0.103:9020/publish/vimrc
-RUN cd /root && source etc/miss.sh
+ADD http://192.168.236.67:9020/publish/ice.sh /root/bin/ice.sh
+ADD http://192.168.236.67:9020/publish/ice.linux.amd64 /root/bin/ice.bin
+RUN chmod u+x /root/bin/*
 
-ENV ctx_dev http://192.168.0.103:9020
-ENV ctx_user shaoying
+RUN mkdir -p /root/usr/publish
+RUN mkdir -p /root/usr/volcanos
+ADD http://192.168.236.67:9020/publish/order.js /root/usr/publish/order.js
+ADD http://192.168.236.67:9020/publish/volcanos.tar.gz /root/usr/
+RUN tar -xvf /root/usr/volcanos.tar.gz -C /root/usr/
+
+RUN mkdir -p /root/.vim/autoload
+ADD http://192.168.236.67:9020/publish/miss.sh /root/etc/miss.sh
+ADD http://192.168.236.67:9020/publish/plug.vim /root/.vim/autoload/plug.vim
+ADD http://192.168.236.67:9020/publish/vimrc /root/.vimrc
+
 ENV GOROOT /usr/local/go
 ENV PATH /usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# RUN cd /root && source etc/miss.sh
 
-RUN cd /root && source etc/miss.sh
-
-EXPOSE 9020
-
+ENV ctx_dev http://192.168.236.67:9020
+ENV ctx_user root
 WORKDIR /root
+EXPOSE 9020
+CMD cd /root && bin/ice.sh start serve dev
+

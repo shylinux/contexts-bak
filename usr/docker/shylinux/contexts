@@ -1,21 +1,21 @@
 FROM alpine
 
-RUN wget http://192.168.0.103:9020/publish/ice.linux.amd64 -O /usr/local/bin/ice.bin
-RUN chmod +x /usr/local/bin/ice.bin
-RUN wget http://192.168.0.103:9020/publish/ice.sh -O /usr/local/bin/ice.sh
-RUN chmod +x /usr/local/bin/ice.sh
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
 RUN mkdir /root/src /root/etc /root/bin /root/var /root/usr
+ADD http://192.168.236.67:9020/publish/ice.sh /usr/local/bin/ice.sh
+ADD http://192.168.236.67:9020/publish/ice.linux.amd64 /usr/local/bin/ice.bin
+RUN chmod u+x /usr/local/bin/*
 
-RUN wget http://192.168.0.103:9020/publish/order.js -O /usr/local/bin/order.js
 RUN mkdir -p /root/usr/publish
-RUN ln /usr/local/bin/order.js /root/usr/publish/order.js
+RUN mkdir -p /root/usr/volcanos
+ADD http://192.168.236.67:9020/publish/order.js /root/usr/publish/order.js
+ADD http://192.168.236.67:9020/publish/volcanos.tar.gz /root/usr/
+RUN tar -xvf /root/usr/volcanos.tar.gz -C /root/usr/
 
-
-ENV ctx_dev http://192.168.0.103:9020
-ENV ctx_user shaoying
-EXPOSE 9020
-
+ENV ctx_dev http://192.168.236.67:9020
+ENV ctx_user root
 WORKDIR /root
-CMD cd /root/
+EXPOSE 9020
 CMD /usr/local/bin/ice.sh start serve dev
+
