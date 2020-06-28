@@ -1,48 +1,39 @@
 Volcanos("onengine", { river: {
     "main": {name: "main", storm: {
-        "dream": {name: "dream", index: [
-            "web.space",
-            "web.dream",
-            "web.code.docker.container",
-            "web.code.tmux.session",
-        ]},
-        "main": {name: "main", index: [
+        "inner": {name: "inner", index: [
             "web.code.inner",
             "web.code.git.status",
             "web.code.git.total",
         ]},
-        "task": {name: "task", index: [
-            "web.team.plan",
-            "web.wiki.draw.draw",
-            "web.wiki.word",
-        ]},
-        "relay": {name: "relay", index: [
-            "aaa.totp.get",
-            "web.route",
-        ]},
-        "性能": {name: "性能", index: [
+        "pprof": {name: "pprof", index: [
             "web.code.pprof",
             "web.code.bench",
             "web.favor",
             "web.cache",
             "web.share",
         ]},
-        "docker": {name: "docker", index: [
-            "web.code.docker.image",
+        "relay": {name: "relay", index: [
+            "aaa.totp.get",
+            "web.route",
+            "web.space",
+            "web.dream",
             "web.code.docker.container",
-            "web.code.docker.command",
-        ]},
-        "tmux": {name: "tmux", index: [
-            "web.code.tmux.text",
-            "web.code.tmux.buffer",
             "web.code.tmux.session",
         ]},
-        "wiki": {name: "wiki", index: [
-            // "web.wiki.draw.draw",
-            "web.wiki.feel",
-            "web.wiki.data",
-        ]},
-        "trans": {name: "翻译", action: [
+
+        "alpha": {name: "alpha", action: [
+            {name: "wubi", help: "五笔", inputs: [
+                {type: "text", name: "word", value: "shwq"},
+                {type: "button", name: "查找"},
+            ], index: "web.code.input.find"},
+
+            {name: "wubi", help: "五笔", inputs: [
+                {type: "text", name: "word", value: "想像"},
+                {type: "text", name: "method", value: "line"},
+                {type: "button", name: "查找"},
+            ], index: "web.code.input.find"},
+
+
             {name: "english", help: "英文", inputs: [
                 {type: "text", name: "word", value: "miss"},
                 {type: "button", name: "翻译"},
@@ -57,7 +48,26 @@ Volcanos("onengine", { river: {
                 {type: "button", name: "翻译"},
             ], index: "web.wiki.alpha.find"},
         ]},
-        "hello": {name: "应用1", action: [
+
+        "office": {name: "office", index: [
+            "web.team.plan",
+            "web.wiki.feel",
+            "web.wiki.data",
+            "web.wiki.word",
+            "web.wiki.draw.draw",
+        ]},
+        "docker": {name: "docker", index: [
+            "web.code.docker.image",
+            "web.code.docker.container",
+            "web.code.docker.command",
+        ]},
+        "tmux": {name: "tmux", index: [
+            "web.code.tmux.text",
+            "web.code.tmux.buffer",
+            "web.code.tmux.session",
+        ]},
+
+        "hello": {name: "hello", action: [
             {name: "some", help: "some", inputs: [
                 {type: "text", name: "one"},
                 {type: "button", name: "one"},

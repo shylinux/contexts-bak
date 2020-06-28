@@ -48,11 +48,12 @@
     # load
 
 ~web.wiki
-    config word meta.path usr/learning
+    # config word meta.path usr/learning
 ~web.wiki.draw
-    config draw meta.path usr/learning
+    # config draw meta.path usr/learning
 
 ~ssh
     source etc/local.shy
     target web.code.pprof
     target web.chat.fyne.hi
+    target web.wiki.alpha.load
