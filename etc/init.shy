@@ -55,3 +55,4 @@
 ~ssh
     source etc/local.shy
     target web.code.pprof
+    target web.chat.fyne.hi

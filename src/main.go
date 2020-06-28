@@ -16,7 +16,8 @@ import (
 	// _ "github.com/shylinux/icebergs/misc/pi"
 	// _ "github.com/shylinux/icebergs/misc/wx"
 
+	_ "github.com/shylinux/icebergs/misc/fyne"
 	_ "github.com/shylinux/icebergs/misc/totp"
 )
 
-func main() { println(ice.Run()) }
+func main() { ice.Run() }

@@ -25,7 +25,7 @@ prepare() {
  }
 start() {
     trap HUP hup && while true; do
-        date && ice.bin $@ 2>$ctx_log && echo -e "\n\nrestarting..." || break
+        date && ice.bin $@ 2>$ctx_log && echo -e "\n\nrestarting..." && break
     done
 }
 restart() {
