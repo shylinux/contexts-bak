@@ -1,5 +1,7 @@
 #!/bin/sh
 ISH_CONF_WORK=~/usr/local/work
+export ctx_dev=http://localhost:9020
+export ctx_dev=http://172.30.8.42:9020
 if [ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh; then
     require conf.sh
 

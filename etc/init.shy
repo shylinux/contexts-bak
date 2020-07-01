@@ -58,3 +58,4 @@
     target web.chat.fyne.hi
     target web.wiki.alpha.load
     target web.code.input.push
+    target web.code.qrc.save
