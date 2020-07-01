@@ -61,6 +61,10 @@ Volcanos("onengine", { river: {
             "web.code.docker.container",
             "web.code.docker.command",
         ]},
+        "chrome": {name: "chrome", index: [
+            "web.code.chrome.chrome",
+            "web.code.chrome.bookmark",
+        ]},
         "tmux": {name: "tmux", index: [
             "web.code.tmux.text",
             "web.code.tmux.buffer",
