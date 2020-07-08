@@ -32,19 +32,19 @@ Volcanos("onengine", { river: {
             "web.code.tmux.session",
         ]},
         "redis": {name: "redis",  action: [
-            {name: "redis", help: "redis", inputs: [
+            {name: "redis", help: "缓存", inputs: [
                 {type: "text", name: "path", value: "redis-story/src/main.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
         "golang": {name: "golang",  action: [
-            {name: "golang", help: "golang", inputs: [
+            {name: "golang", help: "编程", inputs: [
                 {type: "text", name: "path", value: "golang-story/src/main.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
         "nginx": {name: "nginx",  action: [
-            {name: "nginx", help: "nginx", inputs: [
+            {name: "nginx", help: "代理", inputs: [
                 {type: "text", name: "path", value: "nginx-story/src/main.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
