@@ -31,9 +31,9 @@ Volcanos("onengine", { river: {
             "web.code.tmux.buffer",
             "web.code.tmux.session",
         ]},
-        "redis": {name: "redis",  action: [
-            {name: "redis", help: "缓存", inputs: [
-                {type: "text", name: "path", value: "redis-story/src/main.shy"},
+        "nginx": {name: "nginx",  action: [
+            {name: "nginx", help: "代理", inputs: [
+                {type: "text", name: "path", value: "nginx-story/src/main.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
@@ -43,9 +43,9 @@ Volcanos("onengine", { river: {
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
-        "nginx": {name: "nginx",  action: [
-            {name: "nginx", help: "代理", inputs: [
-                {type: "text", name: "path", value: "nginx-story/src/main.shy"},
+        "redis": {name: "redis",  action: [
+            {name: "redis", help: "缓存", inputs: [
+                {type: "text", name: "path", value: "redis-story/src/main.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
