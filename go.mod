@@ -15,8 +15,8 @@ replace github.com/shylinux/icebergs => ./usr/icebergs
 
 replace github.com/shylinux/toolkits => ./usr/toolkits
 
-replace github.com/shylinux/redis-story => ./usr/redis-story
+replace github.com/shylinux/nginx-story => ./usr/nginx-story
 
 replace github.com/shylinux/golang-story => ./usr/golang-story
 
-replace github.com/shylinux/nginx-story => ./usr/nginx-story
+replace github.com/shylinux/redis-story => ./usr/redis-story

@@ -20,8 +20,8 @@ ish_miss_prepare_session miss
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
 
-# ish_miss_prepare nginx-story
-# ish_miss_prepare golang-story
-# ish_miss_prepare redis-story
+ish_miss_prepare nginx-story
+ish_miss_prepare golang-story
+ish_miss_prepare redis-story
 
 
