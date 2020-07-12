@@ -25,4 +25,5 @@ bin/
 pkg/
 var/
 usr/
+trash/
 etc/local.shy
