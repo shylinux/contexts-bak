@@ -45,8 +45,9 @@ Volcanos("onengine", { river: {
         ]},
         "redis": {name: "redis",  action: [
             {name: "redis", help: "缓存", inputs: [
-                {type: "text", name: "path", value: "redis-story/src/main.shy"},
+                {type: "text", name: "path", value: "redis-story/src/main.shy", action: "auto"},
                 {type: "button", name: "查看", value: "auto"},
+                {type: "button", name: "返回"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
     }},
