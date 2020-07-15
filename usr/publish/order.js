@@ -11,6 +11,21 @@ Volcanos("onengine", { river: {
             "web.code.chrome.chrome",
             "web.code.chrome.bookmark",
         ]},
+        "english": {name: "english",  action: [
+            {name: "english", help: "英汉", inputs: [
+                {type: "text", name: "word", value: "hi"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.alpha.find", feature: {}},
+            {name: "chinese", help: "汉英", inputs: [
+                {type: "text", name: "word", value: "你好"},
+                {type: "text", name: "method", value: "line"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.alpha.find", feature: {}},
+            {name: "wubi", help: "五笔", inputs: [
+                {type: "text", name: "word", value: "shwq"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.code.input.find", feature: {}},
+        ]},
     }},
     "project": {name: "研发群", storm: {
         "inner": {name: "inner", index: [
