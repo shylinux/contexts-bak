@@ -22,7 +22,12 @@ Volcanos("onengine", { river: {
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.alpha.find", feature: {}},
             {name: "wubi", help: "五笔", inputs: [
-                {type: "text", name: "word", value: "shwq"},
+                {type: "text", name: "word", value: "wqvb"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.code.input.find", feature: {}},
+            {name: "wubi", help: "五笔", inputs: [
+                {type: "text", name: "word", value: "你好"},
+                {type: "text", name: "method", value: "line"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.code.input.find", feature: {}},
         ]},
@@ -63,6 +68,12 @@ Volcanos("onengine", { river: {
                 {type: "text", name: "path", value: "redis-story/src/main.shy", action: "auto"},
                 {type: "button", name: "查看", value: "auto"},
                 {type: "button", name: "返回"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
+        "context": {name: "context",  action: [
+            {name: "context", help: "编程", inputs: [
+                {type: "text", name: "path", value: "learning/自然/编程/hi.shy"},
+                {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
     }},
