@@ -51,6 +51,26 @@ Volcanos("onengine", { river: {
             "web.code.tmux.buffer",
             "web.code.tmux.session",
         ]},
+        "html": {name: "html",  action: [
+            {name: "spide", help: "爬虫", inputs: [
+                {type: "text", name: "name", value: "icebergs"},
+                {type: "text", name: "begin_time", value: "@date"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.code.git.spide", feature: {display: "/plugin/story/spide.js"}},
+            {name: "trend", help: "趋势", inputs: [
+                {type: "text", name: "name", value: "icebergs"},
+                {type: "text", name: "begin_time", value: "@date"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.code.git.trend", feature: {display: "/plugin/story/trend.js"}},
+            {name: "draw", help: "绘图", inputs: [
+                {type: "text", name: "path", value: "hi.svg"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.draw.draw", feature: {display: "/plugin/local/wiki/draw.js"}},
+            {name: "HTML5", help: "网页", inputs: [
+                {type: "text", name: "path", value: "learning/自然/编程/html5.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
         "nginx": {name: "nginx",  action: [
             {name: "nginx", help: "代理", inputs: [
                 {type: "text", name: "path", value: "nginx-story/src/main.shy"},
@@ -89,6 +109,38 @@ Volcanos("onengine", { river: {
             "web.code.docker.image",
             "web.code.docker.container",
             "web.code.docker.command",
+        ]},
+        "redis": {name: "redis",  action: [
+            {name: "redis", help: "缓存", inputs: [
+                {type: "text", name: "path", value: "usr/install/redis-5.0.4/src", action: "auto"},
+                {type: "text", name: "file", value: "dict.h", action: "auto"},
+                {type: "text", name: "line", value: "82", action: "auto"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
+        ]},
+        "volcanos": {name: "volcanos",  action: [
+            {name: "volcanos", help: "火山架", inputs: [
+                {type: "text", name: "path", value: "usr/volcanos", action: "auto"},
+                {type: "text", name: "file", value: "proto.js", action: "auto"},
+                {type: "text", name: "line", value: "1", action: "auto"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
+        ]},
+        "icebergs": {name: "icebergs",  action: [
+            {name: "icebergs", help: "冰山", inputs: [
+                {type: "text", name: "path", value: "usr/icebergs", action: "auto"},
+                {type: "text", name: "file", value: "type.go", action: "auto"},
+                {type: "text", name: "line", value: "1", action: "auto"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
+        ]},
+        "intshell": {name: "intshell",  action: [
+            {name: "icebergs", help: "冰山", inputs: [
+                {type: "text", name: "path", value: "usr/intshell", action: "auto"},
+                {type: "text", name: "file", value: "plug.sh", action: "auto"},
+                {type: "text", name: "line", value: "1", action: "auto"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
         ]},
     }},
 
