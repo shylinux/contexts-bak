@@ -8,7 +8,7 @@ require show.sh
 require help.sh
 require miss.sh
 
-# ish_miss_prepare_compile
+ish_miss_prepare_compile
 # ish_miss_prepare_install
 # ish_miss_prepare_develop
 ish_miss_prepare_session miss
