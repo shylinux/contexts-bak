@@ -1,5 +1,11 @@
 Volcanos("onengine", { river: {
     "product": {name: "产品群", storm: {
+        "speak": {name: "speak",  action: [
+            {name: "speak", help: "编程", inputs: [
+                {type: "text", name: "path", value: "learning/speak/20200724.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
+        ]},
         "office": {name: "office", index: [
             "web.wiki.draw.draw",
             "web.team.plan",
@@ -54,7 +60,6 @@ Volcanos("onengine", { river: {
         "html": {name: "html",  action: [
             {name: "spide", help: "爬虫", inputs: [
                 {type: "text", name: "name", value: "icebergs"},
-                {type: "text", name: "begin_time", value: "@date"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.code.git.spide", feature: {display: "/plugin/story/spide.js"}},
             {name: "trend", help: "趋势", inputs: [
