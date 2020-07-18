@@ -13,7 +13,7 @@ require miss.sh
 # ish_miss_prepare_develop
 ish_miss_prepare_session miss
 
-# ish_miss_prepare_volcanos
+ish_miss_prepare_volcanos
 # ish_miss_prepare_icebergs
 # ish_miss_prepare_intshell
 
@@ -31,4 +31,4 @@ ish_miss_prepare_vim() {
    [ -f ~/.vim/syntax/javascript.vim ] || ln etc/conf/javascript.vim ~/.vim/syntax/javascript.vim
 }
 
-ish_miss_prepare_vim
+# ish_miss_prepare_vim
