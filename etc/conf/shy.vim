@@ -24,7 +24,3 @@ syntax match shyTitle "^title"
 syntax match shyTitle "^chapter"
 syntax match shyTitle "^section"
 
-highlight shySpark    ctermbg=darkgreen ctermfg=white
-syntax match shySpark "^brief"
-syntax match shySpark "^spark"
-

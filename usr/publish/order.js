@@ -1,6 +1,10 @@
 Volcanos("onengine", { river: {
     "product": {name: "产品群", storm: {
         "speak": {name: "speak",  action: [
+            {name: "ticker", help: "定时", inputs: [
+                {type: "text", name: "word", value: "hi"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "cli.runtime", feature: {}},
             {name: "speak", help: "编程", inputs: [
                 {type: "text", name: "path", value: "learning/speak/20200724.shy"},
                 {type: "button", name: "查看", value: "auto"},
