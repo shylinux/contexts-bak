@@ -11,7 +11,7 @@ import (
 	_ "github.com/shylinux/icebergs/misc/input"
 	_ "github.com/shylinux/icebergs/misc/totp"
 
-	// _ "github.com/shylinux/icebergs/misc/lark"
+	_ "github.com/shylinux/icebergs/misc/lark"
 	// _ "github.com/shylinux/icebergs/misc/md"
 	// _ "github.com/shylinux/icebergs/misc/mp"
 	// _ "github.com/shylinux/icebergs/misc/pi"

@@ -33,4 +33,4 @@ ish_miss_prepare_vim() {
    [ -f ~/.vim/syntax/javascript.vim ] || ln etc/conf/javascript.vim ~/.vim/syntax/javascript.vim
 }
 
-# ish_miss_prepare_vim
+ish_miss_prepare_vim
