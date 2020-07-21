@@ -78,7 +78,7 @@ Volcanos("onengine", { river: {
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.draw.draw", feature: {display: "/plugin/local/wiki/draw.js"}},
             {name: "HTML5", help: "网页", inputs: [
-                {type: "text", name: "path", value: "learning/自然/编程/html5.shy"},
+                {type: "text", name: "path", value: "icebergs/misc/chrome/chrome.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
