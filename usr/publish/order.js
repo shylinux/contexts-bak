@@ -1,7 +1,13 @@
 Volcanos("onengine", { river: {
     "product": {name: "产品群", storm: {
+        "mp": {name: "mp",  action: [
+            {name: "微信小程序", help: "mp", inputs: [
+                {type: "text", name: "path", value: "icebergs/misc/mp/mp.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
         "lark": {name: "lark",  action: [
-            {name: "聊天机器人", help: "lark", inputs: [
+            {name: "飞书机器人", help: "lark", inputs: [
                 {type: "text", name: "path", value: "icebergs/misc/lark/lark.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
