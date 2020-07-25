@@ -60,3 +60,6 @@
     target web.code.input.push
     target web.code.qrc.save
     target web.chat.lark.app
+    target web.chat.qrcode.qrcode
+    target web.chat.location.location
+    target web.chat.paste.paste
