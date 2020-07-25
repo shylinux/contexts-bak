@@ -160,6 +160,22 @@ Volcanos("onengine", { river: {
             ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
         ]},
     }},
+    "operate": {name: "运维群", storm: {
+        "os": {name: "操作系统",  action: [
+            {name: "操作系统", help: "os", inputs: [
+                {type: "text", name: "path", value: "learning/自然/编程/system.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
+    }},
+    "serivce": {name: "运营群", storm: {
+        "mp": {name: "mp",  action: [
+            {name: "微信小程序", help: "mp", inputs: [
+                {type: "text", name: "path", value: "icebergs/misc/mp/mp.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
+    }},
 
     "main": {name: "main", storm: {
         "inner": {name: "inner", index: [
