@@ -1,5 +1,11 @@
 Volcanos("onengine", { river: {
-    "product": {name: "产品群", storm: {
+    "serivce": {name: "运营群", storm: {
+        "wx": {name: "wx",  action: [
+            {name: "微信公众号", help: "wx", inputs: [
+                {type: "text", name: "path", value: "icebergs/misc/wx/wx.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
         "mp": {name: "mp",  action: [
             {name: "微信小程序", help: "mp", inputs: [
                 {type: "text", name: "path", value: "icebergs/misc/mp/mp.shy"},
@@ -13,11 +19,19 @@ Volcanos("onengine", { river: {
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
         ]},
         "share": {name: "share",  action: [
-            {name: "云境", help: "shylinux/contexts", inputs: [
+            {name: "云境科技", help: "shylinux/contexts", inputs: [
                 {type: "text", name: "path", value: "learning/speak/20200724.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
         ]},
+        "company": {name: "company",  action: [
+            {name: "公司", help: "company", inputs: [
+                {type: "text", name: "path", value: "learning/社会/管理/company.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
+    }},
+    "product": {name: "产品群", storm: {
         "office": {name: "office", index: [
             "web.wiki.draw.draw",
             "web.team.plan",
@@ -48,6 +62,12 @@ Volcanos("onengine", { river: {
                 {type: "text", name: "method", value: "line"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.code.input.find", feature: {}},
+        ]},
+        "context": {name: "context",  action: [
+            {name: "context", help: "编程", inputs: [
+                {type: "text", name: "path", value: "learning/自然/编程/hi.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
     }},
     "project": {name: "研发群", storm: {
@@ -107,12 +127,6 @@ Volcanos("onengine", { river: {
                 {type: "button", name: "返回"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
-        "context": {name: "context",  action: [
-            {name: "context", help: "编程", inputs: [
-                {type: "text", name: "path", value: "learning/自然/编程/hi.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
-        ]},
     }},
     "profile": {name: "测试群", storm: {
         "pprof": {name: "pprof", index: [
@@ -127,51 +141,11 @@ Volcanos("onengine", { river: {
             "web.code.docker.container",
             "web.code.docker.command",
         ]},
-        "redis": {name: "redis",  action: [
-            {name: "redis", help: "缓存", inputs: [
-                {type: "text", name: "path", value: "usr/install/redis-5.0.4/src", action: "auto"},
-                {type: "text", name: "file", value: "dict.h", action: "auto"},
-                {type: "text", name: "line", value: "82", action: "auto"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
-        ]},
-        "volcanos": {name: "volcanos",  action: [
-            {name: "volcanos", help: "火山架", inputs: [
-                {type: "text", name: "path", value: "usr/volcanos", action: "auto"},
-                {type: "text", name: "file", value: "proto.js", action: "auto"},
-                {type: "text", name: "line", value: "1", action: "auto"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
-        ]},
-        "icebergs": {name: "icebergs",  action: [
-            {name: "icebergs", help: "冰山", inputs: [
-                {type: "text", name: "path", value: "usr/icebergs", action: "auto"},
-                {type: "text", name: "file", value: "type.go", action: "auto"},
-                {type: "text", name: "line", value: "1", action: "auto"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
-        ]},
-        "intshell": {name: "intshell",  action: [
-            {name: "icebergs", help: "冰山", inputs: [
-                {type: "text", name: "path", value: "usr/intshell", action: "auto"},
-                {type: "text", name: "file", value: "plug.sh", action: "auto"},
-                {type: "text", name: "line", value: "1", action: "auto"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.code.inner", feature: {display: "/plugin/local/code/inner.js", style: "editor"}},
-        ]},
     }},
     "operate": {name: "运维群", storm: {
-        "os": {name: "操作系统",  action: [
+        "os": {name: "os",  action: [
             {name: "操作系统", help: "os", inputs: [
                 {type: "text", name: "path", value: "learning/自然/编程/system.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
-        ]},
-    }},
-    "serivce": {name: "运营群", storm: {
-        "mp": {name: "mp",  action: [
-            {name: "微信小程序", help: "mp", inputs: [
-                {type: "text", name: "path", value: "icebergs/misc/mp/mp.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},

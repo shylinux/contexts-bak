@@ -63,3 +63,4 @@
     target web.chat.qrcode.qrcode
     target web.chat.location.location
     target web.chat.paste.paste
+    target web.chat.wx.menu
