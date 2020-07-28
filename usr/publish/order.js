@@ -1,5 +1,11 @@
 Volcanos("onengine", { river: {
     "serivce": {name: "运营群", storm: {
+        "some": {name: "some",  action: [
+            {name: "context", help: "编程", inputs: [
+                {type: "text", name: "path", value: "learning/自然/编程/hi.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
         "wx": {name: "wx",  action: [
             {name: "微信公众号", help: "wx", inputs: [
                 {type: "text", name: "path", value: "icebergs/misc/wx/wx.shy"},

@@ -17,6 +17,7 @@ syntax match shyCommand "^[a-zA-Z0-9:._]\+"
 highlight shyConfig    ctermfg=yellow
 syntax match shyConfig "^    config"
 syntax match shyConfig "^source"
+syntax match shyConfig "^return"
 
 
 highlight shyTitle    ctermbg=darkred ctermfg=white
