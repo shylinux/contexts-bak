@@ -19,17 +19,17 @@ Volcanos("onengine", { river: {
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
         ]},
         "share": {name: "share",  action: [
-            {name: "云境科技", help: "shylinux/contexts", inputs: [
+            {name: "contexts", help: "shylinux/contexts", inputs: [
                 {type: "text", name: "path", value: "learning/speak/20200724.shy"},
                 {type: "button", name: "查看", value: "auto"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
         ]},
-        "company": {name: "company",  action: [
-            {name: "公司", help: "company", inputs: [
-                {type: "text", name: "path", value: "learning/社会/管理/company.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
-        ]},
+        // "company": {name: "company",  action: [
+        //     {name: "公司", help: "company", inputs: [
+        //         {type: "text", name: "path", value: "learning/社会/管理/company.shy"},
+        //         {type: "button", name: "查看", value: "auto"},
+        //     ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        // ]},
     }},
     "product": {name: "产品群", storm: {
         "office": {name: "office", index: [
@@ -64,6 +64,16 @@ Volcanos("onengine", { river: {
             ], index: "web.code.input.find", feature: {}},
         ]},
         "context": {name: "context",  action: [
+            {name: "knowledge", help: "智库", inputs: [
+                {type: "text", name: "path", value: "learning/", action: "auto"},
+                {type: "button", name: "查看", value: "auto"},
+                {type: "button", name: "返回"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "index", help: "索引", inputs: [
+                {type: "text", name: "path", value: "learning/index.shy", action: "auto"},
+                {type: "button", name: "查看", value: "auto"},
+                {type: "button", name: "返回"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
             {name: "context", help: "编程", inputs: [
                 {type: "text", name: "path", value: "learning/自然/编程/hi.shy"},
                 {type: "button", name: "查看", value: "auto"},
@@ -88,6 +98,16 @@ Volcanos("onengine", { river: {
             "web.code.tmux.text",
             "web.code.tmux.buffer",
             "web.code.tmux.session",
+        ]},
+        "vim": {name: "vim",  action: [
+            {name: "git", help: "git", inputs: [
+                {type: "text", name: "path", value: "icebergs/misc/git/git.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "vim", help: "vim", inputs: [
+                {type: "text", name: "path", value: "icebergs/misc/vim/vim.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
         "html": {name: "html",  action: [
             {name: "spide", help: "爬虫", inputs: [
