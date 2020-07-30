@@ -27,7 +27,7 @@ ish_miss_prepare golang-story
 ish_miss_prepare redis-story
 
 ish_miss_prepare_vim() {
-    mkdir ~/.vim/syntax
+    mkdir -p ~/.vim/syntax
     [ -f ~/.vim/syntax/sh.vim ] || ln etc/conf/sh.vim ~/.vim/syntax/sh.vim
     [ -f ~/.vim/syntax/shy.vim ] || ln etc/conf/shy.vim ~/.vim/syntax/shy.vim
     [ -f ~/.vim/syntax/go.vim ] || ln etc/conf/go.vim ~/.vim/syntax/go.vim
