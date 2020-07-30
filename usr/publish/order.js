@@ -147,6 +147,12 @@ Volcanos("onengine", { river: {
                 {type: "button", name: "返回"},
             ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
         ]},
+        "context": {name: "context",  action: [
+            {name: "context", help: "编程", inputs: [
+                {type: "text", name: "path", value: "learning/自然/编程/context.shy"},
+                {type: "button", name: "查看", value: "auto"},
+            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+        ]},
     }},
     "profile": {name: "测试群", storm: {
         "pprof": {name: "pprof", index: [
