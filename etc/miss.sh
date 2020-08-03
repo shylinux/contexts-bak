@@ -22,9 +22,11 @@ ish_miss_prepare_intshell
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
 
+ish_miss_prepare linux-story
 ish_miss_prepare nginx-story
 ish_miss_prepare golang-story
 ish_miss_prepare redis-story
+ish_miss_prepare mysql-story
 
 ish_miss_prepare_vim() {
     mkdir -p ~/.vim/syntax

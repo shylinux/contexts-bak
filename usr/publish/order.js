@@ -36,11 +36,6 @@ Volcanos("onengine", { river: {
         ]},
     }},
     "project": {name: "研发群", storm: {
-        "inner": {name: "inner", index: [
-            "web.code.inner",
-            "web.code.git.status",
-            "web.code.git.total",
-        ]},
         "relay": {name: "relay", index: [
             "aaa.totp.get",
             "web.route",
@@ -54,15 +49,20 @@ Volcanos("onengine", { river: {
             "web.code.tmux.buffer",
             "web.code.tmux.session",
         ]},
-        "vim": {name: "vim",  action: [
+        "git": {name: "git",  action: [
             {name: "git", help: "git", index: "web.wiki.word", args: ["icebergs/misc/git/git.shy"]},
+        ]},
+        "vim": {name: "vim",  action: [
             {name: "vim", help: "vim", index: "web.wiki.word", args: ["icebergs/misc/vim/vim.shy"]},
         ]},
         "html": {name: "html",  action: [
             {name: "draw", help: "绘图", index: "web.wiki.draw.draw", args: ["hi.svg"]},
-            {name: "spide", help: "爬虫", index: "web.code.git.spide", args: ["icebergs"]},
             {name: "trend", help: "趋势", index: "web.code.git.trend", args: ["icebergs"]},
+            {name: "spide", help: "爬虫", index: "web.code.git.spide", args: ["icebergs"]},
             {name: "HTML5", help: "网页", index: "web.wiki.word", args: ["icebergs/misc/chrome/chrome.shy"]},
+        ]},
+        "linux": {name: "linux",  action: [
+            {name: "linux", help: "系统", index: "web.wiki.word", args: ["linux-story/src/main.shy"]},
         ]},
         "nginx": {name: "nginx",  action: [
             {name: "nginx", help: "代理", index: "web.wiki.word", args: ["nginx-story/src/main.shy"]},
@@ -73,6 +73,9 @@ Volcanos("onengine", { river: {
         "redis": {name: "redis",  action: [
             {name: "redis", help: "缓存", index: "web.wiki.word", args: ["redis-story/src/main.shy"]},
         ]},
+        "mysql": {name: "mysql",  action: [
+            {name: "mysql", help: "数据", index: "web.wiki.word", args: ["mysql-story/src/main.shy"]},
+        ]},
         "context": {name: "context",  action: [
             {name: "think", help: "智库", index: "web.wiki.word", args: ["learning/"]},
             {name: "index", help: "索引", index: "web.wiki.word", args: ["learning/index.shy"]},
@@ -80,17 +83,17 @@ Volcanos("onengine", { river: {
         ]},
     }},
     "profile": {name: "测试群", storm: {
+        "docker": {name: "docker", index: [
+            "web.code.docker.image",
+            "web.code.docker.container",
+            "web.code.docker.command",
+        ]},
         "pprof": {name: "pprof", index: [
             "web.code.pprof",
             "web.code.bench",
             "web.favor",
             "web.cache",
             "web.share",
-        ]},
-        "docker": {name: "docker", index: [
-            "web.code.docker.image",
-            "web.code.docker.container",
-            "web.code.docker.command",
         ]},
     }},
     "operate": {name: "运维群", storm: {

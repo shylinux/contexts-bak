@@ -66,6 +66,3 @@
     target web.chat.wx.menu
 
     target web.chat.meet.miss
-
-    target web.team.task
-    target web.mall.asset
