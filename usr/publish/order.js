@@ -1,35 +1,17 @@
 Volcanos("onengine", { river: {
     "serivce": {name: "运营群", storm: {
         "wx": {name: "wx",  action: [
-            {name: "微信公众号", help: "wx", inputs: [
-                {type: "text", name: "path", value: "icebergs/misc/wx/wx.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "微信公众号", help: "wx", index: "web.wiki.word", args: ["icebergs/misc/wx/wx.shy"]},
         ]},
         "mp": {name: "mp",  action: [
-            {name: "微信小程序", help: "mp", inputs: [
-                {type: "text", name: "path", value: "icebergs/misc/mp/mp.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "微信小程序", help: "mp", index: "web.wiki.word", args: ["icebergs/misc/mp/mp.shy"]},
         ]},
         "lark": {name: "lark",  action: [
-            {name: "飞书机器人", help: "lark", inputs: [
-                {type: "text", name: "path", value: "icebergs/misc/lark/lark.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
+            {name: "飞书机器人", help: "lark", index: "web.wiki.word", args: ["icebergs/misc/lark/lark.shy"]},
         ]},
         "share": {name: "share",  action: [
-            {name: "contexts", help: "shylinux/contexts", inputs: [
-                {type: "text", name: "path", value: "learning/speak/20200724.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js", style: "word"}},
+            {name: "系统上下文", help: "shylinux/contexts", index: "web.wiki.word", args: ["learning/自然/编程/20200724.shy"]},
         ]},
-        // "company": {name: "company",  action: [
-        //     {name: "公司", help: "company", inputs: [
-        //         {type: "text", name: "path", value: "learning/社会/管理/company.shy"},
-        //         {type: "button", name: "查看", value: "auto"},
-        //     ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
-        // ]},
     }},
     "product": {name: "产品群", storm: {
         "office": {name: "office", index: [
@@ -39,45 +21,18 @@ Volcanos("onengine", { river: {
             "web.wiki.data",
             "web.wiki.feel",
         ]},
+        "english": {name: "english",  action: [
+            {name: "english", help: "英汉", index: "web.wiki.alpha.find", args: ["hi"]},
+            {name: "chinese", help: "汉英", index: "web.wiki.alpha.find", args: ["你好", "line"]},
+            {name: "wubi", help: "五笔", index: "web.code.input.find", args: ["wqvb"]},
+            {name: "wubi", help: "五笔", index: "web.code.input.find", args: ["你好", "line"]},
+        ]},
         "chrome": {name: "chrome", index: [
             "web.code.chrome.chrome",
             "web.code.chrome.bookmark",
         ]},
-        "english": {name: "english",  action: [
-            {name: "english", help: "英汉", inputs: [
-                {type: "text", name: "word", value: "hi"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.alpha.find", feature: {}},
-            {name: "chinese", help: "汉英", inputs: [
-                {type: "text", name: "word", value: "你好"},
-                {type: "text", name: "method", value: "line"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.alpha.find", feature: {}},
-            {name: "wubi", help: "五笔", inputs: [
-                {type: "text", name: "word", value: "wqvb"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.code.input.find", feature: {}},
-            {name: "wubi", help: "五笔", inputs: [
-                {type: "text", name: "word", value: "你好"},
-                {type: "text", name: "method", value: "line"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.code.input.find", feature: {}},
-        ]},
         "context": {name: "context",  action: [
-            {name: "knowledge", help: "智库", inputs: [
-                {type: "text", name: "path", value: "learning/", action: "auto"},
-                {type: "button", name: "查看", value: "auto"},
-                {type: "button", name: "返回"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
-            {name: "index", help: "索引", inputs: [
-                {type: "text", name: "path", value: "learning/index.shy", action: "auto"},
-                {type: "button", name: "查看", value: "auto"},
-                {type: "button", name: "返回"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
-            {name: "context", help: "编程", inputs: [
-                {type: "text", name: "path", value: "learning/自然/编程/hi.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "context", help: "编程", index: "web.wiki.word", args: ["learning/自然/编程/context.shy"]},
         ]},
     }},
     "project": {name: "研发群", storm: {
@@ -100,58 +55,28 @@ Volcanos("onengine", { river: {
             "web.code.tmux.session",
         ]},
         "vim": {name: "vim",  action: [
-            {name: "git", help: "git", inputs: [
-                {type: "text", name: "path", value: "icebergs/misc/git/git.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
-            {name: "vim", help: "vim", inputs: [
-                {type: "text", name: "path", value: "icebergs/misc/vim/vim.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "git", help: "git", index: "web.wiki.word", args: ["icebergs/misc/git/git.shy"]},
+            {name: "vim", help: "vim", index: "web.wiki.word", args: ["icebergs/misc/vim/vim.shy"]},
         ]},
         "html": {name: "html",  action: [
-            {name: "spide", help: "爬虫", inputs: [
-                {type: "text", name: "name", value: "icebergs"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.code.git.spide", feature: {display: "/plugin/story/spide.js"}},
-            {name: "trend", help: "趋势", inputs: [
-                {type: "text", name: "name", value: "icebergs"},
-                {type: "text", name: "begin_time", value: "@date"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.code.git.trend", feature: {display: "/plugin/story/trend.js"}},
-            {name: "draw", help: "绘图", inputs: [
-                {type: "text", name: "path", value: "hi.svg"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.draw.draw", feature: {display: "/plugin/local/wiki/draw.js"}},
-            {name: "HTML5", help: "网页", inputs: [
-                {type: "text", name: "path", value: "icebergs/misc/chrome/chrome.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "draw", help: "绘图", index: "web.wiki.draw.draw", args: ["hi.svg"]},
+            {name: "spide", help: "爬虫", index: "web.code.git.spide", args: ["icebergs"]},
+            {name: "trend", help: "趋势", index: "web.code.git.trend", args: ["icebergs"]},
+            {name: "HTML5", help: "网页", index: "web.wiki.word", args: ["icebergs/misc/chrome/chrome.shy"]},
         ]},
         "nginx": {name: "nginx",  action: [
-            {name: "nginx", help: "代理", inputs: [
-                {type: "text", name: "path", value: "nginx-story/src/main.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "nginx", help: "代理", index: "web.wiki.word", args: ["nginx-story/src/main.shy"]},
         ]},
         "golang": {name: "golang",  action: [
-            {name: "golang", help: "编程", inputs: [
-                {type: "text", name: "path", value: "golang-story/src/main.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "golang", help: "编程", index: "web.wiki.word", args: ["golang-story/src/main.shy"]},
         ]},
         "redis": {name: "redis",  action: [
-            {name: "redis", help: "缓存", inputs: [
-                {type: "text", name: "path", value: "redis-story/src/main.shy", action: "auto"},
-                {type: "button", name: "查看", value: "auto"},
-                {type: "button", name: "返回"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "redis", help: "缓存", index: "web.wiki.word", args: ["redis-story/src/main.shy"]},
         ]},
         "context": {name: "context",  action: [
-            {name: "context", help: "编程", inputs: [
-                {type: "text", name: "path", value: "learning/自然/编程/context.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "think", help: "智库", index: "web.wiki.word", args: ["learning/"]},
+            {name: "index", help: "索引", index: "web.wiki.word", args: ["learning/index.shy"]},
+            {name: "context", help: "编程", index: "web.wiki.word", args: ["learning/自然/编程/hi.shy"]},
         ]},
     }},
     "profile": {name: "测试群", storm: {
@@ -170,10 +95,7 @@ Volcanos("onengine", { river: {
     }},
     "operate": {name: "运维群", storm: {
         "os": {name: "os",  action: [
-            {name: "操作系统", help: "os", inputs: [
-                {type: "text", name: "path", value: "learning/自然/编程/system.shy"},
-                {type: "button", name: "查看", value: "auto"},
-            ], index: "web.wiki.word", feature: {display: "/plugin/local/wiki/word.js"}},
+            {name: "操作系统", help: "os", index: "web.wiki.word", args: ["learning/自然/编程/system.shy"]},
         ]},
     }},
 }, })
