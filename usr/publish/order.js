@@ -10,7 +10,7 @@ Volcanos("onengine", { river: {
             {name: "飞书机器人", help: "lark", index: "web.wiki.word", args: ["icebergs/misc/lark/lark.shy"]},
         ]},
         "share": {name: "share",  action: [
-            {name: "系统上下文", help: "shylinux/contexts", index: "web.wiki.word", args: ["learning/自然/编程/20200724.shy"]},
+            {name: "系统上下文", help: "shylinux/contexts", index: "web.wiki.word", args: ["learning/社会/管理/20200724.shy"]},
         ]},
     }},
     "product": {name: "产品群", storm: {
@@ -32,7 +32,7 @@ Volcanos("onengine", { river: {
             "web.code.chrome.bookmark",
         ]},
         "context": {name: "context",  action: [
-            {name: "context", help: "编程", index: "web.wiki.word", args: ["learning/自然/编程/context.shy"]},
+            {name: "context", help: "编程", index: "web.wiki.word", args: ["learning/社会/管理/context.shy"]},
         ]},
     }},
     "project": {name: "研发群", storm: {
@@ -79,7 +79,7 @@ Volcanos("onengine", { river: {
         "context": {name: "context",  action: [
             {name: "think", help: "智库", index: "web.wiki.word", args: ["learning/"]},
             {name: "index", help: "索引", index: "web.wiki.word", args: ["learning/index.shy"]},
-            {name: "context", help: "编程", index: "web.wiki.word", args: ["learning/自然/编程/hi.shy"]},
+            {name: "context", help: "编程", index: "web.wiki.word", args: ["learning/自然/编程/context.shy"]},
         ]},
     }},
     "profile": {name: "测试群", storm: {
