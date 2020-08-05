@@ -27,39 +27,19 @@ Volcanos("onengine", { river: {
             {name: "wubi", help: "五笔", index: "web.code.input.find", args: ["wqvb"]},
             {name: "wubi", help: "五笔", index: "web.code.input.find", args: ["你好", "line"]},
         ]},
-        "chrome": {name: "chrome", index: [
-            "web.code.chrome.chrome",
-            "web.code.chrome.bookmark",
-        ]},
         "context": {name: "context",  action: [
             {name: "context", help: "编程", index: "web.wiki.word", args: ["learning/社会/管理/context.shy"]},
         ]},
     }},
     "project": {name: "研发群", storm: {
-        "relay": {name: "relay", index: [
-            "aaa.totp.get",
-            "web.route",
-            "web.space",
-            "web.dream",
-            "web.code.docker.container",
-            "web.code.tmux.session",
+        "cli": {name: "cli",  action: [
+            {name: "tmux", help: "命令行", index: "web.wiki.word", args: ["icebergs/misc/tmux/tmux.shy"]},
+            {name: "git", help: "代码库", index: "web.wiki.word", args: ["icebergs/misc/git/git.shy"]},
+            {name: "vim", help: "编辑器", index: "web.wiki.word", args: ["icebergs/misc/vim/vim.shy"]},
+            {name: "zsh", help: "命令行", index: "web.wiki.word", args: ["icebergs/misc/zsh/zsh.shy"]},
         ]},
-        "tmux": {name: "tmux", index: [
-            "web.code.tmux.text",
-            "web.code.tmux.buffer",
-            "web.code.tmux.session",
-        ]},
-        "git": {name: "git",  action: [
-            {name: "git", help: "git", index: "web.wiki.word", args: ["icebergs/misc/git/git.shy"]},
-        ]},
-        "vim": {name: "vim",  action: [
-            {name: "vim", help: "vim", index: "web.wiki.word", args: ["icebergs/misc/vim/vim.shy"]},
-        ]},
-        "html": {name: "html",  action: [
-            {name: "draw", help: "绘图", index: "web.wiki.draw.draw", args: ["hi.svg"]},
-            {name: "trend", help: "趋势", index: "web.code.git.trend", args: ["icebergs"]},
-            {name: "spide", help: "爬虫", index: "web.code.git.spide", args: ["icebergs"]},
-            {name: "HTML5", help: "网页", index: "web.wiki.word", args: ["icebergs/misc/chrome/chrome.shy"]},
+        "web": {name: "web",  action: [
+            {name: "HTML5", help: "浏览器", index: "web.wiki.word", args: ["icebergs/misc/chrome/chrome.shy"]},
         ]},
         "linux": {name: "linux",  action: [
             {name: "linux", help: "系统", index: "web.wiki.word", args: ["linux-story/src/main.shy"]},
@@ -83,11 +63,6 @@ Volcanos("onengine", { river: {
         ]},
     }},
     "profile": {name: "测试群", storm: {
-        "docker": {name: "docker", index: [
-            "web.code.docker.image",
-            "web.code.docker.container",
-            "web.code.docker.command",
-        ]},
         "pprof": {name: "pprof", index: [
             "web.code.pprof",
             "web.code.bench",
@@ -97,6 +72,19 @@ Volcanos("onengine", { river: {
         ]},
     }},
     "operate": {name: "运维群", storm: {
+        "docker": {name: "docker", index: [
+            "web.code.docker.image",
+            "web.code.docker.container",
+            "web.code.docker.command",
+        ]},
+        "relay": {name: "relay", index: [
+            "aaa.totp.get",
+            "web.route",
+            "web.space",
+            "web.dream",
+            "web.code.docker.container",
+            "web.code.tmux.session",
+        ]},
         "os": {name: "os",  action: [
             {name: "操作系统", help: "os", index: "web.wiki.word", args: ["learning/自然/编程/system.shy"]},
         ]},
