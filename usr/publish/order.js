@@ -32,6 +32,8 @@ Volcanos("onengine", { river: {
         ]},
         "learning": {name: "learning",  action: [
             {name: "study", help: "学习", index: "web.wiki.word", args: ["learning/study.shy"]},
+            {name: "tmux", help: "粘贴", index: "web.code.tmux.text"},
+            {name: "golang", help: "编程", index: "web.wiki.word", args: ["golang-story/src/main.shy"]},
         ]},
     }},
     "project": {name: "研发群", storm: {
