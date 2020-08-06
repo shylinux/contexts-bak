@@ -30,6 +30,9 @@ Volcanos("onengine", { river: {
         "context": {name: "context",  action: [
             {name: "context", help: "编程", index: "web.wiki.word", args: ["learning/社会/管理/context.shy"]},
         ]},
+        "learning": {name: "learning",  action: [
+            {name: "study", help: "学习", index: "web.wiki.word", args: ["learning/study.shy"]},
+        ]},
     }},
     "project": {name: "研发群", storm: {
         "cli": {name: "cli",  action: [
