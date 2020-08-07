@@ -1,1 +1,21 @@
 title "contexts"
+
+chapter "实践"
+label "实践" `
+code wiki chat team mall
+linux nginx golang redis mysql
+zsh tmux docker git vim
+` stroke blue fill yellow
+
+chapter "理论"
+label "理论" `
+重复性 复杂性 可用性
+模块化 集群化 自动化
+` stroke yellow fill black
+
+chapter "项目"
+label "项目" `
+volcanos icebergs intshell
+learning toolkits contexts
+` stroke red fill black
+
