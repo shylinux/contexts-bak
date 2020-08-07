@@ -9,7 +9,7 @@ require (
 	github.com/shylinux/icebergs v0.1.23
 	github.com/shylinux/nginx-story v0.0.0-00010101000000-000000000000 // indirect
 	github.com/shylinux/redis-story v0.0.0-00010101000000-000000000000 // indirect
-	github.com/shylinux/toolkits v0.1.6
+	github.com/shylinux/toolkits v0.1.7
 )
 
 replace github.com/shylinux/icebergs => ./usr/icebergs
