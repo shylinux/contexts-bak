@@ -66,3 +66,5 @@
     target web.chat.wx.menu
 
     target web.chat.meet.miss
+    target web.chat.lark.msg
+
