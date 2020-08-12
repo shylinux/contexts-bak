@@ -15,6 +15,8 @@ import (
 	_ "github.com/shylinux/icebergs/misc/mp"
 	_ "github.com/shylinux/icebergs/misc/wx"
 
+	_ "github.com/shylinux/icebergs/misc/es"
+
 	_ "github.com/shylinux/golang-story/src/compile"
 	_ "github.com/shylinux/golang-story/src/project"
 	_ "github.com/shylinux/golang-story/src/runtime"
