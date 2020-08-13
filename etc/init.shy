@@ -68,3 +68,5 @@
     target web.chat.meet.miss
     target web.chat.lark.msg
 
+    target web.code.install
+
