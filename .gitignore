@@ -27,4 +27,5 @@ var/
 usr/
 trash/
 etc/local.shy
+src/github.com
 person
