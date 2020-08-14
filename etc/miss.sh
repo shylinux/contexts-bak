@@ -17,8 +17,12 @@ ish_miss_prepare_volcanos
 ish_miss_prepare learning
 ish_miss_prepare_icebergs
 ish_miss_prepare toolkits
+ish_log_debug "require as ctx github.com/shylinux/intshell"
 ish_miss_prepare_intshell
+ish_log_debug "require as ctx github.com/shylinux/contexts"
 git pull
+pwd
+
 
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
