@@ -20,9 +20,11 @@ import (
 	_ "github.com/shylinux/golang-story/src/compile"
 	_ "github.com/shylinux/golang-story/src/project"
 	_ "github.com/shylinux/golang-story/src/runtime"
+	_ "github.com/shylinux/linux-story/src/gcc"
+	_ "github.com/shylinux/linux-story/src/glibc"
+	_ "github.com/shylinux/linux-story/src/kernel"
 	_ "github.com/shylinux/nginx-story/src/server"
 	_ "github.com/shylinux/redis-story/src/client"
-	_ "github.com/shylinux/redis-story/src/server"
 )
 
 func main() { ice.Run() }

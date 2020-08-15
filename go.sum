@@ -46,6 +46,8 @@ github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINE
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/shylinux/linux-story v0.0.0-20200316120319-301c47409108/go.mod h1:zCLHbPPSJ1bJ+84Q7HigCNVBgjhFzHhQC84BNPAHnzM=
+github.com/shylinux/linux-story v0.0.0-20200807015821-42316650ee3e h1:WCgrOFLi7H6uIT6o2B4rjga3rLDj4NOX/wKheXrSzJc=
+github.com/shylinux/mysql-story v0.0.0-20200803175425-16c28631acb8 h1:w9wf7Ab/PepO5B/yqGXyDW1kki2GSN0Uuc31pLOiS98=
 github.com/shylinux/nginx-story v0.0.0-20200707115715-8ace5ba22fb7 h1:0nvkOVbRp48/ZBdzUYZ9kl2f5NguirFnO2mshPbCvvA=
 github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e h1:MRM5ITcdelLK2j1vwZ3Je0FKVCfqOLp5zO6trqMLYs0=
 github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e/go.mod h1:XV66xRDqSt+GTGFMVlhk3ULuV0y9ZmzeVGR4mloJI3M=
