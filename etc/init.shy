@@ -14,27 +14,7 @@
     config footer legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
     config footer legal.1 "京ICP备15046864号-1"
 
-~web.code
-    # publish bin/ice.sh
-    # publish bin/template.sh
-    # publish usr/icebergs/misc/zsh/auto.sh
-    # publish usr/icebergs/misc/vim/auto.vim
-    # publish usr/icebergs/misc/tmux/auto.tmux
-
-~web.code
-    bench create "demo"
-    bench insert "demo" bench command
-    bench insert "demo" bench "GET,SET" redis://localhost:8291
-    bench insert "demo" shell pwd pwd
-
-    pprof create "demo" bin/ice.bin http://localhost:9020/code/pprof/profile 3
-    pprof insert "demo" bench config "" nconn 3 nreqs 3
-    pprof insert "demo" shell pwd pwd
-
 ~web.code.tmux
-    init
-
-~web.code.docker
     init
 
 ~web.code.git
@@ -46,11 +26,6 @@
 
 ~web.wiki.alpha
     # load
-
-~web.wiki
-    # config word meta.path usr/learning
-~web.wiki.draw
-    # config draw meta.path usr/learning
 
 ~ssh
     source etc/local.shy
