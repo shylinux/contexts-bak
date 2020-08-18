@@ -1,4 +1,4 @@
-module contexts
+module github.com/shylinux/contexts
 
 go 1.13
 

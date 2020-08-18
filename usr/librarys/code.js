@@ -1,4 +1,0 @@
-page({
-    init: function() {
-    },
-})

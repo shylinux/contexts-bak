@@ -1,6 +1,0 @@
-fun hello world "" "" public \
-	text "" \
-	button "执行"
-	copy pwd
-
-end
