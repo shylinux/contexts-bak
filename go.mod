@@ -3,6 +3,7 @@ module github.com/shylinux/contexts
 go 1.13
 
 require (
+	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/shylinux/golang-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/icebergs v0.2.7
 	github.com/shylinux/linux-story v0.0.0-00010101000000-000000000000

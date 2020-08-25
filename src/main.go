@@ -22,6 +22,7 @@ import (
 	_ "github.com/shylinux/linux-story/src/busybox"
 	_ "github.com/shylinux/linux-story/src/kernel"
 	_ "github.com/shylinux/linux-story/src/qemu"
+	_ "github.com/shylinux/mysql-story/src/client"
 	_ "github.com/shylinux/mysql-story/src/server"
 	_ "github.com/shylinux/nginx-story/src/server"
 	_ "github.com/shylinux/redis-story/src/client"

@@ -45,4 +45,5 @@
 
     target web.code.install
     target web.code.chrome.spided
+    target web.code.mysql.client
 
