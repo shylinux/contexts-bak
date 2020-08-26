@@ -29,6 +29,11 @@ field webpack web.code.webpack
 field binpack web.code.binpack
 field modpack web.code.modpack
 
+
+source usr/learning/自然/编程/数据结构.shy
+
+source usr/learning/自然/编程/设计模式.shy
+
 chapter "Logo"
 refer `
 艺术字 http://www.akuziti.com/
