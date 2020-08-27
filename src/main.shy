@@ -5,7 +5,7 @@ chapter "实践"
 label "实践" `
 code wiki chat team mall
 linux nginx golang redis mysql
-zsh tmux docker git vim
+zsh tmux chrome git vim
 ` stroke blue fill yellow
 
 chapter "理论"
@@ -22,7 +22,7 @@ learning toolkits contexts
 
 chapter "管理"
 field "下载管理" web.code.install
-field "进程管理" cli.daemon
+field "服务管理" cli.daemon
 
 chapter "Tech"
 field webpack web.code.webpack
@@ -39,26 +39,11 @@ refer `
 艺术字 http://www.akuziti.com/
 `
 
-chapter "Raft"
-refer `
-官网 https://raft.github.io/
-`
-
 chapter "Ceph"
 refer `
 官网 https://docs.ceph.com/docs/master/
 源码 https://github.com/ceph/ceph
 简介 https://blog.csdn.net/mingongge/article/details/100788388
-`
-
-chapter "Ledis"
-refer `
-源码 https://github.com/ledisdb/ledisdb
-`
-
-chapter "Dragonboat"
-refer `
-源码 https://github.com/lni/dragonboat
 `
 
 chapter "SuperVisor"
@@ -74,6 +59,4 @@ refer `
 文档 https://docs.python.org/3/reference/index.html
 `
 field "解释器" cli.python
-
-source usr/icebergs/misc/es/es.shy
 
