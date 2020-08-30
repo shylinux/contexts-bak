@@ -1,5 +1,6 @@
 ~aaa
     role white void web.code.inner
+    role white void usr.publish
     role white void tmp
 
     role black tech ssh

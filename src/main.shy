@@ -24,14 +24,13 @@ chapter "管理"
 field "下载管理" web.code.install
 field "服务管理" cli.daemon
 
-chapter "Tech"
+chapter "技术"
 field webpack web.code.webpack
 field binpack web.code.binpack
 field modpack web.code.modpack
 
-
+chapter "理论"
 source usr/learning/自然/编程/数据结构.shy
-
 source usr/learning/自然/编程/设计模式.shy
 
 chapter "Logo"

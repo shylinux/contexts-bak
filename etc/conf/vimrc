@@ -5,9 +5,9 @@
 ":PlugInstall
 "
 "}}}
-"加载插件"{{{
+"插件列表"{{{
 call plug#begin()
-" Plug 'vim-scripts/matrix.vim--Yang'
+Plug 'vim-scripts/matrix.vim--Yang'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
@@ -20,40 +20,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'gcmt/taboo.vim'
 set sessionoptions+=tabpages,globals
 
-let g:go_highlight_functions=1
 Plug 'fatih/vim-go'
 let g:go_version_warning=0
+let g:go_highlight_functions=1
 Plug 'chr4/nginx.vim'
 Plug 'othree/html5.vim'
+Plug 'vim-scripts/python.vim'
 Plug 'plasticboy/vim-markdown'
+Plug 'vim-syntastic/syntastic'
 
-" Plug 'vim-airline/vim-airline-themes'
-" Plug 'ntpeters/vim-better-whitespace'
-" Plug 'easymotion/vim-easymotion'
-"
-"
-" let g:Tlist_WinWidth=45
-" let g:Tlist_Exit_OnlyWindow=1
-" let g:Tlist_Enable_Fold_Column=0
-" nnoremap <F2> :TlistToggle<CR>
-"
-" Plug 'rking/ag.vim'
-" nnoremap <C-G> :Ag <C-R>=expand("<cword>")<CR><CR>
-"
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" nnoremap <C-N> :FZF -q <C-R>=expand("<cword>")<CR><CR>
-"
-" Plug 'godlygeek/tabular'
-" Plug 'vim-scripts/python.vim'
-"
-" Plug 'vim-syntastic/syntastic'
-" Plug 'Valloric/YouCompleteMe'
-" let g:ycm_confirm_extra_conf=1
-" let g:syntastic_enable_signs=1
-" let g:ycm_python_binary_path='/usr/bin/python'
-" nnoremap gd :YcmCompleter GoToDeclaration<CR>
-" nnoremap gD :YcmCompleter GoToReferences<CR>
-"
 call plug#end()
 "}}}
 " 基本配置"{{{
@@ -64,7 +39,6 @@ set relativenumber
 set cursorline
 set cursorcolumn
 set scrolloff=3
-
 set t_Co=256
 set mouse=a
 
@@ -79,7 +53,6 @@ set incsearch
 set nowrapscan
 set smartcase
 set ignorecase
-
 set showmatch
 set matchtime=2
 
@@ -94,17 +67,12 @@ set backspace=indent,eol,start
 set foldenable
 set foldmethod=marker
 "}}}
-"快捷键映射"{{{
+"按键映射"{{{
 nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
 nnoremap <Space> :
-
-cnoremap jk <CR>
-cnoremap W w<CR>
-cnoremap wa wa<CR>
-inoremap jk <Esc>
 "}}}
 " 编程配置{{{
 set keywordprg=man\ -a
@@ -116,27 +84,19 @@ function! Config(type)
     if a:type == "go"
         set foldmethod=syntax
         set foldnestmax=3
-        set tags+=ctx.tags,golang.tags
-        " autocmd BufWritePost *.go !goimports -w <afile>
     elseif a:type == "shy"
         set filetype=shy
         set commentstring=#%s
-    elseif a:type == "son"
-        set commentstring=#%s
-    elseif a:type == "tmpl"
-        set foldmethod=indent
-    elseif a:type == "conf"
-        set filetype=nginx
     elseif a:type == "json"
         set foldmethod=syntax
+    elseif a:type == "conf"
+        set filetype=nginx
     elseif a:type == "xml"
         set filetype=xml
     elseif a:type == "css"
         set filetype=css
         set foldmethod=marker
         set foldmarker={,}
-    elseif a:type == "txt"
-        set noexpandtab
     elseif a:type == "js"
         set filetype=javascript
         source ~/.vim/syntax/javascript.vim
@@ -147,35 +107,21 @@ endfunction
 
 autocmd BufNewFile,BufReadPost *.go call Config("go")
 autocmd BufNewFile,BufReadPost *.shy call Config("shy")
-autocmd BufNewFile,BufReadPost *.tmpl call Config("tmpl")
-autocmd BufNewFile,BufReadPost *.conf call Config("conf")
 autocmd BufNewFile,BufReadPost *.json call Config("json")
-
+autocmd BufNewFile,BufReadPost *.conf call Config("conf")
 autocmd BufNewFile,BufReadPost *.wxml call Config("xml")
 autocmd BufNewFile,BufReadPost *.wxss call Config("css")
-autocmd BufNewFile,BufReadPost *.txt call Config("txt")
 autocmd BufNewFile,BufReadPost *.js call Config("js")
+
+if filereadable(expand("~/.auto.vim")) | source ~/.auto.vim | endif
+if filereadable(expand("~/.local.vim")) | source ~/.local.vim | endif
 
 autocmd BufReadPost * normal `"
 
-if filereadable(expand("~/.vim_local")) | source ~/.vim_local | endif
-if filereadable(expand("usr/publish/auto.vim")) | source usr/publish/auto.vim | endif
-
+"}}}
+"主题色系"{{{
 colorscheme torte
 highlight Comment ctermfg=cyan ctermbg=darkblue
-highlight Pmenu ctermfg=cyan ctermbg=darkblue
 highlight PmenuSel ctermfg=darkblue ctermbg=cyan
+highlight Pmenu ctermfg=cyan ctermbg=darkblue
 "}}}
-"
-nnoremap <F3> :NERDTreeToggle<CR>
-
-" " miss
-" highlight StatusLine ctermfg=white ctermbg=black
-" highlight LineNr ctermfg=white ctermbg=black
-" highlight CursorLineNr ctermfg=white ctermbg=black
-"
-" highlight kitMiss    ctermfg=white
-" syntax match kitMiss ".*"
-" syntax match kitMiss "\".*\""
-
-
