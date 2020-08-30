@@ -1,6 +1,4 @@
 #!/bin/bash
-# git &>/dev/null || yum install -y git
-
 [ -f ~/.ish/plug.sh ] || [ -f ./.ish/plug.sh ] || git clone https://github.com/shylinux/intshell ./.ish
 [ "$ISH_CONF_PRE" != "" ] || source ./.ish/plug.sh || source ~/.ish/plug.sh
 require miss.sh
