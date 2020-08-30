@@ -1,10 +1,9 @@
 ~aaa
     role white void web.code.inner
     role white void usr.publish
-    role white void tmp
 
-    role black tech ssh
     role black tech aaa.role
+    role black tech ssh
 
 ~web
     config share meta.host shylinux.com
@@ -23,7 +22,6 @@
 
 ~web.code.input
     # load
-    # import usr/wubi-dict/person
 
 ~web.wiki.alpha
     # load
