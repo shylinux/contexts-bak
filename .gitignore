@@ -1,24 +1,6 @@
-# Binaries for programs and plugins
 .*
-*.exe
-*.bin
-*.dll
-*.so
-*.dylib
-
-# Test binary, build with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
-.glide/
-.DS_Store
-
 *.swp
 *.swo
-
 *.log
 
 bin/
@@ -26,7 +8,8 @@ pkg/
 var/
 usr/
 trash/
-etc/local.shy
-src/github.com
-person
+local.sh
+local.shy
 github.com
+
+.DS_Store
