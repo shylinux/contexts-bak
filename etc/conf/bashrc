@@ -9,3 +9,4 @@ if [ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh; then
     require conf.sh
 fi
 
+[ -f etc/local.sh ] && source etc/local.sh
