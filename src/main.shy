@@ -1,6 +1,8 @@
 title "contexts"
 premenu
 
+field "ssh" ssh.dial
+
 chapter "实践"
 label "实践" `
 code wiki chat team mall
