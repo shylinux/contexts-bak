@@ -1,6 +1,14 @@
 ~aaa
-    role white void web.code.inner
-    role white void usr.publish
+    role white void web.wiki.word.src/main
+    role white void web.wiki.word.action
+
+    role white void web.code.inner.src/main
+    role white void web.code.git.total
+    role white void web.code.git.trend
+
+    role white void usr/install
+    role white void usr/publish
+    role white void src/main
 
     role black tech aaa.role
     role black tech ssh
