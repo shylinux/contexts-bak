@@ -54,7 +54,7 @@ ish_miss_prepare_git
 ish_miss_prepare_vim
 
 # ish_miss_prepare_develop
+make
 ish_miss_prepare_session miss
 export PATH=$PWD/bin:$PWD/usr/local/bin:$PWD/usr/local/go/bin:$PATH
 
-make
