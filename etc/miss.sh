@@ -55,5 +55,5 @@ ish_miss_prepare_tmux
 ish_miss_prepare_git
 ish_miss_prepare_vim
 
-ish_miss_prepare_develop
+# ish_miss_prepare_develop
 ish_miss_prepare_session miss
