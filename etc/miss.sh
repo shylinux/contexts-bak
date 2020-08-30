@@ -1,4 +1,5 @@
 #!/bin/bash
+
 [ -f ~/.ish/plug.sh ] || [ -f ./.ish/plug.sh ] || git clone https://github.com/shylinux/intshell ./.ish
 [ "$ISH_CONF_PRE" != "" ] || source ./.ish/plug.sh || source ~/.ish/plug.sh
 require miss.sh
@@ -46,6 +47,12 @@ ish_miss_prepare_tmux() {
 ish_miss_prepare_bash() {
     ish_miss_create_link ~/.bashrc $PWD/etc/conf/bashrc
     ish_miss_create_link ~/.ish $PWD/.ish
+
+    if [ -z `cat ~/.bashrc |grep "source ~/.ish/plug.sh"` ]; then
+        if [ -z `cat ~/.bashrc |grep "source $PWD/etc/conf/bashrc"` ]; then
+            echo -e "\nsource $PWD/etc/conf/bashrc\n" >> ~/.bashrc
+        fi
+    fi
 }
 
 ish_miss_prepare_bash
@@ -54,6 +61,7 @@ ish_miss_prepare_git
 ish_miss_prepare_vim
 
 # ish_miss_prepare_develop
+
 make
 ish_miss_prepare_session miss
 export PATH=$PWD/bin:$PWD/usr/local/bin:$PWD/usr/local/go/bin:$PATH
