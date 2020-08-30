@@ -38,8 +38,9 @@ ish_miss_prepare_vim() {
     ish_miss_create_link ~/.vim/syntax/javascript.vim $PWD/etc/conf/javascript.vim
 }
 ish_miss_prepare_git() {
-    git --global config alias.s status
-    git --global config alias.b branch
+    git config --global alias.s status
+    git config --global alias.b branch
+    git config --global credential.helper store
 }
 ish_miss_prepare_tmux() {
     ish_miss_create_link ~/.tmux.conf $PWD/etc/conf/tmux.conf
