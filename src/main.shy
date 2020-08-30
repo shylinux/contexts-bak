@@ -4,8 +4,8 @@ premenu
 chapter "实践"
 label "实践" `
 code wiki chat team mall
-linux nginx golang redis mysql
-zsh tmux chrome git vim
+linux nginx context redis mysql
+bash tmux golang git vim
 ` stroke blue fill yellow
 
 chapter "理论"
