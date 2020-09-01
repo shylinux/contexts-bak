@@ -72,5 +72,3 @@ ish_miss_prepare_vim
 
 make
 ish_miss_prepare_session miss
-export PATH=$PWD/bin:$PWD/usr/local/bin:$PWD/usr/local/go/bin:$PATH
-

@@ -2,6 +2,7 @@ title "contexts"
 premenu
 
 field "ssh" ssh.dial
+field "ssh" ssh.public
 
 chapter "实践"
 label "实践" `
@@ -34,6 +35,13 @@ field modpack web.code.modpack
 chapter "理论"
 source usr/learning/自然/编程/数据结构.shy
 source usr/learning/自然/编程/设计模式.shy
+
+chapter "ssh"
+refer `
+官网 http://www.openssh.com/
+源码 https://github.com/openssh/openssh-portable
+文档 https://man.openbsd.org/ssh
+`
 
 chapter "Logo"
 refer `

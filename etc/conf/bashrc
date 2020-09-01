@@ -10,4 +10,4 @@ if [ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh; then
 fi
 
 [ -f etc/local.sh ] && source etc/local.sh
-export PATH=$PWD/bin:$PATH
+# export PATH=$PWD/bin:$PWD/usr/local/go/bin:$PATH

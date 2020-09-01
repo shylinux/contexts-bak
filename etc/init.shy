@@ -35,6 +35,8 @@
     # load
 
 ~ssh
+    listen :9030 &
+
     source etc/local.shy
     target web.code.pprof
     target web.chat.fyne.hi
