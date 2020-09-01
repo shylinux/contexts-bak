@@ -11,5 +11,6 @@ trash/
 local.sh
 local.shy
 github.com
+etc/work.sh
 
 .DS_Store
