@@ -11,7 +11,6 @@
     role white void src/main
 
     role black tech aaa.role
-    role black tech ssh
 
 ~web
     config share meta.host shylinux.com
@@ -35,7 +34,7 @@
     # load
 
 ~ssh
-    listen :9030 &
+    listen :9030
 
     source etc/local.shy
     target web.code.pprof
