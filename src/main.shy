@@ -20,6 +20,31 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
+chapter "环境"
+field "安装管理" web.code.install
+field "发布管理" web.code.publish
+
+section "终端环境"
+web.code.install contexts tmux centos
+web.code.install contexts tmux ubuntu
+web.code.install contexts tmux alpine
+web.code.install contexts tmux darwin
+
+section "生产环境"
+web.code.install contexts base centos
+web.code.install contexts base ubuntu
+web.code.install contexts base alpine
+web.code.install contexts base darwin
+
+section "开发环境"
+web.code.install contexts miss centos
+web.code.install contexts miss ubuntu
+web.code.install contexts miss alpine
+web.code.install contexts miss darwin
+
+chapter "组织"
+chapter "品牌"
+
 chapter "管理"
 field "下载管理" web.code.install
 field "服务管理" cli.daemon

@@ -1,9 +1,10 @@
 #! /bin/sh
 
 export PATH=${PWD}/bin:${PWD}:$PATH
+export ctx_dev=${ctx_dev:="https://shylinux.com:443"}
+export ctx_mod=${ctx_mod:="gdb,log,ssh,ctx"}
 export ctx_pid=${ctx_pid:=var/run/ice.pid}
 export ctx_log=${ctx_log:=bin/boot.log}
-export ctx_mod=${ctx_mod:="gdb,log,ssh,ctx"}
 
 prepare() {
     [ -d bin ] || mkdir bin
@@ -20,14 +21,16 @@ prepare() {
     esac
     case `uname -m` in
         x86_64) bin=${bin}.amd64 ;;
-        i686) bin=${bin}.386 ;;
         arm*) bin=${bin}.arm ;;
+        *) bin=${bin}.386 ;;
     esac
     curl -sq $ctx_dev/publish/${bin} -o bin/ice.bin && chmod u+x bin/ice.bin
  }
 start() {
     trap HUP hup && while true; do
-        date && ice.bin $@ 2>$ctx_log && echo -e "\n\nrestarting..." && break
+        date && echo -e "\n\nrestarting..."
+        echo -e "ctx_dev: $ctx_dev ctx_mod: $ctx_mod ctx_cmd: $ctx_cmd"
+        ice.bin $@ 2>$ctx_log && break
     done
 }
 restart() {
@@ -40,5 +43,4 @@ serve() {
     prepare && shutdown && start $@
 }
 
-cmd=$1 && [ -n "$cmd" ] && shift || cmd=prepare
-$cmd $*
+cmd=$1 && [ -n "$cmd" ] && shift || cmd="serve serve dev"; $cmd $*
