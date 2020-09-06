@@ -6,6 +6,7 @@ require (
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gomarkdown/markdown v0.0.0-20200824053859-8c8b3816f167
 	github.com/gomodule/redigo v2.0.0+incompatible
+	github.com/google/gitprotocolio v0.0.0-20180630173033-8d2b3b1c37f6
 	github.com/gorilla/websocket v1.4.2
 	github.com/mattn/go-runewidth v0.0.9 // indirect
 	github.com/nsf/termbox-go v0.0.0-20200418040025-38ba6e5628f1

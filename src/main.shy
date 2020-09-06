@@ -1,3 +1,8 @@
+spark "生产环境"
+web.code.install contexts base
+spark "开发环境"
+web.code.install contexts miss
+return
 title "contexts"
 premenu
 
@@ -24,23 +29,11 @@ chapter "环境"
 field "安装管理" web.code.install
 field "发布管理" web.code.publish
 
-section "终端环境"
-web.code.install contexts tmux centos
-web.code.install contexts tmux ubuntu
-web.code.install contexts tmux alpine
-web.code.install contexts tmux darwin
-
-section "生产环境"
-web.code.install contexts base centos
-web.code.install contexts base ubuntu
-web.code.install contexts base alpine
-web.code.install contexts base darwin
-
-section "开发环境"
-web.code.install contexts miss centos
-web.code.install contexts miss ubuntu
-web.code.install contexts miss alpine
-web.code.install contexts miss darwin
+chapter "环境"
+spark "生产环境"
+web.code.install contexts base
+spark "开发环境"
+web.code.install contexts miss
 
 chapter "组织"
 chapter "品牌"

@@ -10,8 +10,6 @@ prepare() {
     [ -d bin ] || mkdir bin
     [ -e bin/ice.sh ] || curl -sq $ctx_dev/publish/ice.sh -o bin/ice.sh && chmod u+x bin/ice.sh
     [ -e bin/ice.bin ] && chmod u+x bin/ice.bin && return
-    mkdir -p usr/publish 
-    [ -e usr/publish/order.js ] || echo "{}" > usr/publish/order.js
 
     bin="ice"
     case `uname -s` in
