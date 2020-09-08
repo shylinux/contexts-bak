@@ -1,0 +1,23 @@
+title "https://taskhub.com.cn"
+refer `
+源码 https://github.com/shylinux/contexts
+后台 https://shylinux.com
+`
+spark `将人、事、物高效快速的组织在一起，创建高度可复用的模板、流程、制度。`
+
+premenu
+
+
+chapter "搭建服务"
+web.code.install contexts miss
+
+chapter "创建群组"
+
+chapter "添加用户"
+
+chapter "添加设备"
+web.code.install contexts base
+
+chapter "添加文档"
+
+chapter "添加任务"
