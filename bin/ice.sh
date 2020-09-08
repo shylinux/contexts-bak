@@ -29,6 +29,7 @@ start() {
         date && echo -e "\n\nrestarting..."
         echo -e "ctx_dev: $ctx_dev ctx_mod: $ctx_mod ctx_cmd: $ctx_cmd"
         ice.bin $@ 2>$ctx_log && break
+        sleep 3
     done
 }
 restart() {
