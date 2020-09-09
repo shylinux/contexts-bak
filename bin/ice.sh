@@ -8,7 +8,7 @@ export ctx_log=${ctx_log:=bin/boot.log}
 
 prepare() {
     [ -d bin ] || mkdir bin
-    [ -e bin/ice.sh ] || curl -sq $ctx_dev/publish/ice.sh -o bin/ice.sh && chmod u+x bin/ice.sh
+    [ -e bin/ice.sh ] || (curl -o bin/ice.sh -sq $ctx_dev/publish/ice.sh || wget -O bin/ice.sh $ctx_dev/publish/ice.sh) && chmod u+x bin/ice.sh
     [ -e bin/ice.bin ] && chmod u+x bin/ice.bin && return
 
     bin="ice"
@@ -22,7 +22,7 @@ prepare() {
         arm*) bin=${bin}.arm ;;
         *) bin=${bin}.386 ;;
     esac
-    curl -sq $ctx_dev/publish/${bin} -o bin/ice.bin && chmod u+x bin/ice.bin
+    (curl -o bin/ice.bin -sq $ctx_dev/publish/${bin} || wget -O bin/ice.bin $ctx_dev/publish/${bin}) && chmod u+x bin/ice.bin
  }
 start() {
     trap HUP hup && while true; do
