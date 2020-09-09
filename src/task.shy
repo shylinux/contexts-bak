@@ -16,6 +16,10 @@ chapter "创建群组"
 chapter "添加用户"
 
 chapter "添加设备"
+
+field "空间站" web.space
+spark
+
 web.code.install contexts base
 
 chapter "添加文档"
