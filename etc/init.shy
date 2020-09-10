@@ -37,7 +37,7 @@
     # load
 
 ~ssh
-    listen :9030
+    listen create port 9030
 
     source local.shy
     target web.code.pprof

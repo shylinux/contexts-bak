@@ -1,6 +1,5 @@
 title "contexts"
 premenu
-source lock.shy
 
 chapter "实践"
 label "实践" `
@@ -21,63 +20,40 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
+
 chapter "环境"
 field "安装管理" web.code.install
 field "发布管理" web.code.publish
-
-chapter "环境"
-spark "生产环境"
-web.code.install contexts base
-spark "开发环境"
-web.code.install contexts miss
+field "服务管理" cli.daemon
 
 chapter "组织"
 chapter "品牌"
-
 chapter "管理"
-field "下载管理" web.code.install
-field "服务管理" cli.daemon
 
 chapter "技术"
 field webpack web.code.webpack
 field binpack web.code.binpack
 field modpack web.code.modpack
 
-chapter "理论"
-
-chapter "ssh"
-refer `
-官网 http://www.openssh.com/
-源码 https://github.com/openssh/openssh-portable
-文档 https://man.openbsd.org/ssh
-`
-
-field "登录" ssh.dial
-field "公钥" ssh.public
-field "服务" ssh.listen
-field "连接" ssh.connect
-field "会话" ssh.session
-
-
-chapter "Logo"
+section "Logo"
 refer `
 艺术字 http://www.akuziti.com/
 `
 
-chapter "Ceph"
+section "Ceph"
 refer `
 官网 https://docs.ceph.com/docs/master/
 源码 https://github.com/ceph/ceph
 简介 https://blog.csdn.net/mingongge/article/details/100788388
 `
 
-chapter "SuperVisor"
+section "SuperVisor"
 refer `
 官网 http://supervisord.org/
 源码 https://github.com/Supervisor/supervisor
 `
 
-chapter "python"
+section "python"
 refer `
 官网 https://www.python.org/
 源码 https://www.python.org/downloads/source/
