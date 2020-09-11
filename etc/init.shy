@@ -58,4 +58,5 @@
     target web.code.chrome.spided
     target web.code.mysql.client
     target ssh.listen
+    target web.code.vim.favor
 

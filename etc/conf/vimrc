@@ -1,35 +1,41 @@
-"安装plug-vim {{{
+" 软件安装 {{{
 "$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "
-"安装vim各种插件
+"1. 安装vim各种插件
 ":PlugInstall
 "
+"2. 安装go各种插件
+":GoInstallBinaries
 "}}}
-"插件列表"{{{
-call plug#begin()
-Plug 'vim-scripts/matrix.vim--Yang'
-Plug 'vim-airline/vim-airline'
-Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/nerdtree'
-let g:NERDTreeWinPos="right"
-Plug 'mbbill/echofunc'
-Plug 'kien/ctrlp.vim'
-let g:ctrlp_cmd='CtrlPBuffer'
-Plug 'vim-scripts/tComment'
-Plug 'tpope/vim-fugitive'
-Plug 'gcmt/taboo.vim'
-set sessionoptions+=tabpages,globals
+" 插件列表"{{{
+if filereadable(expand("~/.vim/autoload/plug.vim"))
+	call plug#begin()
+	Plug 'vim-scripts/matrix.vim--Yang'
+	Plug 'vim-airline/vim-airline'
+	Plug 'gcmt/taboo.vim'
+	set sessionoptions+=tabpages,globals
 
-Plug 'fatih/vim-go'
-let g:go_version_warning=0
-let g:go_highlight_functions=1
-Plug 'chr4/nginx.vim'
-Plug 'othree/html5.vim'
-Plug 'vim-scripts/python.vim'
-Plug 'plasticboy/vim-markdown'
-Plug 'vim-syntastic/syntastic'
+	Plug 'scrooloose/nerdtree'
+	let g:NERDTreeWinPos="right"
+	Plug 'kien/ctrlp.vim'
+	let g:ctrlp_cmd='CtrlPBuffer'
 
-call plug#end()
+	Plug 'airblade/vim-gitgutter'
+	Plug 'tpope/vim-fugitive'
+
+	Plug 'fatih/vim-go'
+	let g:go_version_warning=0
+	let g:go_highlight_functions=1
+	Plug 'chr4/nginx.vim'
+	Plug 'othree/html5.vim'
+	Plug 'vim-scripts/python.vim'
+
+	Plug 'mbbill/echofunc'
+	Plug 'vim-scripts/tComment'
+	Plug 'vim-syntastic/syntastic'
+	Plug 'plasticboy/vim-markdown'
+	call plug#end()
+endif
 "}}}
 " 基本配置"{{{
 set cc=80
@@ -39,7 +45,6 @@ set relativenumber
 set cursorline
 set cursorcolumn
 set scrolloff=3
-set t_Co=256
 set mouse=a
 
 " 缓存
@@ -66,18 +71,16 @@ set backspace=indent,eol,start
 " 折叠
 set foldenable
 set foldmethod=marker
-"}}}
-"按键映射"{{{
+
+" 按键
+nnoremap <Space> :
 nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
-nnoremap <Space> :
 "}}}
 " 编程配置{{{
 set keywordprg=man\ -a
-set splitbelow
-set splitright
 
 let javaScript_fold=1
 function! Config(type)
@@ -112,15 +115,18 @@ autocmd BufNewFile,BufReadPost *.conf call Config("conf")
 autocmd BufNewFile,BufReadPost *.wxml call Config("xml")
 autocmd BufNewFile,BufReadPost *.wxss call Config("css")
 autocmd BufNewFile,BufReadPost *.js call Config("js")
+"}}}
 
-if filereadable(expand("~/.auto.vim")) | source ~/.auto.vim | endif
+"本地配置"{{{
 if filereadable(expand("~/.local.vim")) | source ~/.local.vim | endif
-
+if filereadable(expand("~/.auto.vim")) | source ~/.auto.vim | endif
 autocmd BufReadPost * normal `"
-
 "}}}
 "主题色系"{{{
+syntax on
+set t_Co=256
 colorscheme torte
+
 highlight Comment ctermfg=cyan ctermbg=darkblue
 highlight PmenuSel ctermfg=darkblue ctermbg=cyan
 highlight Pmenu ctermfg=cyan ctermbg=darkblue
