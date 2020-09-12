@@ -61,3 +61,11 @@ refer `
 `
 field "解释器" cli.python
 
+
+table `
+华为 Apple
+百度 Google
+小米 Microsoft
+腾讯 Facebook
+阿里 Amazon
+`
