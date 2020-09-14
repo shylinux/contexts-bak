@@ -20,11 +20,15 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
-
 chapter "环境"
 field "安装管理" web.code.install
 field "发布管理" web.code.publish
 field "服务管理" cli.daemon
+
+chapter "流水"
+field "编辑器" web.code.vim.sync
+field "命令行" web.code.zsh.sync
+field "浏览器" web.code.chrome.sync
 
 chapter "组织"
 chapter "品牌"

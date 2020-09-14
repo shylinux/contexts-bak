@@ -16,7 +16,7 @@ require (
 	github.com/shylinux/mysql-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/nginx-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/redis-story v0.0.0-00010101000000-000000000000
-	github.com/shylinux/toolkits v0.1.7
+	github.com/shylinux/toolkits v0.1.8
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 )

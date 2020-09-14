@@ -31,32 +31,11 @@
     init
 
 ~web.code.input
-    # load
+    wubi import usr/wubi-dict/person
 
 ~web.wiki.alpha
     # load
 
 ~ssh
     listen create port 9030
-
     source local.shy
-    target web.code.pprof
-    target web.chat.fyne.hi
-    target web.wiki.alpha.load
-    target web.code.input.push
-    target web.code.qrc.save
-    target web.chat.lark.app
-    target web.chat.qrcode.qrcode
-    target web.chat.location.location
-    target web.chat.paste.paste
-    target web.chat.wx.menu
-
-    target web.chat.meet.miss
-    target web.chat.lark.msg
-
-    target web.code.install
-    target web.code.chrome.spided
-    target web.code.mysql.client
-    target ssh.listen
-    target web.code.vim.favor
-
