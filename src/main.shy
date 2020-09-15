@@ -20,6 +20,9 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
+chapter "代码"
+field spide web.code.git.spide args `icebergs`
+
 chapter "环境"
 field "安装管理" web.code.install
 field "发布管理" web.code.publish
