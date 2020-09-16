@@ -21,6 +21,7 @@ learning toolkits contexts
 ` stroke red fill black
 
 chapter "代码"
+field trend web.code.git.trend args `icebergs`
 field spide web.code.git.spide args `icebergs`
 
 chapter "环境"
