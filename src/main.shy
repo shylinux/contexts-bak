@@ -21,6 +21,8 @@ learning toolkits contexts
 ` stroke red fill black
 
 chapter "代码"
+field "生成器" web.code.autogen
+
 field trend web.code.git.trend args `icebergs`
 field spide web.code.git.spide args `icebergs`
 
@@ -33,6 +35,7 @@ chapter "流水"
 field "编辑器" web.code.vim.sync
 field "命令行" web.code.zsh.sync
 field "浏览器" web.code.chrome.sync
+
 
 chapter "组织"
 chapter "品牌"
