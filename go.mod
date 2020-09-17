@@ -3,12 +3,8 @@ module github.com/shylinux/contexts
 go 1.13
 
 require (
-	github.com/go-sql-driver/mysql v1.5.0
-	github.com/gomarkdown/markdown v0.0.0-20200824053859-8c8b3816f167
-	github.com/gomodule/redigo v2.0.0+incompatible
-	github.com/google/gitprotocolio v0.0.0-20180630173033-8d2b3b1c37f6
+	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/gorilla/websocket v1.4.2
-	github.com/mattn/go-runewidth v0.0.9 // indirect
 	github.com/nsf/termbox-go v0.0.0-20200418040025-38ba6e5628f1
 	github.com/shylinux/golang-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/icebergs v0.2.7
@@ -18,7 +14,6 @@ require (
 	github.com/shylinux/redis-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/toolkits v0.1.8
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
-	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 )
 
 replace github.com/shylinux/icebergs => ./usr/icebergs
