@@ -20,6 +20,9 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
+chapter "群组"
+field "群组" web.chat.river
+
 chapter "代码"
 field "收藏夹" web.code.favor
 field "生成器" web.code.autogen
