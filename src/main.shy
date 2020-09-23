@@ -22,6 +22,7 @@ learning toolkits contexts
 
 chapter "群组"
 field "群组" web.chat.river
+field "共享" web.share
 
 chapter "代码"
 field "收藏夹" web.code.favor
