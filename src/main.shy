@@ -22,7 +22,9 @@ learning toolkits contexts
 
 chapter "群组"
 field "群组" web.chat.river
-field "群组" web.chat.paste
+field "粘贴板" web.chat.paste
+field "二维码" web.chat.qrcode
+field "地理位置" web.chat.location
 
 chapter "代码"
 field "收藏夹" web.code.favor
