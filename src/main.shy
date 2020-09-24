@@ -28,8 +28,9 @@ chapter "代码"
 field "收藏夹" web.code.favor
 field "生成器" web.code.autogen
 
-field trend web.code.git.trend args `icebergs`
-field spide web.code.git.spide args `usr/icebergs`
+field "火山架" web.code.git.trend args `volcanos`
+field "冰山架" web.code.git.trend args `icebergs`
+field "冰山架" web.code.git.spide args `usr/icebergs`
 
 chapter "环境"
 field "安装管理" web.code.install
