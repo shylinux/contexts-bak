@@ -35,5 +35,5 @@
     # load
 
 ~ssh
-    listen create port 9030
+    service listen port 9030
     source local.shy
