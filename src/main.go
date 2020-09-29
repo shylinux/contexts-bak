@@ -37,4 +37,4 @@ import (
 	_ "github.com/shylinux/mysql-story/src/server"
 )
 
-func main() { ice.Run() }
+func main() { print(ice.Run()) }

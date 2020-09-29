@@ -1,8 +1,8 @@
 ~aaa
-    role white void web.wiki.word
-    role white void web.code.inner
     role white void web.code.git.total
     role white void web.code.git.trend
+    role white void web.code.inner
+    role white void web.wiki.word
 
     role white void usr/linux-story
     role white void usr/learning
@@ -17,22 +17,16 @@
     config share meta.host shylinux.com
     config share meta.domain https://shylinux.com
 
-~web.chat
-    config header title github.com/shylinux/contexts
-    config footer legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
-    config footer legal.1 "京ICP备15046864号-1"
-
-~web.code.tmux
-    init
-
 ~web.code.git
     init
 
 ~web.code.input
     wubi import usr/wubi-dict/person
 
-~web.wiki.alpha
-    # load
+~web.chat
+    config header title github.com/shylinux/contexts
+    config footer legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
+    config footer legal.1 "京ICP备15046864号-1"
 
 ~ssh
     service listen
