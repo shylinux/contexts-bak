@@ -35,5 +35,5 @@
     # load
 
 ~ssh
-    service listen port 9030 private .ssh/id_rsa
+    service listen
     source local.shy
