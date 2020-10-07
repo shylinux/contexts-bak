@@ -37,4 +37,18 @@ import (
 	_ "github.com/shylinux/mysql-story/src/server"
 )
 
+var (
+	Time     string
+	Version  string
+	HostName string
+	UserName string
+)
+
+func init() {
+	ice.Info.Build.Time = Time
+	ice.Info.Build.Version = Version
+	ice.Info.Build.HostName = HostName
+	ice.Info.Build.UserName = UserName
+}
+
 func main() { print(ice.Run()) }
