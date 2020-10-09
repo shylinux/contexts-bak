@@ -20,6 +20,13 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
+chapter "模块"
+label "模块" `
+ctx cli aaa web
+lex yac gdb log
+tcp nfs ssh mdb
+` stroke red fill black
+
 chapter "代码"
 field "收藏夹" web.code.favor
 field "生成器" web.code.autogen
