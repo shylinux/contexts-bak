@@ -27,25 +27,11 @@ lex yac gdb log
 tcp nfs ssh mdb
 ` stroke red fill black
 
-chapter "代码"
-field "收藏夹" web.code.favor
-field "生成器" web.code.autogen
+source ../usr/icebergs/core/code/code.shy
 
 field "火山架" web.code.git.trend args `volcanos`
 field "冰山架" web.code.git.trend args `icebergs`
 field "冰山架" web.code.git.spide args `usr/icebergs`
-
-
-source ../usr/icebergs/base/ctx/ctx.shy
-source ../usr/icebergs/base/cli/cli.shy
-source ../usr/icebergs/base/aaa/aaa.shy
-source ../usr/icebergs/base/web/web.shy
-source ../usr/icebergs/base/gdb/gdb.shy
-source ../usr/icebergs/base/log/log.shy
-source ../usr/icebergs/base/tcp/tcp.shy
-source ../usr/icebergs/base/nfs/nfs.shy
-source ../usr/icebergs/base/ssh/ssh.shy
-source ../usr/icebergs/base/mdb/mdb.shy
 
 chapter "群组"
 field "群组" web.chat.river
@@ -54,8 +40,6 @@ field "二维码" web.chat.qrcode
 field "地理位置" web.chat.location
 
 chapter "环境"
-field "安装管理" web.code.install
-field "发布管理" web.code.publish
 field "服务管理" cli.daemon
 
 chapter "流水"
@@ -107,3 +91,5 @@ table `
 腾讯 Facebook
 阿里 Amazon
 `
+
+source hi/hi.shy
