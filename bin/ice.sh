@@ -42,4 +42,4 @@ serve() {
     prepare && shutdown && start $@
 }
 
-cmd=$1 && [ -n "$cmd" ] && shift || cmd="serve serve start dev dev"; $cmd $*
+cmd=$1 && [ -n "$cmd" ] && shift || cmd="serve serve dev"; $cmd $*
