@@ -27,8 +27,6 @@ lex yac gdb log
 tcp nfs ssh mdb
 ` stroke red fill black
 
-source ../usr/icebergs/core/code/code.shy
-
 field "火山架" web.code.git.trend args `volcanos`
 field "冰山架" web.code.git.trend args `icebergs`
 field "冰山架" web.code.git.spide args `usr/icebergs`
