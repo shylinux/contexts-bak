@@ -4,8 +4,8 @@ premenu
 chapter "实践"
 label "实践" `
 code wiki chat team mall
-linux nginx context redis mysql
-bash tmux golang git vim
+linux nginx golang redis mysql
+bash tmux context git vim
 ` stroke blue fill yellow
 
 chapter "理论"
@@ -20,6 +20,17 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
+section "Logo"
+refer `
+艺术字 http://www.akuziti.com/
+`
+
+section "框架"
+field "火山架" web.code.git.trend args `volcanos`
+field "火山架" web.code.git.spide args `usr/volcanos`
+field "冰山架" web.code.git.trend args `icebergs`
+field "冰山架" web.code.git.spide args `usr/icebergs`
+
 chapter "模块"
 label "模块" `
 ctx cli aaa web
@@ -27,38 +38,10 @@ lex yac gdb log
 tcp nfs ssh mdb
 ` stroke red fill black
 
-field "火山架" web.code.git.trend args `volcanos`
-field "冰山架" web.code.git.trend args `icebergs`
-field "冰山架" web.code.git.spide args `usr/icebergs`
-
-chapter "群组"
-field "群组" web.chat.river
-field "粘贴板" web.chat.paste
-field "二维码" web.chat.qrcode
-field "地理位置" web.chat.location
-
-chapter "环境"
-field "服务管理" cli.daemon
-
-chapter "流水"
-field "编辑器" web.code.vim.sync
-field "命令行" web.code.zsh.sync
-field "浏览器" web.code.chrome.sync
-
-
-chapter "组织"
-chapter "品牌"
-chapter "管理"
-
-chapter "技术"
-field webpack web.code.webpack
-field binpack web.code.binpack
-field modpack web.code.modpack
-
-section "Logo"
-refer `
-艺术字 http://www.akuziti.com/
-`
+# source ../usr/icebergs/base/base.shy
+source ../usr/icebergs/base/aaa/aaa.shy
+source ../usr/icebergs/base/ssh/ssh.shy
+source ../usr/icebergs/core/core.shy
 
 section "Ceph"
 refer `
@@ -72,15 +55,6 @@ refer `
 官网 http://supervisord.org/
 源码 https://github.com/Supervisor/supervisor
 `
-
-section "python"
-refer `
-官网 https://www.python.org/
-源码 https://www.python.org/downloads/source/
-文档 https://docs.python.org/3/reference/index.html
-`
-field "解释器" cli.python
-
 
 table `
 华为 Apple
