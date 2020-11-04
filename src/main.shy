@@ -1,3 +1,7 @@
+source ../usr/icebergs/misc/zsh/bash.shy
+source ../usr/icebergs/misc/zsh/zsh.shy
+source ../usr/icebergs/misc/vim/vim.shy
+return
 title "contexts"
 premenu
 
