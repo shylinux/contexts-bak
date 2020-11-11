@@ -1,15 +1,11 @@
-source ../usr/icebergs/misc/zsh/bash.shy
-source ../usr/icebergs/misc/zsh/zsh.shy
-source ../usr/icebergs/misc/vim/vim.shy
-return
 title "contexts"
 premenu
 
 chapter "实践"
 label "实践" `
 code wiki chat team mall
-linux nginx golang redis mysql
-bash tmux context git vim
+linux nginx context redis mysql
+bash tmux golang git vim
 ` stroke blue fill yellow
 
 chapter "理论"
@@ -24,47 +20,22 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
-section "Logo"
-refer `
-艺术字 http://www.akuziti.com/
-`
-
 section "框架"
 field "火山架" web.code.git.trend args `volcanos`
-field "火山架" web.code.git.spide args `usr/volcanos`
-field "冰山架" web.code.git.trend args `icebergs`
-field "冰山架" web.code.git.spide args `usr/icebergs`
+field "火山架" web.code.git.spide args `volcanos`
 
-chapter "模块"
+field "冰山架" web.code.git.trend args `icebergs`
+field "冰山架" web.code.git.spide args `icebergs`
+
+section "模块"
 label "模块" `
 ctx cli aaa web
 lex yac gdb log
 tcp nfs ssh mdb
 ` stroke red fill black
 
-# source ../usr/icebergs/base/base.shy
-source ../usr/icebergs/base/aaa/aaa.shy
-source ../usr/icebergs/base/ssh/ssh.shy
-source ../usr/icebergs/core/core.shy
-
-section "Ceph"
+section "Logo"
 refer `
-官网 https://docs.ceph.com/docs/master/
-源码 https://github.com/ceph/ceph
-简介 https://blog.csdn.net/mingongge/article/details/100788388
-`
-
-section "SuperVisor"
-refer `
-官网 http://supervisord.org/
-源码 https://github.com/Supervisor/supervisor
-`
-
-table `
-华为 Apple
-百度 Google
-小米 Microsoft
-腾讯 Facebook
-阿里 Amazon
+艺术字 http://www.akuziti.com/
 `
 
