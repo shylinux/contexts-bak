@@ -1,3 +1,6 @@
+source ../usr/icebergs/misc/vim/vim.shy
+
+return
 title "contexts"
 premenu
 

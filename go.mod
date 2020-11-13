@@ -14,16 +14,12 @@ require (
 	github.com/shylinux/toolkits v0.1.9
 )
 
-replace github.com/shylinux/icebergs => ./usr/icebergs
-
-replace github.com/shylinux/toolkits => ./usr/toolkits
-
-replace github.com/shylinux/linux-story => ./usr/linux-story
-
-replace github.com/shylinux/nginx-story => ./usr/nginx-story
-
-replace github.com/shylinux/golang-story => ./usr/golang-story
-
-replace github.com/shylinux/redis-story => ./usr/redis-story
-
-replace github.com/shylinux/mysql-story => ./usr/mysql-story
+replace (
+	github.com/shylinux/golang-story => ./usr/golang-story
+	github.com/shylinux/icebergs => ./usr/icebergs
+	github.com/shylinux/linux-story => ./usr/linux-story
+	github.com/shylinux/mysql-story => ./usr/mysql-story
+	github.com/shylinux/nginx-story => ./usr/nginx-story
+	github.com/shylinux/redis-story => ./usr/redis-story
+	github.com/shylinux/toolkits => ./usr/toolkits
+)
