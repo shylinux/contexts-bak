@@ -17,9 +17,6 @@
     config share meta.host shylinux.com
     config share meta.domain https://shylinux.com
 
-~web.code.git
-    init
-
 ~web.code.input
     wubi import usr/wubi-dict/person
 
