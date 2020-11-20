@@ -21,10 +21,7 @@ import (
 	_ "github.com/shylinux/redis-story/src/client"
 	_ "github.com/shylinux/redis-story/src/server"
 
-	_ "github.com/shylinux/linux-story/iso/android"
 	_ "github.com/shylinux/linux-story/iso/centos"
-	_ "github.com/shylinux/linux-story/iso/context"
-	_ "github.com/shylinux/linux-story/iso/ubuntu"
 	_ "github.com/shylinux/linux-story/src/busybox"
 	_ "github.com/shylinux/linux-story/src/gcc"
 	_ "github.com/shylinux/linux-story/src/gdb"
