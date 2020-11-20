@@ -40,7 +40,7 @@ ish_miss_prepare_bash() {
         fi
     fi
 }
-ish_miss_prepare_bash
+# ish_miss_prepare_bash
 
 require misc/tmux/tmux.sh
 require misc/git/git.sh
@@ -50,7 +50,6 @@ ish_ctx_dev_tmux_prepare
 ish_ctx_dev_git_prepare
 ish_ctx_dev_vim_prepare
 
-ish_miss_prepare_develop
-
+# ish_miss_prepare_develop
 make
 ish_miss_prepare_session miss
