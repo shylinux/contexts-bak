@@ -1,13 +1,13 @@
 #!/bin/sh
 
-export GOPRIVATE=github.com
-export GOPROXY=https://goproxy.cn,direct
-export ctx_dev=http://localhost:9020
+export GOPATH=~/bin/go
+export GOROOT=~/usr/local/go
+export GOPRIVATE=git.zuoyebang.cc,github.com
 
 ISH_CONF_WORK=~/usr/local/work
 if [ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh; then
     require conf.sh
+
+    ish_ctx_cli_prompt
 fi
 
-[ -f etc/local.sh ] && source etc/local.sh
-# export PATH=$PWD/bin:$PWD/usr/local/go/bin:$PATH
