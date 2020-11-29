@@ -26,10 +26,3 @@ field "火山架" web.code.git.spide args `volcanos`
 field "冰山架" web.code.git.trend args `icebergs`
 field "冰山架" web.code.git.spide args `icebergs`
 
-section "模块"
-label "模块" `
-ctx cli aaa web
-lex yac gdb log
-tcp nfs ssh mdb
-` stroke red fill black
-
