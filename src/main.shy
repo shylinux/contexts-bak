@@ -15,8 +15,8 @@ label "理论" `
 
 chapter "项目"
 label "项目" `
-volcanos icebergs intshell
-learning toolkits contexts
+intshell icebergs volcanos
+contexts toolkits learning
 ` stroke red fill black
 
 section "框架"

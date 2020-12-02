@@ -12,18 +12,10 @@ ice>
 ```
 open http://localhost:9020
 
-### install by docker
-```
-$ docker run -p 9020:9020 -it shylinux/contexts
-ice>
-```
-open http://localhost:9020
-
 ### install by source
 ```
 $ git clone https://github.com/shylinux/contexts
 $ cd contexts && source etc/miss.sh
-$ make
 $ ish_miss_serve
 ice>
 ```

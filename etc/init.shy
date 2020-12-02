@@ -14,14 +14,7 @@
     role black tech aaa.role
 
 ~web
-    config share meta.host shylinux.com
     config share meta.domain https://shylinux.com
-
-    spide create mirror.centos.org http://mirror.centos.org
-    spide create mirrorlist.centos.org http://mirrorlist.centos.org
-
-    spide create mirrors.aliyuncs.com http://mirrors.aliyuncs.com
-    spide create mirrors.cloud.aliyuncs.com http://mirrors.cloud.aliyuncs.com
 
 ~web.code.input
     wubi import usr/wubi-dict/person
@@ -32,5 +25,4 @@
     config footer legal.1 "京ICP备15046864号-1"
 
 ~ssh
-    service listen
     source local.shy
