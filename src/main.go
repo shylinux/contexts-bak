@@ -5,7 +5,6 @@ import (
 	_ "github.com/shylinux/icebergs/base"
 	_ "github.com/shylinux/icebergs/core"
 	_ "github.com/shylinux/icebergs/misc"
-
 	_ "github.com/shylinux/icebergs/misc/alpha"
 	_ "github.com/shylinux/icebergs/misc/chrome"
 	_ "github.com/shylinux/icebergs/misc/input"
