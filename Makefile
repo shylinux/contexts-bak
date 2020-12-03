@@ -8,4 +8,8 @@ all:
 
 relay: src/relay.go
 	@echo && date
-	go build -v -o usr/publish/$@ src/$@.go && chmod u+x usr/publish/$@
+	go build -v -o usr/publish/$@ src/relay.go && chmod u+x usr/publish/$@
+
+relay.darwin: src/relay.go
+	@echo && date
+	GOOS=darwin go build -v -o usr/publish/relay.darwin.amd64 src/relay.go
