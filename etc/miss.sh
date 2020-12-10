@@ -20,7 +20,7 @@ ish_miss_prepare_learning
 ish_miss_prepare_volcanos
 
 ish_miss_prepare wubi-dict
-ish_miss_prepare word-dict
+# ish_miss_prepare word-dict
 
 ish_miss_prepare linux-story
 ish_miss_prepare nginx-story
