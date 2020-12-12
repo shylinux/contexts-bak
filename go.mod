@@ -1,6 +1,6 @@
 module github.com/shylinux/contexts
 
-go 1.13
+go 1.11
 
 require (
 	github.com/shylinux/golang-story v0.0.0-00010101000000-000000000000
