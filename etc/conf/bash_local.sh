@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# export LC_ALL=zh_CN.utf-8
+export LC_ALL=en_US.utf-8
+
 export CTX_ROOT=${CTX_ROOT:=~/contexts}
 export GOROOT=$CTX_ROOT/usr/local/go
 
