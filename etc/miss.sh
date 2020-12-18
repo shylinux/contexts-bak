@@ -35,7 +35,5 @@ ish_miss_prepare golang-story
 ish_miss_prepare redis-story
 ish_miss_prepare mysql-story
 
-
-ish_miss_prepare https://github.com/AaronO/go-git-http
 make
 ish_miss_prepare_session miss miss
