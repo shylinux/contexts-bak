@@ -1,16 +1,7 @@
 .*
-*.swp
-*.swo
-*.log
 
+src/version.go
+etc/local.shy
 bin/
-pkg/
 var/
 usr/
-trash/
-local.sh
-local.shy
-github.com
-etc/work.sh
-
-.DS_Store
