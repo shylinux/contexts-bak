@@ -25,5 +25,15 @@
     config footer legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
     config footer legal.1 "京ICP备15046864号-1"
 
+~mdb
+    search create github web.code.github
+    search create csdn web.code.csdn
+
+    search create baidu web.wiki.baidu
+
+    search create taobao web.mall.taobao
+    search create beike web.mall.beike
+
 ~ssh
     source local.shy
+
