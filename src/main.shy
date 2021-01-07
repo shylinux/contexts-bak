@@ -13,8 +13,9 @@ bash tmux golang git vim
 
 chapter "理论"
 label "理论" `
-重复性 复杂性 可用性
-模块化 集群化 自动化
+ctx cli web aaa
+lex yac gdb log
+tcp nfs ssh mdb
 ` stroke yellow fill black
 
 chapter "项目"
@@ -24,9 +25,9 @@ contexts toolkits learning
 ` stroke red fill black
 
 section "框架"
-field "冰山架" web.code.git.trend args `icebergs`
-field "冰山架" web.code.git.spide args `icebergs`
-
 field "火山架" web.code.git.trend args `volcanos`
 field "火山架" web.code.git.spide args `volcanos`
+
+field "冰山架" web.code.git.trend args `icebergs`
+field "冰山架" web.code.git.spide args `icebergs`
 
