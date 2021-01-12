@@ -2,6 +2,7 @@
 
 src/version.go
 etc/local.shy
+etc/local.sh
 bin/
 var/
 usr/
