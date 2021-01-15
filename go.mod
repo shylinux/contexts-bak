@@ -3,6 +3,7 @@ module github.com/shylinux/contexts
 go 1.11
 
 require (
+	github.com/jstemmer/gotags v1.4.1 // indirect
 	github.com/shylinux/golang-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/icebergs v0.3.1
 	github.com/shylinux/linux-story v0.0.0-00010101000000-000000000000
