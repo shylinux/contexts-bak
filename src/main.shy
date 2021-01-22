@@ -30,5 +30,6 @@ field "火山架" web.code.git.spide args `volcanos`
 
 field "冰山架" web.code.git.trend args `icebergs`
 field "冰山架" web.code.git.spide args `icebergs`
- 
-field "media" web.chat.meet.media
+
+
+source hi/hi.shy
