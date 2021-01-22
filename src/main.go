@@ -1,8 +1,6 @@
 package main
 
 import (
-	_ "github.com/shylinux/contexts/src/hi"
-
 	ice "github.com/shylinux/icebergs"
 	_ "github.com/shylinux/icebergs/base"
 	_ "github.com/shylinux/icebergs/core"
