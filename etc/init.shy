@@ -37,13 +37,14 @@
     baidu action create type "map" name "wd" text "https://map.baidu.com/search?querytype=s"
 
     baidu action create type "toutiao" name "keyword" text "https://www.toutiao.com/search/"
-    baidu action create type "zhihu" name "q" text "https://www.zhihu.com/search?type=content"
-    baidu action create type "weibo" text "https://s.weibo.com/weibo/"
+    baidu action create type "mdn" name "q" text "https://developer.mozilla.org/zh-CN/search"
+    # baidu action create type "zhihu" name "q" text "https://www.zhihu.com/search?type=content"
+    # baidu action create type "weibo" text "https://s.weibo.com/weibo/"
 
     video action create type "v" name "q" text "https://v.qq.com/x/search/"
-    video action create type "iqiyi" text "https://so.iqiyi.com/so/q_"
-    video action create type "kuaishou" name "searchKey" text "https://video.kuaishou.com/search"
-    video action create type "bilibili" name "keyword" text "https://search.bilibili.com/all"
+    # video action create type "iqiyi" text "https://so.iqiyi.com/so/q_"
+    # video action create type "kuaishou" name "searchKey" text "https://video.kuaishou.com/search"
+    # video action create type "bilibili" name "keyword" text "https://search.bilibili.com/all"
 
     music action create type "163" name "s" text "https://music.163.com/#/search/m/"
 

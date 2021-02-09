@@ -10,7 +10,7 @@ require (
 	github.com/shylinux/mysql-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/nginx-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/redis-story v0.0.0-00010101000000-000000000000
-	github.com/shylinux/toolkits v0.2.1
+	github.com/shylinux/toolkits v0.2.2
 )
 
 replace (
