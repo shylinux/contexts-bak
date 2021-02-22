@@ -71,3 +71,5 @@
 ~ssh
     source local.shy
 
+~gdb
+    event action listen event dream.create cmd web.code.tmux.session
