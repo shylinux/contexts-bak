@@ -8,12 +8,10 @@ ish_miss_create_link ~/.bashrc $PWD/etc/conf/bash_local.sh
 ish_miss_create_link ~/.ish $PWD/.ish
 
 require misc/tmux/tmux.sh
-require misc/git/git.sh
-require misc/vim/vim.sh
-
 ish_ctx_dev_tmux_prepare
+
+require misc/git/git.sh
 ish_ctx_dev_git_prepare
-ish_ctx_dev_vim_prepare
 
 ish_miss_prepare_develop
 ish_miss_prepare_compile
@@ -35,5 +33,9 @@ ish_miss_prepare golang-story
 ish_miss_prepare redis-story
 ish_miss_prepare mysql-story
 
+require misc/vim/vim.sh
+ish_ctx_dev_vim_prepare
+
 make
+
 ish_miss_prepare_session miss miss
