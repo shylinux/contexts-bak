@@ -3,9 +3,9 @@
 [ "$ISH_CONF_PRE" != "" ] || source $PWD/.ish/plug.sh || source ~/.ish/plug.sh
 require miss.sh
 
-ish_miss_create_link ~/.bash_local $PWD/etc/conf/bash_local.sh
-ish_miss_create_link ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 [ "$PWD" = "$HOME" ] || ish_miss_create_link $HOME/.ish $PWD/.ish
+ish_miss_create_link ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
+ish_miss_create_link ~/.bash_local $PWD/etc/conf/bash_local.sh
 
 require misc/tmux/tmux.sh
 ish_ctx_dev_tmux_prepare
