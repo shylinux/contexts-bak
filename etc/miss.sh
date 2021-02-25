@@ -4,8 +4,8 @@
 require miss.sh
 
 ish_miss_create_link ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
-ish_miss_create_link ~/.bashrc $PWD/etc/conf/bash_local.sh
-ish_miss_create_link ~/.ish $PWD/.ish
+ish_miss_create_link ~/.bash_local $PWD/etc/conf/bash_local.sh
+[ "$PWD" = "$HOME" ] || ish_miss_create_link $HOME/.ish $PWD/.ish
 
 require misc/tmux/tmux.sh
 ish_ctx_dev_tmux_prepare
@@ -37,5 +37,4 @@ require misc/vim/vim.sh
 ish_ctx_dev_vim_prepare
 
 make
-
 ish_miss_prepare_session miss miss
