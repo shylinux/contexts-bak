@@ -33,8 +33,9 @@ ish_miss_prepare golang-story
 ish_miss_prepare redis-story
 ish_miss_prepare mysql-story
 
+make
+
 require misc/vim/vim.sh
 ish_ctx_dev_vim_prepare
 
-make
 ish_miss_prepare_session miss miss
