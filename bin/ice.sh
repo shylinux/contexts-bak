@@ -29,7 +29,7 @@ restart() {
 start() {
     prepare
     trap HUP hup && while true; do
-        date && bin/ice.bin $@ 2>$ctx_log && echo -e \"\n\nrestarting...\" && break
+        date && bin/ice.bin $@ 2>$ctx_log && break || echo -e \"\n\nrestarting...\"
     done
 }
 stop() {

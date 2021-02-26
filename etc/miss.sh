@@ -1,6 +1,6 @@
 #!/bin/bash
-[ -f ~/.ish/plug.sh ] || [ -f $PWD/.ish/plug.sh ] || git clone ${ISH_CONF_HUB_PROXY:="https://"}github.com/shylinux/intshell $PWD/.ish
-[ "$ISH_CONF_PRE" != "" ] || source $PWD/.ish/plug.sh || source ~/.ish/plug.sh
+[ -f $PWD/.ish/plug.sh ] || [ -f $HOME/.ish/plug.sh ] || git clone ${ISH_CONF_HUB_PROXY:="https://"}github.com/shylinux/intshell $PWD/.ish
+[ "$ISH_CONF_PRE" != "" ] || source $PWD/.ish/plug.sh || source $HOME/.ish/plug.sh
 require miss.sh
 
 [ "$PWD" = "$HOME" ] || ish_miss_create_link $HOME/.ish $PWD/.ish
@@ -13,12 +13,12 @@ ish_ctx_dev_tmux_prepare
 require misc/git/git.sh
 ish_ctx_dev_git_prepare
 
-ish_miss_prepare_develop
 ish_miss_prepare_compile
+ish_miss_prepare_develop
 ish_miss_prepare_install
 
-ish_miss_prepare_intshell
 ish_miss_prepare_contexts
+ish_miss_prepare_intshell
 ish_miss_prepare_icebergs
 ish_miss_prepare_toolkits
 ish_miss_prepare_volcanos
@@ -39,3 +39,4 @@ require misc/vim/vim.sh
 ish_ctx_dev_vim_prepare
 
 ish_miss_prepare_session miss miss
+
