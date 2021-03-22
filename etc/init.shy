@@ -18,6 +18,7 @@
     config share meta.domain https://shylinux.com
 
 ~web.code.input
+    # wubi import usr/wubi-dict/wubi86
     wubi import usr/wubi-dict/person
 
 ~web.code
