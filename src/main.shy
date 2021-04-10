@@ -13,10 +13,8 @@ bash tmux golang git vim
 
 chapter "理论"
 label "理论" `
-ctx cli web aaa
-lex yac gdb log
-tcp nfs ssh mdb
-` stroke yellow fill black
+自动化 模块化 集群化
+` stroke yellow fill black font-family none
 
 chapter "项目"
 label "项目" `
@@ -24,9 +22,14 @@ volcanos icebergs intshell
 learning toolkits contexts
 ` stroke red fill black
 
-section "框架"
-field "火山架" web.code.git.trend args `volcanos`
-field "火山架" web.code.git.spide args `volcanos`
+section "火山架"
+field "趋势" web.code.git.trend args `volcanos`
+field "架构" web.code.git.spide args `volcanos`
 
-field "冰山架" web.code.git.trend args `icebergs`
-field "冰山架" web.code.git.spide args `icebergs`
+section "冰山架"
+field "趋势" web.code.git.trend args `icebergs`
+field "架构" web.code.git.spide args `icebergs`
+
+section "神农架"
+field "趋势" web.code.git.trend args `intshell`
+field "架构" web.code.git.spide args `intshell`
