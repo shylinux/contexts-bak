@@ -7,10 +7,6 @@ all:
 	[ -f src/version.go ] || echo "package main" > src/version.go
 	go build -v -o bin/ice.bin src/main.go src/version.go && chmod u+x bin/ice.bin && ./bin/ice.sh restart
 
-relay: src/relay.go
+%: src/%.go
 	@echo && date
-	go build -v -o usr/publish/$@ src/relay.go && chmod u+x usr/publish/$@
-
-relay.darwin: src/relay.go
-	@echo && date
-	GOOS=darwin go build -v -o usr/publish/relay.darwin.amd64 src/relay.go
+	go build -v -o usr/publish/$@ src/$@.go && chmod u+x usr/publish/$@
