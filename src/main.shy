@@ -1,6 +1,3 @@
-source ../usr/icebergs/misc/git/git.shy
-return
-
 title "contexts"
 refer `
 官网 https://shylinux.com
