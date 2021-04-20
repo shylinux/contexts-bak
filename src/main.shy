@@ -34,6 +34,3 @@ section "神农架"
 field "趋势" web.code.git.trend args `intshell`
 field "架构" web.code.git.spide args `intshell`
 
-refer `
-https://coolshell.cn/articles/19395.html
-`
