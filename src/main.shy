@@ -23,14 +23,14 @@ learning toolkits contexts
 ` stroke red fill black
 
 section "火山架"
-field "趋势" web.code.git.trend args `volcanos`
-field "架构" web.code.git.spide args `volcanos`
+field "趋势图" web.code.git.trend args `volcanos`
+field "架构图" web.code.git.spide args `volcanos`
 
 section "冰山架"
-field "趋势" web.code.git.trend args `icebergs`
-field "架构" web.code.git.spide args `icebergs`
+field "趋势图" web.code.git.trend args `icebergs`
+field "架构图" web.code.git.spide args `icebergs`
 
 section "神农架"
-field "趋势" web.code.git.trend args `intshell`
-field "架构" web.code.git.spide args `intshell`
+field "趋势图" web.code.git.trend args `intshell`
+field "架构图" web.code.git.spide args `intshell`
 
