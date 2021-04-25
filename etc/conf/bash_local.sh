@@ -17,3 +17,4 @@ fi
 ps aux |grep tmux &>/dev/null && return
 ps aux |grep ice.bin &>/dev/null && return
 cd $CTX_ROOT && source etc/miss.sh
+[ -f ~/.bash_local ] && source ~/.bash_local
