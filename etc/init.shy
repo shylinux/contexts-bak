@@ -5,9 +5,12 @@
     role white void web.code.inner
     role white void web.wiki.word
 
+    role white void usr/local/go
     role white void usr/linux-story
     role white void usr/learning
+    role white void usr/volcanos
     role white void usr/icebergs
+    role white void usr/intshell
     role white void usr/publish
     role white void usr/install
     role white void src/main
@@ -15,8 +18,9 @@
     role black tech aaa.role
 
 ~web
-    config serve meta.share  "https://shylinux.com"
-    config share meta.domain "https://shylinux.com"
+    # config serve meta.share  "https://shylinux.com"
+    # config share meta.domain "https://shylinux.com"
+    config share meta.domain ""
 
 ~web.code.input
     # wubi import usr/wubi-dict/wubi86
