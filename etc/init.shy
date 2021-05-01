@@ -15,7 +15,8 @@
     role black tech aaa.role
 
 ~web
-    config share meta.domain https://shylinux.com
+    config serve meta.share  "https://shylinux.com"
+    config share meta.domain "https://shylinux.com"
 
 ~web.code.input
     # wubi import usr/wubi-dict/wubi86
