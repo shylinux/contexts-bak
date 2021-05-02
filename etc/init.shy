@@ -26,6 +26,9 @@
     # wubi import usr/wubi-dict/wubi86
     wubi import usr/wubi-dict/person
 
+~web.wiki.alpha
+    # alpha import
+
 ~web.code
     github action create type "github" name "q" text "https://github.com/search"
 
