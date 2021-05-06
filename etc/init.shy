@@ -19,7 +19,6 @@
 
 ~web
     # config serve meta.share  "https://shylinux.com"
-    # config share meta.domain "https://shylinux.com"
     config share meta.domain ""
 
 ~web.code.input
