@@ -31,6 +31,7 @@
 
 ~web.code
     github action create type "github" name "q" text "https://github.com/search"
+    github action create type "mdn" name "q" text "https://developer.mozilla.org/zh-CN/search"
 
     # csdn action create type "csdn" name "q" text "https://so.csdn.net/so/search/all"
     # csdn action create type "juejin" name "query" text "https://juejin.cn/search?type=all"
@@ -46,7 +47,6 @@
     baidu action create type "map" name "wd" text "https://map.baidu.com/search?querytype=s"
 
     baidu action create type "toutiao" name "keyword" text "https://www.toutiao.com/search/"
-    baidu action create type "mdn" name "q" text "https://developer.mozilla.org/zh-CN/search"
     # baidu action create type "zhihu" name "q" text "https://www.zhihu.com/search?type=content"
     # baidu action create type "weibo" text "https://s.weibo.com/weibo/"
 
@@ -65,8 +65,8 @@
     email action create type "163" name "keyword" text "https://mail.163.com"
 
 ~web.mall
-    taobao action create type "taobao" name "q" text "https://s.taobao.com/search"
-    beike action create type "beike" text "https://ke.com/ershoufang/rs"
+    # taobao action create type "taobao" name "q" text "https://s.taobao.com/search"
+    # beike action create type "beike" text "https://ke.com/ershoufang/rs"
 
 ~mdb
     search create github web.code.github
