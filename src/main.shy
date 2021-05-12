@@ -2,6 +2,7 @@ title "contexts"
 refer `
 官网 https://shylinux.com
 源码 https://github.com/shylinux/contexts
+文档 https://github.com/shylinux/learning
 `
 
 chapter "实践"
@@ -13,24 +14,24 @@ bash tmux golang git vim
 
 chapter "理论"
 label "理论" `
-自动化 模块化 集群化
+集群化 模块化 自动化
 ` stroke yellow fill black font-family none
 
 chapter "项目"
 label "项目" `
-volcanos icebergs intshell
-learning toolkits contexts
+intshell icebergs volcanos
+contexts toolkits learning
 ` stroke red fill black
 
-section "火山架"
-field "趋势图" web.code.git.trend args `volcanos`
-field "架构图" web.code.git.spide args `volcanos`
+section "神农架"
+field "趋势图" web.code.git.trend args `intshell`
+field "架构图" web.code.git.spide args `intshell`
 
 section "冰山架"
 field "趋势图" web.code.git.trend args `icebergs`
 field "架构图" web.code.git.spide args `icebergs`
 
-section "神农架"
-field "趋势图" web.code.git.trend args `intshell`
-field "架构图" web.code.git.spide args `intshell`
+section "火山架"
+field "趋势图" web.code.git.trend args `volcanos`
+field "架构图" web.code.git.spide args `volcanos`
 
