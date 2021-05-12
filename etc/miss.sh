@@ -7,11 +7,11 @@ require miss.sh
 ish_miss_create_link ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 ish_miss_create_link ~/.bash_local $PWD/etc/conf/bash_local.sh
 
-require misc/tmux/tmux.sh
-ish_ctx_dev_tmux_prepare
+require dev/tmux/tmux.sh
+ish_dev_tmux_prepare
 
-require misc/git/git.sh
-ish_ctx_dev_git_prepare
+require dev/git/git.sh
+ish_dev_git_prepare
 
 ish_miss_prepare_compile
 ish_miss_prepare_develop
@@ -35,8 +35,8 @@ ish_miss_prepare mysql-story
 
 make
 
-require misc/vim/vim.sh
-ish_ctx_dev_vim_prepare
+require dev/vim/vim.sh
+ish_dev_vim_prepare
 
 ish_miss_prepare_session miss miss
 

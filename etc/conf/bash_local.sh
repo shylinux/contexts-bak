@@ -11,7 +11,7 @@ export PATH=$CTX_ROOT/bin:$CTX_ROOT/usr/publish:$CTX_ROOT/usr/local/bin:$GOROOT/
 if [ -f ~/.ish/plug.sh ] && source ~/.ish/plug.sh; then
     require conf.sh
 
-    ish_ctx_cli_prompt
+    ish_sys_cli_prompt
 fi
 
 ps aux |grep tmux &>/dev/null && return
