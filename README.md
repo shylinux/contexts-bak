@@ -6,22 +6,14 @@ contexts通过集群化、模块化、自动化，可以在各种设备上，快
 
 ### install by source
 ```sh
-curl -fsSL https://shylinux.com |sh -s source
+export ctx_temp=$(mktemp); curl -fsSL https://shylinux.com -o $ctx_temp; source $ctx_temp source
 ```
 
 ### install by binary
 ```sh
-curl -fsSL https://shylinux.com |sh -s binary
+export ctx_temp=$(mktemp); curl -fsSL https://shylinux.com -o $ctx_temp; source $ctx_temp binary
 ```
 
-## start
-
-### serve
-```sh
-ish_miss_serve
-ice>
-```
-
-### page
+## page
 open http://localhost:9020
 
