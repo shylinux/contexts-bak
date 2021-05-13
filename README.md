@@ -1,6 +1,6 @@
 # contexts
 
-contexts通过集群化、模块化、自动化，可以在各种设备上，快速组建起云计算服务。
+contexts通过集群化、模块化、自动化，可以在各种设备上，一键搭起云计算服务。
 
 ## install
 
@@ -14,6 +14,6 @@ export ctx_dev=https://shylinux.com ctx_temp=$(mktemp); curl -fsSL $ctx_dev -o $
 export ctx_dev=https://shylinux.com ctx_temp=$(mktemp); curl -fsSL $ctx_dev -o $ctx_temp; source $ctx_temp binary
 ```
 
-## page
-open http://localhost:9020
+## webview
+then open http://localhost:9020
 
