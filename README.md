@@ -6,7 +6,7 @@ contexts通过集群化、模块化、自动化，可以在各种设备上，一
 
 ### install by source
 ```sh
-export ctx_dev=https://shylinux.com ctx_temp=$(mktemp); curl -fsSL $ctx_dev -o $ctx_temp; source $ctx_temp source
+export ctx_temp=$(mktemp); curl -fsSL https://shylinux.com -o $ctx_temp; source $ctx_temp source
 ```
 
 ### install by binary
@@ -16,4 +16,3 @@ export ctx_dev=https://shylinux.com ctx_temp=$(mktemp); curl -fsSL $ctx_dev -o $
 
 ## webview
 then open http://localhost:9020
-
