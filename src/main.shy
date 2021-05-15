@@ -9,7 +9,7 @@ chapter "实践"
 label "实践" `
 code wiki chat team mall
 linux nginx context redis mysql
-bash tmux golang git vim
+bash git golang vim tmux
 ` stroke blue fill yellow
 
 chapter "理论"
