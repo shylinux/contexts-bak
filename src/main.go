@@ -15,8 +15,6 @@ import (
 	_ "github.com/shylinux/icebergs/misc/wx"
 
 	_ "github.com/shylinux/golang-story/src/compile"
-	_ "github.com/shylinux/golang-story/src/gogs"
-	_ "github.com/shylinux/golang-story/src/grafana"
 	_ "github.com/shylinux/golang-story/src/project"
 	_ "github.com/shylinux/golang-story/src/runtime"
 	_ "github.com/shylinux/nginx-story/src/server"
