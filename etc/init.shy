@@ -7,6 +7,9 @@
 
     role white void usr/local/go
     role white void usr/linux-story
+    role white void usr/nginx-story
+    role white void usr/golang-story
+    role white void usr/redis-story
     role white void usr/mysql-story
     role white void usr/learning
     role white void usr/volcanos
