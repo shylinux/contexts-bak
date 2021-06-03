@@ -13,6 +13,8 @@ replace (
 )
 
 require (
+	github.com/creack/pty v1.1.13 // indirect
+	github.com/kr/pty v1.1.8 // indirect
 	github.com/shylinux/golang-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/icebergs v0.3.4
 	github.com/shylinux/linux-story v0.0.0-00010101000000-000000000000
