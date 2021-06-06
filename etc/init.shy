@@ -85,3 +85,16 @@
 
 ~gdb
     event action listen event dream.create cmd web.code.tmux.session
+
+
+~yac
+    matrix create shy 32 32
+    matrix insert shy num num "[0-9]*"
+    matrix insert shy key key "[a-z0-9]*"
+    matrix insert shy stm stm "if key < num"
+return
+    matrix insert shy num num [0-9]*
+    matrix insert shy str str \"[a-h]*\"
+    matrix insert shy op2 op2 >
+    matrix insert shy op2 op2 >=
+    matrix insert shy exp exp num op2 num
