@@ -1,4 +1,5 @@
 
 inoremap jk <Esc>
 cnoremap wa wa<CR>
-let g:go_fmt_auto_save=1
+
+set path+=.,..,./usr/,./usr/volcanos/,./usr/icebergs/,.ish/pluged/,~/.ish/pluged/,$GOROOT/src,/usr/include
