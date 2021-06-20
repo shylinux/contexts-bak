@@ -88,6 +88,9 @@
 
 
 ~yac
+~cli
+    target lex
+
 return
     matrix create shy 32 32
     matrix insert shy num num "[0-9]*"
