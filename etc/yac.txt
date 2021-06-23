@@ -1,0 +1,18 @@
+num num [0-9]+
+key key [a-zA-Z]+
+
+op2 op2 [>=<]
+op2 op2 [+\-*/%]
+val val mul{ num key }
+exp exp val
+exp exp val op2 val
+
+stm var var key = exp
+stm let let key = exp
+stm for for exp
+stm if if exp
+stm end end
+stm cmd pwd
+
+script script rep{ stm }
+
