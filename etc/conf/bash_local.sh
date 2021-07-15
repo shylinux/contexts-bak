@@ -3,6 +3,9 @@
 export LC_ALL=en_US.utf-8
 export CTX_ROOT=${CTX_ROOT:=~/contexts}
 
+ish_sys_cli_prompt
+ish_sys_cli_alias t "tmux attach"
+
 export PATH=$CTX_ROOT/usr/install/vim81/_install/bin:$PATH
 alias vi=vim
 
