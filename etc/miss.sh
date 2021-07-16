@@ -2,12 +2,10 @@
 if [ "$ISH_CONF_PRE" = "" ]; then
     [ -f $PWD/.ish/plug.sh ] || [ -f $HOME/.ish/plug.sh ] || git clone ${ISH_CONF_HUB_PROXY:="https://"}github.com/shylinux/intshell $PWD/.ish
     source $PWD/.ish/plug.sh || source $HOME/.ish/plug.sh
-fi; [ "$PWD" = "$HOME" ] || ish_miss_create_link $HOME/.ish $PWD/.ish
+fi
 
 [ -f ~/.bash_profile ] || echo "source ~/.bashrc" >> ~/.bash_profile
-ish_miss_create_link ~/.bash_local $PWD/etc/conf/bash_local.sh
-require dev/git/git.sh
-ish_dev_git_prepare
+ish_sys_link_create ~/.bash_local $PWD/etc/conf/bash_local.sh
 
 require miss.sh
 ish_miss_prepare_compile
@@ -32,7 +30,7 @@ ish_miss_prepare mysql-story
 
 make
 
-ish_miss_create_link ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
+ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 require dev/vim/vim.sh
 ish_dev_vim_prepare
 

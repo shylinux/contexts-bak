@@ -89,7 +89,7 @@
 
 ~yac
 ~cli
-    target lex
+    target web.code.bash
 
 return
     matrix create shy 32 32
