@@ -89,7 +89,7 @@
 
 ~yac
 ~cli
-    target web.chat.wx
+    target web.chat.lark
 
 ~web.chat.wx
     config menu hash ""
