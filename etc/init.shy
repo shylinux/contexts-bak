@@ -45,21 +45,6 @@
     # csdn action create type "nowcoder" name "query" text "https://www.nowcoder.com/search?type=all"
     # csdn action create type "leetcode-cn" name "search" text "https://leetcode-cn.com/problemset/all/"
 
-~web.wiki
-    baidu action create type "web" name "wd" text "https://www.baidu.com/s"
-    baidu action create type "map" name "wd" text "https://map.baidu.com/search?querytype=s"
-
-    baidu action create type "toutiao" name "keyword" text "https://www.toutiao.com/search/"
-    # baidu action create type "zhihu" name "q" text "https://www.zhihu.com/search?type=content"
-    # baidu action create type "weibo" text "https://s.weibo.com/weibo/"
-
-    video action create type "v" name "q" text "https://v.qq.com/x/search/"
-    # video action create type "iqiyi" text "https://so.iqiyi.com/so/q_"
-    # video action create type "kuaishou" name "searchKey" text "https://video.kuaishou.com/search"
-    # video action create type "bilibili" name "keyword" text "https://search.bilibili.com/all"
-
-    music action create type "163" name "s" text "https://music.163.com/#/search/m/"
-
 ~web.chat
     config header title github.com/shylinux/contexts
     config footer legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
@@ -70,15 +55,6 @@
 ~web.mall
     # taobao action create type "taobao" name "q" text "https://s.taobao.com/search"
     # beike action create type "beike" text "https://ke.com/ershoufang/rs"
-
-~mdb
-    search create github web.code.github
-    search create csdn web.code.csdn
-
-    search create baidu web.wiki.baidu
-
-    search create taobao web.mall.taobao
-    search create beike web.mall.beike
 
 ~ssh
     source local.shy
