@@ -11,7 +11,7 @@ import (
 
 func main() {
 	log.LogDisable = true
+	defer func() { recover() }()
 	args := []string{"ssh.connect", "open", "authfile", path.Join(os.Getenv("HOME"), ".ssh/", path.Base(os.Args[0])+".json")}
-	args = append(args, os.Args[1:]...)
-	print(ice.Run(args...))
+	print(ice.Run(append(args, os.Args[1:]...)...))
 }
