@@ -4,7 +4,6 @@ go 1.11
 
 replace (
 	github.com/shylinux/golang-story => ./usr/golang-story
-	github.com/shylinux/ice => ./usr/ice
 	github.com/shylinux/icebergs => ./usr/icebergs
 	github.com/shylinux/linux-story => ./usr/linux-story
 	github.com/shylinux/mysql-story => ./usr/mysql-story
@@ -15,7 +14,6 @@ replace (
 
 require (
 	github.com/shylinux/golang-story v0.0.0-00010101000000-000000000000
-	github.com/shylinux/ice v0.0.5 // indirect
 	github.com/shylinux/icebergs v0.3.8
 	github.com/shylinux/linux-story v0.0.0-00010101000000-000000000000
 	github.com/shylinux/mysql-story v0.0.0-00010101000000-000000000000
