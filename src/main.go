@@ -19,6 +19,7 @@ import (
 	_ "github.com/shylinux/golang-story/src/runtime"
 	_ "github.com/shylinux/nginx-story/src/server"
 	_ "github.com/shylinux/redis-story/src/client"
+	_ "github.com/shylinux/redis-story/src/kafka"
 	_ "github.com/shylinux/redis-story/src/server"
 
 	_ "github.com/shylinux/linux-story/iso/centos"
