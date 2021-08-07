@@ -4,6 +4,7 @@ if [ "$ISH_CONF_PRE" = "" ]; then
     source $PWD/.ish/plug.sh || source $HOME/.ish/plug.sh
 fi
 
+require sys/cli/file.sh
 [ -f ~/.bash_profile ] || echo "source ~/.bashrc" >> ~/.bash_profile
 ish_sys_link_create ~/.bash_local $PWD/etc/conf/bash_local.sh
 
