@@ -56,9 +56,6 @@
     # taobao action create type "taobao" name "q" text "https://s.taobao.com/search"
     # beike action create type "beike" text "https://ke.com/ershoufang/rs"
 
-~ssh
-    source local.shy
-
 ~gdb
     event action listen event dream.create cmd web.code.tmux.session
 
@@ -73,6 +70,8 @@
     menu insert zone home title "网站主页"  refer "https://shylinux.com"
     menu insert zone home title "产品工具"  refer "https://shylinux.com?river=product"
 
+~ssh
+    source local.shy
 return
     matrix create shy 32 32
     matrix insert shy num num "[0-9]*"
