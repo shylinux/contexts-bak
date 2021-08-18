@@ -4,9 +4,9 @@ import (
 	"os"
 	"path"
 
-	ice "github.com/shylinux/icebergs"
-	_ "github.com/shylinux/icebergs/base/ssh"
-	log "github.com/shylinux/toolkits/logs"
+	ice "shylinux/x/icebergs"
+	_ "shylinux/x/icebergs/base/ssh"
+	log "shylinux/x/toolkits/logs"
 )
 
 func main() {

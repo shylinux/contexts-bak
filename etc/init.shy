@@ -46,7 +46,7 @@
     # csdn action create type "leetcode-cn" name "search" text "https://leetcode-cn.com/problemset/all/"
 
 ~web.chat
-    config header title github.com/shylinux/contexts
+    config header title shylinux.com/x/contexts
     config footer legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
     config footer legal.1 "京ICP备15046864号-1"
 

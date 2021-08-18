@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/shylinux/ice"
+	"shylinux/x/ice"
 )
 
 func main() {
