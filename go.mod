@@ -14,10 +14,10 @@ replace (
 
 require (
 	shylinux.com/x/golang-story v0.0.0-00010101000000-000000000000
-	shylinux.com/x/icebergs v0.3.9
+	shylinux.com/x/icebergs v0.4.0
 	shylinux.com/x/linux-story v0.0.0-00010101000000-000000000000
 	shylinux.com/x/mysql-story v0.0.0-00010101000000-000000000000
 	shylinux.com/x/nginx-story v0.0.0-00010101000000-000000000000
 	shylinux.com/x/redis-story v0.0.0-00010101000000-000000000000
-	shylinux.com/x/toolkits v0.2.8
+	shylinux.com/x/toolkits v0.3.0
 )
