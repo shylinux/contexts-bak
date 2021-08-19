@@ -10,18 +10,18 @@ label `
 code wiki chat team mall
 linux nginx context redis mysql
 bash git golang vim tmux
-` stroke blue fill yellow
+` fg blue bg yellow
 
 chapter "理论"
 label `
 集群化 模块化 自动化
-` stroke yellow fill black font-family none
+` fg yellow bg black font-family none
 
 chapter "项目"
 label `
 intshell icebergs volcanos
 contexts toolkits learning
-` stroke red fill black
+` fg red bg black
 
 section "火山架"
 field "趋势图" web.code.git.trend args `volcanos`
