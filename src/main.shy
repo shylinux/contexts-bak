@@ -1,4 +1,32 @@
+navmenu `
+入门简介 src/hi.shy
+  集群化
+  模块化
+  自动化
+使用手册 src/main.shy
+  安装使用
+    应用安装
+    源码安装
+    创建项目
+  创建空间
+  创建群组
+  创建脚本
+编程手册
+  脚本编程
+  模块编程
+  框架编程
+参考手册
+  函数列表
+  命令列表
+  服务列表
+  事件列表
+  参数列表
+`
+
+premenu
+
 title "contexts"
+
 refer `
 官网 https://shylinux.com
 源码 https://shylinux.com/x/contexts
@@ -35,3 +63,4 @@ section "神农架"
 field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
+endmenu
