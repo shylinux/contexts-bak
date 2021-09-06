@@ -18,6 +18,7 @@
     role white void usr/publish
     role white void usr/install
     role white void src/main
+    role white void src/help
 
     role black tech aaa.role
 
