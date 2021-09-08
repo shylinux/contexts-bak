@@ -12,4 +12,4 @@ all:
 	go build -v -o usr/publish/$@ src/$@.go && chmod u+x usr/publish/$@
 
 ice:
-	cat src/binpack.go|sed 's/package main/package ice/g' > usr/ice/binpack.go
+	cat src/binpack.go|sed 's/package main/package ice/g' > usr/release/binpack.go
