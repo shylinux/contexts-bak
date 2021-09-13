@@ -12,4 +12,3 @@ ish_sys_path_insert $CTX_ROOT/usr/publish
 ps aux |grep -v grep |grep ice.bin &>/dev/null && return
 ps aux |grep -v grep |grep tmux &>/dev/null && return
 cd $CTX_ROOT && source etc/miss.sh
-ish_log_debug "some" "what"

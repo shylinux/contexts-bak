@@ -24,7 +24,7 @@
 
 ~web
     # config serve meta.share  "https://shylinux.com"
-    config share meta.domain "http://localhost:9020"
+    # config share meta.domain "http://localhost:9020"
 
 ~web.code.input
     # wubi import usr/wubi-dict/wubi86
