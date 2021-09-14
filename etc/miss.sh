@@ -20,6 +20,8 @@ ish_miss_prepare_toolkits
 ish_miss_prepare_volcanos
 ish_miss_prepare_learning
 
+ish_miss_prepare release
+
 # ish_miss_prepare wubi-dict
 # ish_miss_prepare word-dict
 
