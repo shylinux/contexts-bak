@@ -27,6 +27,8 @@ gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8
 gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 shylinux.com/x/golang-story v0.1.1 h1:IdnwxVfbqaqGrJdSad2a9/cQjP2plimOHCHr2O/B+Hg=
 shylinux.com/x/golang-story v0.1.1/go.mod h1:FHiPa/oFzRUbhXXBc/lQ8Cl13aEEDaskaEwEFkTrGGc=
+shylinux.com/x/ice v0.1.7 h1:Y+4iohquVVpUHbh6jYR1dL16CyO0oEN/UVQ/gx4AZ40=
+shylinux.com/x/ice v0.1.7/go.mod h1:N2+41/RneGDfxP66pWKmdJAW+qtol5uDlcJiniCS1lc=
 shylinux.com/x/icebergs v0.4.4/go.mod h1:mHre+KETs8dFxI/1wlSw24RN+JYYgE1W7ppeZUDp7hc=
 shylinux.com/x/icebergs v0.4.6 h1:ONhshrtZmmPdBfPHzYwR0bp4e12N60lMh4YIA1Hii0I=
 shylinux.com/x/icebergs v0.4.6/go.mod h1:mHre+KETs8dFxI/1wlSw24RN+JYYgE1W7ppeZUDp7hc=
