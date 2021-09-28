@@ -17,15 +17,15 @@ replace (
 )
 
 require (
-	shylinux.com/x/ice v0.1.7
-	shylinux.com/x/icebergs v0.4.6
-	shylinux.com/x/toolkits v0.3.1
+	shylinux.com/x/ice v0.1.9
+	shylinux.com/x/icebergs v0.4.7
+	shylinux.com/x/toolkits v0.3.2
 )
 
 require (
 	shylinux.com/x/golang-story v0.1.1
 	shylinux.com/x/linux-story v0.1.1
 	shylinux.com/x/mysql-story v0.1.1
-	shylinux.com/x/nginx-story v0.1.1
-	shylinux.com/x/redis-story v0.1.1
+	shylinux.com/x/nginx-story v0.1.2
+	shylinux.com/x/redis-story v0.1.2
 )

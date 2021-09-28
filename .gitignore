@@ -2,6 +2,8 @@ src/binpack.go
 src/version.go
 etc/local.shy
 etc/local.sh
+*.swp
+*.swo
 bin/
 var/
 usr/
