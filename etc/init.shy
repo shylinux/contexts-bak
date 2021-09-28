@@ -1,4 +1,4 @@
-~aaa
+~aaa 
     role white void web.code.git.total
     role white void web.code.git.spide
     role white void web.code.git.trend
@@ -25,16 +25,16 @@
 ~web
     config serve meta.dump false
 
+~web.code
+    github action create type "github" name "q" text "https://github.com/search"
+    github action create type "mdn" name "q" text "https://developer.mozilla.org/zh-CN/search"
+
 ~web.code.input
     # wubi import usr/wubi-dict/wubi86
     wubi import usr/wubi-dict/person
 
 ~web.wiki.alpha
     # alpha import
-
-~web.code
-    github action create type "github" name "q" text "https://github.com/search"
-    github action create type "mdn" name "q" text "https://developer.mozilla.org/zh-CN/search"
 
 ~web.chat
     config header title shylinux.com/x/contexts
@@ -43,26 +43,38 @@
 
     email action create type "163" name "keyword" text "https://mail.163.com"
 
-~web.mall
-    # taobao action create type "taobao" name "q" text "https://s.taobao.com/search"
-    # beike action create type "beike" text "https://ke.com/ershoufang/rs"
-
-~gdb
-    event action listen event dream.create cmd web.code.tmux.session
-
-
-~yac
-~cli
-    target web.code.bash
-
 ~web.chat.wx
     config menu hash ""
     menu create zone home
     menu insert zone home title "网站主页"  refer "https://shylinux.com"
     menu insert zone home title "产品工具"  refer "https://shylinux.com?river=product"
 
+~web.mall
+    # taobao action create type "taobao" name "q" text "https://s.taobao.com/search"
+    # beike action create type "beike" text "https://ke.com/ershoufang/rs"
+
+~cli
+    target web.code.bash
+
+~ctx
+
+~lex
+
+~yac
+
+~log
+
+~gdb
+    event action listen event dream.create cmd web.code.tmux.session
+
+~mdb
+
 ~ssh
     source local.shy
+~nfs
+
+~tcp
+
 return
     matrix create shy 32 32
     matrix insert shy num num "[0-9]*"
