@@ -23,8 +23,7 @@
     role black tech aaa.role
 
 ~web
-    # config serve meta.share  "https://shylinux.com"
-    # config share meta.domain "http://localhost:9020"
+    config serve meta.dump false
 
 ~web.code.input
     # wubi import usr/wubi-dict/wubi86
@@ -36,15 +35,6 @@
 ~web.code
     github action create type "github" name "q" text "https://github.com/search"
     github action create type "mdn" name "q" text "https://developer.mozilla.org/zh-CN/search"
-
-    # csdn action create type "csdn" name "q" text "https://so.csdn.net/so/search/all"
-    # csdn action create type "juejin" name "query" text "https://juejin.cn/search?type=all"
-    # csdn action create type "51cto" name "keywords" text "http://so.51cto.com/?sort=time"
-    # csdn action create type "oschina" name "q" text "https://www.oschina.net/search?scope=project"
-    # csdn action create type "imooc" name "words" text "https://www.imooc.com/search/"
-    # csdn action create type "segmentfault" name "q" text "https://segmentfault.com/search"
-    # csdn action create type "nowcoder" name "query" text "https://www.nowcoder.com/search?type=all"
-    # csdn action create type "leetcode-cn" name "search" text "https://leetcode-cn.com/problemset/all/"
 
 ~web.chat
     config header title shylinux.com/x/contexts
