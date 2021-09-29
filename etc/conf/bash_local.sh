@@ -7,7 +7,11 @@ ish_sys_cli_prompt
 ish_sys_cli_alias vi vim
 ish_sys_cli_alias t "tmux attach"
 ish_sys_path_insert $CTX_ROOT/usr/publish
-ish_sys_path_insert $CTX_ROOT/usr/install/vim81/_install/bin
+
+for line in `cat $CTX_ROOT/etc/path`; do
+    ish_sys_path_insert $line
+    ish_log_debug "path" $line
+done
 
 ps aux |grep -v grep |grep ice.bin &>/dev/null && return
 ps aux |grep -v grep |grep tmux &>/dev/null && return

@@ -2,6 +2,7 @@ src/binpack.go
 src/version.go
 etc/local.shy
 etc/local.sh
+etc/path
 *.swp
 *.swo
 bin/
