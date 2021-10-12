@@ -8,6 +8,7 @@ ish_sys_cli_alias vi vim
 ish_sys_cli_alias t "tmux attach"
 ish_sys_path_insert $CTX_ROOT/usr/publish
 
+touch $CTX_ROOT/etc/path
 for line in `cat $CTX_ROOT/etc/path`; do
     ish_sys_path_insert $line
     ish_log_debug "path" $line

@@ -28,6 +28,7 @@
 ~web.code
     github action create type "github" name "q" text "https://github.com/search"
     github action create type "mdn" name "q" text "https://developer.mozilla.org/zh-CN/search"
+    binpack remove
 
 ~web.code.input
     # wubi import usr/wubi-dict/wubi86
