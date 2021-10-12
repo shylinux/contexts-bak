@@ -15,7 +15,7 @@ go 1.11
 // 	shylinux.com/x/icebergs => ./usr/icebergs
 // 	shylinux.com/x/toolkits => ./usr/toolkits
 // )
-//
+
 require (
 	shylinux.com/x/golang-story v0.1.4
 	shylinux.com/x/linux-story v0.1.4
