@@ -25,7 +25,7 @@ require (
 )
 
 require (
-	shylinux.com/x/ice v0.2.4
-	shylinux.com/x/icebergs v0.5.3
+	shylinux.com/x/ice v0.2.5
+	shylinux.com/x/icebergs v0.5.4
 	shylinux.com/x/toolkits v0.3.4
 )

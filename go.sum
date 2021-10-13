@@ -21,12 +21,12 @@ shylinux.com/x/golang-story v0.1.4 h1:8YFrCUUfNRqyAp0ihcXNgQLKVtTvmm8pIwe/C8AR3Q
 shylinux.com/x/golang-story v0.1.4/go.mod h1:E02IxObAxD5uy6GACzZ5bpEuYm8RkKgXXnVJNaZbcU4=
 shylinux.com/x/ice v0.2.0/go.mod h1:fYV/AU+bQMWWOt+XIWXFroiXb7tdet2MZxozkO0NKUA=
 shylinux.com/x/ice v0.2.2/go.mod h1:QNo2InUQh5YaWmwTDDjHu/y1Nt7ch84eIxidzDqTPYU=
-shylinux.com/x/ice v0.2.4 h1:uCqS/0cA5CCnSq+YZ3Zf0kokDWd/flneuW8t0PVdWqM=
-shylinux.com/x/ice v0.2.4/go.mod h1:1r1hNJpe8MhUh3dixVz9cUcgMInVzDfvnZCXu24nvZg=
+shylinux.com/x/ice v0.2.5 h1:otwuG8KVQXVfYzgtBc12iZEu1Tn5mcsoPuG86xQtu7s=
+shylinux.com/x/ice v0.2.5/go.mod h1:2Cp/ulHV0+bwafljlRq4jemKdfUj2K0dRXME7rXwY4w=
 shylinux.com/x/icebergs v0.4.8/go.mod h1:TZ6JQtR/FEL/e2bN0uN0rh1o1YsUMzi7ZEQPPvWbF1Q=
 shylinux.com/x/icebergs v0.5.0/go.mod h1:iv3fXIaUWp3LUFLJ4wtOrcHKZchXcujSlf4AkjdQWtA=
-shylinux.com/x/icebergs v0.5.3 h1:ooKGHaOsxqqiwEpA2lLA4bB6U+JkiKkKHrGqpOoi9I0=
-shylinux.com/x/icebergs v0.5.3/go.mod h1:eaml5/zx3HiPvZaz3QnndBbDzcUglzOnI4Udz7BUuQk=
+shylinux.com/x/icebergs v0.5.4 h1:2VSM4QIC4p4kVdCGA4U+137b5oUPUVOChF/3Vc3W2cY=
+shylinux.com/x/icebergs v0.5.4/go.mod h1:eaml5/zx3HiPvZaz3QnndBbDzcUglzOnI4Udz7BUuQk=
 shylinux.com/x/linux-story v0.1.4 h1:GQ9oueIPcEzqSpa8IAR+fRYzhXaDGzSa6okznbbah4A=
 shylinux.com/x/linux-story v0.1.4/go.mod h1:9YT2BIZRekLVuTxaq6v9URLcBXlsWVvlWPWyj1kE9g0=
 shylinux.com/x/mysql-story v0.1.5 h1:qEXj4O0gjYFPln/Uki2Dv0mVXisnajibQ3ijPut5V+4=
