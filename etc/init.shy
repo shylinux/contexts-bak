@@ -55,7 +55,7 @@
     # beike action create type "beike" text "https://ke.com/ershoufang/rs"
 
 ~cli
-    target web.code.bash
+    target web.chat.wework
 
 ~ctx
 

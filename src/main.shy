@@ -35,3 +35,9 @@ field "架构图" web.code.git.spide args `icebergs`
 section "神农架"
 field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
+
+source hi/hi.shy
+
+source hi/hi.shy
+
+source hi/hi.shy
