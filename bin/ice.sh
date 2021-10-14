@@ -1,8 +1,7 @@
-#! /bin/sh
+#!/bin/sh
 
 export ctx_log=${ctx_log:=bin/boot.log}
 export ctx_pid=${ctx_pid:=var/run/ice.pid}
-
 
 start() {
     trap HUP hup && while true; do
