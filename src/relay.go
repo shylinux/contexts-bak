@@ -5,7 +5,7 @@ import (
 	"path"
 
 	ice "shylinux.com/x/icebergs"
-	_ "shylinux.com/x/icebergs/base/ssh"
+	_ "shylinux.com/x/icebergs/misc/ssh"
 	log "shylinux.com/x/toolkits/logs"
 )
 
