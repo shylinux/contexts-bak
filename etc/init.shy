@@ -39,8 +39,7 @@
 
 ~web.chat
     config header title shylinux.com/x/contexts
-    config footer legal.0 `<a href="mailto:shylinux@163.com">shylinux@163.com</a>`
-    config footer legal.1 "京ICP备15046864号-1"
+    config list footer legal `<a href="mailto:shylinux@163.com">shylinux@163.com</a>` "京ICP备15046864号-1"
 
     email action create type "163" name "keyword" text "https://mail.163.com"
 
