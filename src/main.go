@@ -24,7 +24,6 @@ import (
 	_ "shylinux.com/x/mysql-story/src/search"
 	_ "shylinux.com/x/mysql-story/src/server"
 
-	_ "shylinux.com/x/linux-story/cli"
 	_ "shylinux.com/x/linux-story/src/gcc"
 	_ "shylinux.com/x/linux-story/src/gdb"
 	_ "shylinux.com/x/linux-story/src/glibc"
@@ -33,6 +32,7 @@ import (
 	_ "shylinux.com/x/linux-story/src/kernel"
 	_ "shylinux.com/x/linux-story/src/qemu"
 
+	_ "shylinux.com/x/linux-story/cli"
 	_ "shylinux.com/x/linux-story/iso/centos"
 )
 
