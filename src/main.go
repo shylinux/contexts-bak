@@ -9,6 +9,7 @@ import (
 
 	_ "shylinux.com/x/icebergs/misc/lark"
 	_ "shylinux.com/x/icebergs/misc/mp"
+	_ "shylinux.com/x/icebergs/misc/wework"
 	_ "shylinux.com/x/icebergs/misc/wx"
 
 	_ "shylinux.com/x/golang-story/src/compile"
@@ -37,4 +38,3 @@ import (
 )
 
 func main() { print(ice.Run()) }
-
