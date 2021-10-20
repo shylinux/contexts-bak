@@ -45,7 +45,6 @@
 
 ~web.chat.wx
     config menu hash ""
-    menu create zone home
     menu insert zone home title "网站主页"  refer "https://shylinux.com"
     menu insert zone home title "产品工具"  refer "https://shylinux.com?river=product"
 
