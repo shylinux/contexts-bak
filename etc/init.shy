@@ -23,11 +23,8 @@
     role black tech aaa.role
 
 ~web
-    config serve meta.dump false
 
 ~web.code
-    github action create type "github" name "q" text "https://github.com/search"
-    github action create type "mdn" name "q" text "https://developer.mozilla.org/zh-CN/search"
     binpack remove
 
 ~web.code.input
@@ -41,19 +38,14 @@
     config header title shylinux.com/x/contexts
     config list footer legal `<a href="mailto:shylinux@163.com">shylinux@163.com</a>` "京ICP备15046864号-1"
 
-    email action create type "163" name "keyword" text "https://mail.163.com"
-
 ~web.chat.wx
     config menu hash ""
     menu insert zone home title "网站主页"  refer "https://shylinux.com"
     menu insert zone home title "产品工具"  refer "https://shylinux.com?river=product"
 
 ~web.mall
-    # taobao action create type "taobao" name "q" text "https://s.taobao.com/search"
-    # beike action create type "beike" text "https://ke.com/ershoufang/rs"
 
 ~cli
-    target web.chat.wx
 
 ~ctx
 
