@@ -1,9 +1,11 @@
 ~aaa 
-    role white void web.code.git.total
-    role white void web.code.git.spide
-    role white void web.code.git.trend
+    role white void web.code.git
     role white void web.code.inner
+    role white void web.code.input.find
+    role white void web.wiki.alpha.find
     role white void web.wiki.word
+    role white void web.wiki.draw
+    role white void web.team.plan
 
     role white void usr/local/go
     role white void usr/linux-story
@@ -17,12 +19,11 @@
     role white void usr/intshell
     role white void usr/publish
     role white void usr/install
+    role white void usr/require
     role white void src/main
     role white void src/help
 
     role black tech aaa.role
-
-~web
 
 ~web.code
     binpack remove
@@ -34,45 +35,9 @@
 ~web.wiki.alpha
     # alpha import
 
-~web.chat
-    config header title shylinux.com/x/contexts
-    config list footer legal `<a href="mailto:shylinux@163.com">shylinux@163.com</a>` "京ICP备15046864号-1"
-
-~web.chat.wx
-    config menu hash ""
-    menu insert zone home title "网站主页"  refer "https://shylinux.com"
-    menu insert zone home title "产品工具"  refer "https://shylinux.com?river=product"
-
-~web.mall
-
-~cli
-
-~ctx
-
-~lex
-
-~yac
-
-~log
-
 ~gdb
     event action listen event dream.create cmd web.code.tmux.session
 
-~mdb
-
 ~ssh
     source local.shy
-~nfs
 
-~tcp
-
-return
-    matrix create shy 32 32
-    matrix insert shy num num "[0-9]*"
-    matrix insert shy key key "[a-z0-9]*"
-    matrix insert shy stm stm "if key < num"
-    matrix insert shy num num [0-9]*
-    matrix insert shy str str \"[a-h]*\"
-    matrix insert shy op2 op2 >
-    matrix insert shy op2 op2 >=
-    matrix insert shy exp exp num op2 num
