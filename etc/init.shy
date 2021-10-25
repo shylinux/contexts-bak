@@ -29,8 +29,8 @@
     binpack remove
 
 ~web.code.input
-    # wubi import usr/wubi-dict/wubi86
-    wubi import usr/wubi-dict/person
+    # wubi import file usr/wubi-dict/wubi86 zone wubi86
+    wubi import file usr/wubi-dict/person zone person
 
 ~web.wiki.alpha
     # alpha import
