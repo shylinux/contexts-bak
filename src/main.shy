@@ -36,3 +36,22 @@ section "神农架"
 field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
+section "macbook"
+refer `
+Trackpad: Tap to click
+Terminal: font-size
+keyboard: CapsLock
+Dock: simple
+
+iOA: https://ioa.tencent.com
+WeCom: https://work.weixin.qq.com/#indexDownload
+TencentMeeting: http://wemeet.oa.com/publicity/
+foxmail: https://www.foxmail.com/
+
+chrome: https://www.google.cn/intl/zh-CN/chrome/
+golang: https://golang.google.cn/dl/
+contexts: https://shylinux.com/
+homebrew: https://brew.sh/
+ssh-keygen ssh-copy-id
+chsh -s /bin/bash
+`
