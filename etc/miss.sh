@@ -1,6 +1,7 @@
 #!/bin/bash
+
+[ -f $PWD/.ish/plug.sh ] || [ -f $HOME/.ish/plug.sh ] || git clone ${ISH_CONF_HUB_PROXY:="https://"}shylinux.com/x/intshell $PWD/.ish
 if [ "$ISH_CONF_PRE" = "" ]; then
-    [ -f $PWD/.ish/plug.sh ] || [ -f $HOME/.ish/plug.sh ] || git clone ${ISH_CONF_HUB_PROXY:="https://"}shylinux.com/x/intshell $PWD/.ish
     source $PWD/.ish/plug.sh || source $HOME/.ish/plug.sh
 fi
 
