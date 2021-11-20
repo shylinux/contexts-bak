@@ -36,6 +36,19 @@ section "神农架"
 field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
+section "centos"
+spark shell `
+ssh root@114.132.199.163 # 登录主机
+useradd -m shy           # 添加用户
+passwd shy               # 添加密码
+visudo                   # 添加权限
+`
+
+order `
+添加域名 2021.shylinux.com
+安装代理 nginx
+`
+
 section "macbook"
 refer `
 Trackpad: Tap to click
