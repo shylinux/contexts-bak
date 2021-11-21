@@ -1,5 +1,4 @@
 title "contexts"
-
 refer `
 官网 https://shylinux.com
 源码 https://shylinux.com/x/contexts
@@ -42,11 +41,16 @@ ssh root@114.132.199.163 # 登录主机
 useradd -m shy           # 添加用户
 passwd shy               # 添加密码
 visudo                   # 添加权限
+su shy                   # 切换用户
+`
+spark shell `
+ctx_temp=$(mktemp)\; curl -fsSL https://shylinux.com -o $ctx_temp; source $ctx_temp source
 `
 
 order `
 添加域名 2021.shylinux.com
 安装代理 nginx
+添加证书 https
 `
 
 section "macbook"
