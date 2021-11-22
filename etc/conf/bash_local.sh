@@ -15,7 +15,6 @@ ish_sys_path_insert $PWD/bin
 touch $CTX_ROOT/etc/path
 for line in `cat $CTX_ROOT/etc/path`; do
     ish_sys_path_insert $line
-    ish_log_debug "path" $line
 done
 
 ps aux |grep -v grep |grep ice.bin &>/dev/null && return
