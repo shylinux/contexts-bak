@@ -6,6 +6,11 @@ if [ "$ISH_CONF_PRE" = "" ]; then
 fi
 
 require sys/cli/file.sh
+ish_sys_file_create etc/path <<END
+usr/local/go/bin
+usr/publish
+bin
+END
 ish_sys_path_load
 
 [ -f ~/.bash_profile ] || echo "source ~/.bashrc" >> ~/.bash_profile
