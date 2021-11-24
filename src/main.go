@@ -29,12 +29,11 @@ import (
 	_ "shylinux.com/x/linux-story/src/gdb"
 	_ "shylinux.com/x/linux-story/src/glibc"
 
+	_ "shylinux.com/x/linux-story/cli"
+	_ "shylinux.com/x/linux-story/iso/centos"
 	_ "shylinux.com/x/linux-story/src/busybox"
 	_ "shylinux.com/x/linux-story/src/kernel"
 	_ "shylinux.com/x/linux-story/src/qemu"
-
-	_ "shylinux.com/x/linux-story/cli"
-	_ "shylinux.com/x/linux-story/iso/centos"
 )
 
 func main() { print(ice.Run()) }
