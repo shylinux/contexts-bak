@@ -6,11 +6,6 @@ if [ "$ISH_CONF_PRE" = "" ]; then
 fi
 
 require sys/cli/file.sh
-ish_sys_file_create etc/path <<END
-usr/local/go/bin
-usr/publish
-bin
-END
 ish_sys_path_load
 
 [ -f ~/.bash_profile ] || echo "source ~/.bashrc" >> ~/.bash_profile
@@ -38,9 +33,7 @@ ish_miss_prepare_toolkits
 ish_miss_prepare_volcanos
 ish_miss_prepare_learning
 
-echo && date
-[ -f src/version.go ] || echo "package main" > src/version.go
-go build -v -o bin/ice.bin src/main.go src/version.go && chmod u+x bin/ice.bin && ./bin/ice.sh restart
+ish_miss_make
 
 ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 require dev/vim/vim.sh
