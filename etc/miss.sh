@@ -39,8 +39,12 @@ ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 require dev/vim/vim.sh
 ish_dev_vim_prepare
 
-require dev/tmux/tmux.sh
-ish_dev_tmux_prepare
+if which tmux; then
+    require dev/tmux/tmux.sh
+    ish_dev_tmux_prepare
 
-ish_miss_prepare_session miss miss
+    ish_miss_prepare_session miss miss
+else
+    ctx_log=/dev/stdout ish_miss_serve
+fi
 
