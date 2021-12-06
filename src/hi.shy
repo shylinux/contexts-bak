@@ -1,8 +1,0 @@
-cli.system pwd
-_span span
-    _span div
-        web.code.git.trend icebergs
-        web.code.git.trend volcanos
-    _span div
-        web.code.git.trend toolkits
-        web.code.git.trend intshell
