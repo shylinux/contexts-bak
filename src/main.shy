@@ -35,3 +35,38 @@ section "神农架"
 field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
+chart sequence `
+用户 视频转码 视频评测 事件中心 消息队列
+0 "创建任务" 2 "完成" 0
+0 "创建事件" 2 "完成" 0
+
+0 "创建任务" 1 "完成" 0
+0 "绑定事件" 1 "完成" 0
+
+0 "启动任务" 1 "完成" 0
+1 "转码完成" 3 "分发事件" 4 "完成" 3 "完成" 1
+
+4 "启动评测" 2 "完成" 4
+` rect-height 80 text-stroke red marginx 100 head-stroke blue
+
+chain `
+总裁办
+  PCG
+    PCG技术部
+      交付与验证中心
+        视频评测
+        后端测试
+        前端测试
+        终端测试
+      开发工具
+    QQ社交
+    看点
+    腾讯视频
+    QQ音乐
+  IEG
+  WXG
+  CDG
+  TEG
+  S1
+  S2
+` stroke white fill white font-family monospace
