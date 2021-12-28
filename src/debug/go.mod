@@ -2,7 +2,7 @@ module shylinux.com/x/contexts
 
 go 1.11
 
-require shylinux.com/x/ice v0.4.6
+require shylinux.com/x/ice v0.4.7
 
 require (
 	shylinux.com/x/golang-story v0.2.9

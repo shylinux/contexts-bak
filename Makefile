@@ -13,3 +13,4 @@ all:
 
 ice:
 	cat src/binpack.go|sed 's/package main/package ice/g' > usr/release/binpack.go
+
