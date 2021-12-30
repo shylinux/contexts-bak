@@ -1,10 +1,4 @@
 ~aaa 
-    role white void src
-    role white void bin
-    role white void usr
-    role black void usr/local
-    role white void usr/local/go
-
     role white void web.code.git
     role white void web.code.inner
     role white void web.code.input.find
