@@ -1,4 +1,10 @@
 ~aaa 
+    role white void src
+    role white void bin
+    role white void usr
+    role black void usr/local
+    role white void usr/local/go
+
     role white void web.code.git
     role white void web.code.inner
     role white void web.code.input.find
@@ -7,33 +13,11 @@
     role white void web.wiki.draw
     role white void web.team.plan
 
-    role white void usr/local/go
-    role white void usr/linux-story
-    role white void usr/nginx-story
-    role white void usr/golang-story
-    role white void usr/redis-story
-    role white void usr/mysql-story
-    role white void usr/learning
-    role white void usr/volcanos
-    role white void usr/icebergs
-    role white void usr/intshell
-    role white void usr/publish
-    role white void usr/install
-    role white void usr/require
-    role white void src/main
-    role white void src/help
-
-    role black tech aaa.role
-
 ~web.code
     binpack remove
 
 ~web.code.input
-    # wubi import file usr/wubi-dict/wubi86 zone wubi86
     wubi import file usr/wubi-dict/person zone person
-
-~web.wiki.alpha
-    # alpha import
 
 ~gdb
     event action listen event dream.create cmd web.code.tmux.session
