@@ -1,6 +1,6 @@
 export GOPROXY=https://goproxy.cn,direct
 export GOPRIVATE=shylinux.com,github.com
-export CGO_ENABLED=0
+# export CGO_ENABLED=0
 
 all:
 	@echo && date
@@ -14,3 +14,7 @@ all:
 ice:
 	cat src/binpack.go|sed 's/package main/package ice/g' > usr/release/binpack.go
 
+macapp:
+	 mkdir -p usr/publish/contexts.app/Contents/MacOS
+	 go build -o usr/publish/contexts.app/Contents/MacOS/contexts src/app.go src/binpack.go
+	 open usr/publish/contexts.app
