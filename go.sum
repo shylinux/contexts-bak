@@ -21,3 +21,7 @@ shylinux.com/x/go-sql-mysql v0.0.1 h1:VX5SrwLBKzfkRouj39LgJ9reIXOWmMsScRpr+e0qdp
 shylinux.com/x/go-sql-mysql v0.0.1/go.mod h1:47OfAZK24HRJMy7dAu/jrksGCf9yzJaAUFwWYjhDFDA=
 shylinux.com/x/websocket v0.0.1 h1:OBc21DxqsGlQ2+Pz76xqLyDNo1LV+PUUqfWi+1PZPDE=
 shylinux.com/x/websocket v0.0.1/go.mod h1:AaSpMToOxbMULKQytzczeHPuqb708vK1vrAzCxLo/XE=
+shylinux.com/x/webview v0.0.0-20220104080933-edb3c5bf9a44 h1:rTEqGX83INYiuYEkf3wZP3WOx5FukClNkTla6HGET/8=
+shylinux.com/x/webview v0.0.0-20220104080933-edb3c5bf9a44/go.mod h1:4QYVOgAZyyoCghh0ByuAXqfcuFWCJQY3F7Ss2x3N/cQ=
+shylinux.com/x/webview v0.0.1 h1:84waIh8MnBFA2sCA9CqE2aTGBZz26pS7JlizgKi9IGU=
+shylinux.com/x/webview v0.0.1/go.mod h1:4QYVOgAZyyoCghh0ByuAXqfcuFWCJQY3F7Ss2x3N/cQ=

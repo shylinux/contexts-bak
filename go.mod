@@ -5,14 +5,12 @@ go 1.11
 require shylinux.com/x/ice v0.4.8
 
 require (
-	github.com/kr/pty v1.1.8 // indirect
-	github.com/webview/webview v0.0.0-20210330151455-f540d88dde4e // indirect
-	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
 	shylinux.com/x/golang-story v0.3.0
 	shylinux.com/x/linux-story v0.3.0
 	shylinux.com/x/mysql-story v0.3.2
 	shylinux.com/x/nginx-story v0.3.1
 	shylinux.com/x/redis-story v0.3.2
+	shylinux.com/x/webview v0.0.1
 )
 
 replace (
