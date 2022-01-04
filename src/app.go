@@ -11,7 +11,7 @@ import (
 
 func main() {
 	os.Chdir(path.Join("/Users", os.Getenv("USER"), "contexts"))
-	go ice.Run("serve", "start", "dev", "shy")
+	go ice.Run("serve", "start")
 	time.Sleep(time.Second)
 	app.Run()
 }

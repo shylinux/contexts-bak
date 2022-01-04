@@ -16,4 +16,5 @@ ish_sys_path_insert $PWD/bin
 
 ps aux |grep -v grep |grep ice.bin &>/dev/null && return
 ps aux |grep -v grep |grep tmux &>/dev/null && return
+sleep 3
 cd $CTX_ROOT && source etc/miss.sh
