@@ -1,6 +1,7 @@
 ~aaa 
     role white void web.code.inner
     role white void web.code.git.spide
+    role white void web.code.git.trend
     role white void web.code.input.find
     role white void web.wiki.alpha.find
     role white void web.wiki.word
@@ -16,6 +17,6 @@
     event action listen event dream.create cmd web.code.tmux.session
 
 ~ssh
-    target web.code.chrome
+    target web.code.input
     source local.shy
 

@@ -1,15 +1,21 @@
 package main
 
 import (
-	"shylinux/x/ice"
+	"shylinux.com/x/ice"
 )
 
 func main() {
-	ice.App("web.demo", "/tool/", func(p *ice.Page) {
-		p.Cmd("nav", &ice.Nav{Home: "./", Prefix: "/tool"})
-		p.Cmd("cli.system", ice.Arg("pwd"))
-		p.Cmd("hash", &ice.Hash{})
-		p.Home = "./"
-	})
-	ice.RunServe("9090")
+	ice.App("/admin", "管理", `
+libra
+	dev 开发
+		cli.qrcode
+		cli.runtime
+`)
+	ice.App("/vip", "会员", `
+libra
+	dev 开发
+		cli.runtime
+		cli.qrcode
+`)
+	ice.RunServe("port", "9090")
 }
