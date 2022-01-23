@@ -36,4 +36,4 @@ import (
 	_ "shylinux.com/x/linux-story/src/qemu"
 )
 
-func main() { print(ice.Run()) }
+func main() { println(ice.Run()) }
