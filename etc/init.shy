@@ -7,9 +7,6 @@
     role white void web.wiki.word
     role white void web.wiki.draw
 
-~web.code
-    binpack remove
-
 ~web.code.input
     wubi import file usr/wubi-dict/person zone person
 
@@ -17,6 +14,6 @@
     event action listen event dream.create cmd web.code.tmux.session
 
 ~ssh
-    target web.code.input
+    target web.code
     source local.shy
 
