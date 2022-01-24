@@ -1,6 +1,8 @@
 package main
 
 import (
+	_ "shylinux.com/x/contexts/src/h1"
+
 	_ "shylinux.com/x/contexts/src/hi"
 
 	"shylinux.com/x/ice"
