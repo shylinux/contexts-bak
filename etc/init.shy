@@ -1,19 +1,19 @@
 ~aaa 
-    role white void web.code.inner
-    role white void web.code.git.spide
-    role white void web.code.git.trend
-    role white void web.code.input.find
-    role white void web.wiki.alpha.find
-    role white void web.wiki.word
-    role white void web.wiki.draw
+	role white void web.code.inner
+	role white void web.code.git.spide
+	role white void web.code.git.trend
+	role white void web.code.input.find
+	role white void web.wiki.alpha.find
+	role white void web.wiki.word
+	role white void web.wiki.draw
 
 ~web.code.input
-    wubi import file usr/wubi-dict/person zone person
+	wubi import file usr/wubi-dict/person zone person
 
 ~gdb
-    event action listen event dream.create cmd web.code.tmux.session
+	event action listen event dream.create cmd web.code.tmux.session
 
 ~ssh
-    target web.code
-    source local.shy
+	target web.code
+	source local.shy
 
