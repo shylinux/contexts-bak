@@ -1,0 +1,13 @@
+{
+    "hi": {
+        "name": "示例",
+        "storm": {
+            "hi": {
+                "name": "示例",
+                "list": [
+                    {"index": "cli.qrcode"}
+                ]
+            }
+        }
+    }
+}
