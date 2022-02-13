@@ -14,6 +14,6 @@
 	event action listen event dream.create cmd web.code.tmux.session
 
 ~ssh
-	target web.code
+	target web.team
 	source local.shy
 
