@@ -6,7 +6,7 @@ all:
 	@echo && date
 	[ -f src/version.go ] || echo "package main" > src/version.go
 	go build -v -o bin/ice.bin src/main.go src/version.go && chmod u+x bin/ice.bin && ./bin/ice.sh restart
-	# cp bin/ice.bin usr/publish/ice.$(shell go env GOOS).$(shell go env GOARCH)
+	cp bin/ice.bin usr/publish/ice.$(shell go env GOOS).$(shell go env GOARCH)
 
 ice:
 	cat src/binpack.go|sed 's/package main/package ice/g' > usr/release/binpack.go
