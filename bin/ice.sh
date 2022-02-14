@@ -6,6 +6,7 @@ export ctx_pid=${ctx_pid:=var/run/ice.pid}
 start() {
     trap HUP hup && while true; do
         date && bin/ice.bin $@ 2>$ctx_log && break || echo -e \"\n\nrestarting...\"
+		sleep 1
     done
 }
 restart() {
