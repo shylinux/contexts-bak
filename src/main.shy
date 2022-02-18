@@ -38,3 +38,5 @@ field "架构图" web.code.git.spide args `intshell`
 spark shell `
 find . -name "*.css" -exec sed -i 's/: /:/g' {} +
 `
+
+source hi/hi.shy
