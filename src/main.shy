@@ -40,3 +40,4 @@ find . -name "*.css" -exec sed -i 's/: /:/g' {} +
 `
 
 source hi/hi.shy
+source hi/hi.shy
