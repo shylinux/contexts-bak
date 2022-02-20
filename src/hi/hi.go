@@ -7,7 +7,7 @@ import (
 type hi struct {
 	ice.Zone
 
-	list string `name:"list zone id auto insert" help:"hi"`
+	list string `name:"list zone id auto insert" help:"示例"`
 }
 
 func (h hi) List(m *ice.Message, arg ...string) {
