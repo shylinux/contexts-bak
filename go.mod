@@ -9,7 +9,7 @@ require (
 	shylinux.com/x/linux-story v0.3.3
 	shylinux.com/x/mysql-story v0.3.5
 	shylinux.com/x/nginx-story v0.3.5
-	shylinux.com/x/redis-story v0.3.6
+	shylinux.com/x/redis-story v0.3.5
 )
 
 replace (

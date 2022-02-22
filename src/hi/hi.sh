@@ -1,6 +1,5 @@
 #! /bin/sh
 
-source hi/base.sh
 date
 uptime
 uname
