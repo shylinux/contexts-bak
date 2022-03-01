@@ -4,14 +4,8 @@ contexts 通过集群化、模块化、自动化的方式，用一个 20M 的程
 
 ## 安装项目
 
-### 镜像方式
 ```sh
 ctx_temp=$(mktemp); curl -o $ctx_temp -fsSL https://shylinux.com; source $ctx_temp binary
-```
-
-### 源码方式
-```sh
-ctx_temp=$(mktemp); curl -fsSL https://shylinux.com -o $ctx_temp; source $ctx_temp source
 ```
 
 ## 使用项目
