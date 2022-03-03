@@ -3,10 +3,11 @@ Volcanos("onimport", {help: "导入数据", list: [
 	{type: "button", name: "back"},
 	{type: "button", name: "show"},
 ], _init: function(can, msg, cb, target) { 
-	can.page.Modify(can, can._legend, "示例")
-	msg.Push("hi", "hello")
-	msg.Push("he", "world")
-	msg.Echo("hello world")
+	if (msg.Length() == 0) {
+		msg.Push("hi", "hello")
+		msg.Push("he", "world")
+		msg.Echo("hello world")
+	}
 	can.onmotion.clear(can)
 	can.onappend.table(can, msg)
 	can.onappend.board(can, msg)

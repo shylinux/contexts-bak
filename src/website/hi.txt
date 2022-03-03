@@ -1,9 +1,5 @@
 hi
-	hi
-		nfs.dir
-		cli.qrcode
-		cli.runtime
-		web.code.hi.hi
-	he
-		cli.runtime
-		web.code.hi.hi
+	h1
+		hi/he.js "示例"
+		hi/hi.go
+		hi/hi.js
