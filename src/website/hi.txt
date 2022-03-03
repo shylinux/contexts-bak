@@ -1,5 +1,5 @@
 hi
 	h1
-		hi/he.js "示例"
+		hi/hi.sh
 		hi/hi.go
 		hi/hi.js
