@@ -5,7 +5,6 @@ service "运营群"
 		usr/icebergs/misc/mp/mp.shy "微信小程序"
 	lark "机器人 lark"
 		usr/icebergs/misc/lark/lark.shy "飞书机器人"
-
 product "产品群"
 	office "办公 office"
 		web.wiki.feel "影音媒体"
@@ -25,7 +24,6 @@ product "产品群"
 		web.code.chrome.cache "爬虫缓存"
 		web.code.chrome.spide "网页爬虫"
 		web.code.chrome.modify "编辑页面"
-
 project "研发群"
 	studio "研发 studio"
 		web.code.vimer "编辑器"
@@ -55,7 +53,6 @@ project "研发群"
 	mysql "存储 mysql"
 		usr/mysql-story/src/main.shy "数据存储"
 		usr/mysql-story/src/clickhouse/clickhouse.shy "数据存储"
-
 profile "测试群"
 	website "定制 website"
 		- web.chat.website web.chat.div web.code.vimer web.dream
@@ -64,7 +61,6 @@ profile "测试群"
 		~ web.code.git status server
 	research "测试 research"
 		~ web.code favor bench pprof case
-
 operate "运维群"
 	aaa "权限 aaa"
 		- user totp sess role
