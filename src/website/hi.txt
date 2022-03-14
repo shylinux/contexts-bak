@@ -1,5 +1,0 @@
-hi
-	h1
-		hi/hi.sh
-		hi/hi.go
-		hi/hi.js

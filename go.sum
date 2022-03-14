@@ -5,8 +5,8 @@ shylinux.com/x/go-sql-mysql v0.0.1/go.mod h1:47OfAZK24HRJMy7dAu/jrksGCf9yzJaAUFw
 shylinux.com/x/golang-story v0.3.6 h1:3yMPRZK/bW9oaWquhlagJZq8LTLY3sQxrt+rvkSrGO4=
 shylinux.com/x/golang-story v0.3.6/go.mod h1:4nkJ5zyhNNC2ulPsf6WowneJ+axCw8eWMpsLwiQrvgg=
 shylinux.com/x/ice v0.7.6/go.mod h1:cnR4S2jWpPKuUsmnnul1gZCIZeuFeO17ieHbXmWjwpM=
-shylinux.com/x/ice v0.8.1 h1:lf9hsthbWeMtUJZ9jrE+fWUmcXUcJ3igkobaT7hlFzE=
-shylinux.com/x/ice v0.8.1/go.mod h1:lyjm480UtLgn0UsZGHOneTLwUUQ/GaSQcn7pDY64hS4=
+shylinux.com/x/ice v0.8.2 h1:VepFJYaX7OBI2XHhS+9qZxeiYcqRmZsOKjIf/abtcdY=
+shylinux.com/x/ice v0.8.2/go.mod h1:lyjm480UtLgn0UsZGHOneTLwUUQ/GaSQcn7pDY64hS4=
 shylinux.com/x/icebergs v1.0.3/go.mod h1:1fRX95S0HcbeVk1emgtPugJPaR15xhGo3qNYxqIUgCw=
 shylinux.com/x/icebergs v1.0.8 h1:Vi/gwr7VTlupZfgcd7TuCHeZD1V1O6YXtyi3ognXLgU=
 shylinux.com/x/icebergs v1.0.8/go.mod h1:1fRX95S0HcbeVk1emgtPugJPaR15xhGo3qNYxqIUgCw=

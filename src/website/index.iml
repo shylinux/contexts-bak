@@ -1,0 +1,77 @@
+service "运营群"
+	wx "公众号 wx"
+		usr/icebergs/misc/wx/wx.shy "微信公众号"
+	mp "小程序 mp"
+		usr/icebergs/misc/mp/mp.shy "微信小程序"
+	lark "机器人 lark"
+		usr/icebergs/misc/lark/lark.shy "飞书机器人"
+
+product "产品群"
+	office "办公 office"
+		web.wiki.feel "影音媒体"
+		web.wiki.draw "思维导图"
+		web.wiki.data "数据表格"
+		web.team.plan "计划任务"
+		web.wiki.word "智库" args usr/learning/
+		usr/learning/index.shy "索引"
+		src/main.shy "编程"
+	english "英汉 english"
+		web.wiki.alpha.alpha "英汉" args "word hi"
+		web.wiki.alpha.alpha "汉英" args "line 你好"
+		web.code.input.wubi "五笔" args "word wqvb"
+		web.code.input.wubi "五笔" args "line 你好"
+	chrome "爬虫 chrome"
+		web.wiki.feel "网页爬虫" args spide/
+		web.code.chrome.cache "爬虫缓存"
+		web.code.chrome.spide "网页爬虫"
+		web.code.chrome.modify "编辑页面"
+
+project "研发群"
+	studio "研发 studio"
+		web.code.vimer "编辑器"
+		web.code.git.status "代码库" name repos
+		web.team.plan "任务表"
+		web.wiki.word "上下文"
+	web "网页 web"
+		usr/icebergs/misc/chrome/chrome.shy "浏览器" name HTML5
+	cli "命令 cli"
+		usr/icebergs/misc/bash/bash.shy "命令行"
+		usr/icebergs/misc/git/git.shy "代码库"
+		usr/icebergs/misc/vim/vim.shy "编辑器"
+		usr/icebergs/misc/tmux/tmux.shy "命令行"
+	linux "系统 linux"
+		usr/linux-story/idc/idc.shy "平台"
+		usr/linux-story/iso/iso.shy "系统"
+		usr/linux-story/iot/iot.shy "设备"
+		usr/linux-story/cli/cli.shy "命令"
+		usr/linux-story/src/main.shy "系统"
+	nginx "代理 nginx"
+		usr/nginx-story/src/main.shy "代理"
+	context "编程 context"
+		usr/golang-story/src/main.shy "编程"
+	redis "缓存 redis"
+		usr/redis-story/src/main.shy "缓存"
+		usr/redis-story/src/kafka/kafka.shy "队列"
+	mysql "存储 mysql"
+		usr/mysql-story/src/main.shy "数据存储"
+		usr/mysql-story/src/clickhouse/clickhouse.shy "数据存储"
+
+profile "测试群"
+	website "定制 website"
+		- web.chat.website web.chat.div web.code.vimer web.dream
+	release "发布 release"
+		~ web.code install upgrade publish compile autogen binpack webpack
+		~ web.code.git status server
+	research "测试 research"
+		~ web.code favor bench pprof case
+
+operate "运维群"
+	aaa "权限 aaa"
+		- user totp sess role
+	web "应用 web"
+		- serve space dream route
+		- share spide cache story
+	cli "系统 cli"
+		- qrcode daemon system runtime
+	nfs "文件 nfs"
+		- cat dir tail trash
