@@ -13,13 +13,16 @@ ish_sys_cli_alias t "tmux attach"
 ish_sys_path_load
 ish_sys_path_insert $PWD/usr/publish
 ish_sys_path_insert $PWD/bin
+return
 
 ps aux |grep -v grep |grep ice.bin &>/dev/null && return
 ps aux |grep -v grep |grep tmux &>/dev/null && return
 sleep 1 && cd $CTX_ROOT && source etc/miss.sh
 
-return
 # /etc/rc.local
+su - shy -c 'cd /home/shy/contexts/ && ./bin/ice.bin forever serve'
 cd /home/shy/contexts/usr/local/daemon/10000 && ./sbin/nginx -p $PWD
-su - shy -c "cd /home/shy/contexts/ && /home/shy/contexts/bin/ice.bin forever serve"
+
+# mac login
+cd /Users/harveyshao/contexts/ && ./bin/ice.bin forever serve dev shy &
 
