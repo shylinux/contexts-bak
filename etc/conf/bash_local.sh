@@ -18,11 +18,16 @@ return
 ps aux |grep -v grep |grep ice.bin &>/dev/null && return
 ps aux |grep -v grep |grep tmux &>/dev/null && return
 sleep 1 && cd $CTX_ROOT && source etc/miss.sh
+return
 
-# /etc/rc.local
-su - shy -c 'cd /home/shy/contexts/ && ./bin/ice.bin forever serve'
+# shy
+su - shy -c "cd /home/shy/contexts/ && ./bin/ice.bin forever serve &"
 cd /home/shy/contexts/usr/local/daemon/10000 && ./sbin/nginx -p $PWD
 
-# mac login
+# dev
+su - harveyshao -c "cd /home/harveyshao/contexts/ && ./bin/ice.bin forever serve dev dev &"
+cd /home/harveyshao/contexts/usr/local/daemon/10002 && ./sbin/nginx -p $PWD
+
+# mac
 cd /Users/harveyshao/contexts/ && ./bin/ice.bin forever serve dev shy &
 
