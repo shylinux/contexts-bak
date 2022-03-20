@@ -8,6 +8,7 @@
 	role white void web.wiki.draw
 
 ~web.code.input
+	# wubi import file usr/wubi-dict/wubi86
 	wubi import file usr/wubi-dict/person zone person
 
 ~gdb
