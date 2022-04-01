@@ -5,6 +5,6 @@ Volcanos("onimport", {help: "导入数据", list: [], _init: function(can, msg, 
 	msg.Echo("hello world!\n")
 	msg.Echo("hello world!\n")
 
-	can.onmotion.clear(can), can.onappend.table(can, msg), can.onappend.board(can, msg)
-	can.base.isFunc(cb) && cb(msg)
+	can.onmotion.clear(can), can.base.isFunc(cb) && cb(msg)
+	can.onappend.table(can, msg), can.onappend.board(can, msg)
 }})

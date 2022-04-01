@@ -15,4 +15,3 @@ func (h hi) List(m *ice.Message, arg ...string) {
 }
 
 func init() { ice.Cmd("web.code.hi.hi", hi{}) }
-
