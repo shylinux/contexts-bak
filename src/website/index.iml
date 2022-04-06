@@ -65,7 +65,7 @@ operate "运维群"
 	aaa "权限 aaa"
 		- user totp sess role
 	web "应用 web"
-		- serve space dream route
+		- broad serve space dream route
 		- share spide cache story
 	cli "系统 cli"
 		- qrcode daemon system runtime
