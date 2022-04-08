@@ -6,11 +6,12 @@ require shylinux.com/x/ice v0.8.9
 
 require (
 	shylinux.com/x/golang-story v0.3.8
-	shylinux.com/x/icebergs v1.1.5
+	shylinux.com/x/icebergs v1.1.6
 	shylinux.com/x/linux-story v0.3.6
 	shylinux.com/x/mysql-story v0.3.9
 	shylinux.com/x/nginx-story v0.3.9
 	shylinux.com/x/redis-story v0.3.9
+	shylinux.com/x/webview v0.0.1
 )
 
 replace (
