@@ -12,7 +12,6 @@ require (
 	shylinux.com/x/nginx-story v0.3.9
 	shylinux.com/x/redis-story v0.3.9
 	shylinux.com/x/toolkits v0.5.7
-	shylinux.com/x/webview v0.0.1
 )
 
 replace (
