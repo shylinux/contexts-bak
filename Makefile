@@ -1,11 +1,12 @@
 export CGO_ENABLED=0
 
-publish_ice = usr/publish/ice.$(shell go env GOOS).$(shell go env GOARCH)
+binarys = bin/ice.bin
+publish = usr/publish/ice.$(shell go env GOOS).$(shell go env GOARCH)
 
 all: def
 	@echo && date
-	go build -v -o bin/ice.bin src/main.go src/version.go src/binpack.go && chmod u+x bin/ice.bin && ./bin/ice.sh restart
-	rm ${publish_ice}; cp bin/ice.bin ${publish_ice}
+	go build -v -o ${binarys} src/main.go src/version.go src/binpack.go && ./${binarys} forever restart &>/dev/null
+	mkdir $(dir ${publish}) &>/dev/null; rm ${publish} &>/dev/null; cp ${binarys} ${publish}
 
 def:
 	@ [ -f src/version.go ] || echo "package main" > src/version.go

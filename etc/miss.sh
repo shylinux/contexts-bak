@@ -32,7 +32,8 @@ ish_miss_prepare_icebergs
 ish_miss_prepare_toolkits
 ish_miss_prepare_volcanos
 ish_miss_prepare_learning
-ish_miss_make
+
+ish_miss_make; if [ -n "$*" ]; then ./bin/ice.bin forever serve "$@"; fi
 
 ish_sys_link_create ~/.vim_local.vim $PWD/etc/conf/vim_local.vim
 require dev/vim/vim.sh
