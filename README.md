@@ -5,7 +5,7 @@ contexts 通过集群化、模块化、自动化的方式，用一个 20M 的程
 ## 安装项目
 
 ```sh
-ctx_temp=$(mktemp); curl -o $ctx_temp -fsSL https://shylinux.com; source $ctx_temp binary
+ctx_temp=$(mktemp); curl -o $ctx_temp -fsSL https://shylinux.com; source $ctx_temp binary port 9020
 ```
 
 ## 使用项目
