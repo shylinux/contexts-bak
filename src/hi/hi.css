@@ -1,0 +1,142 @@
+div.head {
+	background-color:#404040; padding:5px; height:42px; clear:both;
+}
+div.head div.menu {
+	color:white; cursor:pointer; padding:10px; float:left;
+}
+div.head div.menu:hover {
+	background-color:#323232;
+}
+div.left {
+	background-color:#323232; overflow:auto; float:left;
+}
+div.left:hover {
+	background-color:#323232;
+}
+div.left div.item {
+	background-color:#323232;
+}
+div.left div.item:hover {
+	background-color:#404040;
+}
+div.main {
+	background-color:#cccccc; height:180px; width:180px; overflow:auto; float:left;
+}
+div.main fieldset.plugin {
+	background-color:#f8f8f8; padding:10px; margin:10px;
+}
+div.main fieldset.plugin form.option div.item {
+ 	margin:10px;
+}
+div.main fieldset.plugin div.action div.item {
+ 	margin:10px;
+}
+div.main fieldset.plugin legend {
+	box-shadow:none;
+	background-color:#e4e4e4;
+	color:black;
+	display:block;
+	float:left;
+}
+div.main fieldset.plugin form.option {
+	display:block;
+	clear:both;
+}
+div.main fieldset.plugin select {
+	background-color:white; color:black;
+ 	border:solid 1px gray; outline:none;
+	box-shadow:none;
+}
+div.main fieldset.plugin input[type=text] {
+	background-color:white; color:black; padding:2px 10px;
+ 	border:solid 1px gray; outline:none;
+	border-radius:3px 3px;
+	box-shadow:none;
+}
+div.main fieldset.plugin input[type=button] {
+	background-color:blue; color:white; padding:4px 10px;
+	border:none; border-radius:3px 3px;
+}
+div.main fieldset.plugin table.content {
+ 	border-collapse:collapse;
+	display:block;
+}
+div.main fieldset.plugin table.content thead {
+	z-index:1;
+}
+div.main fieldset.plugin table.content tr {
+	border:solid 1px lightgray;
+}
+div.main fieldset.plugin table.content th {
+	background-color:#fbfbfb; color:rgba(0,0,0,.45); font-weight:100; padding:10px;
+}
+div.main fieldset.plugin table.content td {
+	background-color:white; color: #5c5c5c; padding:10px;
+}
+div.main fieldset.plugin div.status {
+	color:black;
+}
+div.foot {
+	background-color:#404040; height:32px; clear:both;
+}
+
+div.tabs:hover {
+	background-color:#272727;
+}
+div.tabs div.name {
+	height:46px; width:-webkit-fill-available;
+	position:sticky; top:5px;
+	z-index:1;
+}
+div.tabs div.name div.item {
+	color:gray; padding:10px; float:left;
+}
+div.tabs div.name div.item.select {
+	background-color:#404040; color:white;
+ 	border-bottom:solid red 2px;
+}
+div.tabs div.page {
+	overflow:auto; clear:both;
+}
+div.tabs div.page>div.input {
+	padding:5px; position:sticky; top:0px;
+}
+div.tabs div.page>div.input input {
+	background-color:#212121; color:white; border:0; outline:none; width:230px;
+}
+div.tabs div.page>div.item {
+	background-color:#404040; clear:both; display:none;
+}
+div.tabs div.page>div.list {
+	padding-left:20px; display:none; clear:both;
+}
+div.tabs div.page>div.list.select {
+	background-color:#323232; display:block;
+}
+div.tabs div.list {
+	padding-left:20px;
+}
+
+div.tabs.left div.name {
+	float:left;
+}
+div.tabs.left div.name div.item {
+	border-bottom:none; float:none;
+}
+div.tabs.left div.name div.item.select {
+	border-right:solid red 2px;
+}
+div.tabs.left div.page {
+	width:240px; clear:none; float:left;
+}
+div.tabs.left div.page>div.item {
+	display:block;
+}
+
+div.tabs.void div.name {
+	display:none;
+}
+div.tabs.void div.page>div.item {
+	display:block;
+}
+
