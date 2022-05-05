@@ -1,4 +1,4 @@
-odule shylinux.com/x/contexts
+module shylinux.com/x/contexts
 
 go 1.11
 
