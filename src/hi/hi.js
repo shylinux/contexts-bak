@@ -6,6 +6,7 @@ Volcanos("onimport", {help: "导入数据", list: [], _init: function(can, msg, 
 	can.onengine.listen(can, "menu", function(msg) { can.user.toast(can, msg.Option(html.ITEM)) })
 	can.onengine.listen(can, "高级配置", function(msg) { can.user.toast(can, msg.Option(html.ITEM)) })
 	can.onengine.listen(can, "h1", function(msg) { can.user.toast(can, "h1") })
+	can.require(["hi.css"])
 
 	can.onappend.parse(can, can.onappend._parse(can, `
 head
@@ -65,7 +66,7 @@ Volcanos("onappend", {help: "导入数据", list: [],
 				if (ls[i] == ctx.INDEX) { item.type = item.type||html.PLUGIN }
 			}
 		})
-		return {type: "demo", style: {height: window.innerHeight}, list: stack[0].list}
+		return {type: "demo", style: {height: can.ConfHeight()||window.innerHeight}, list: stack[0].list}
 	},
 	parse: function(can, list, target, keys, data, type) { target = target||can._output, data = data||{}
 		if (!list) { return } else if (can.base.isArray(list)) {
@@ -105,10 +106,12 @@ Volcanos("onappend", {help: "导入数据", list: [],
 				break
 			case html.MAIN:
 				init = function(target) { data.main = target
-					var width = target.parentNode.offsetWidth
-					can.page.Select(can, target.parentNode, html.DIV_LAYOUT_LEFT, function(item) {
-						width -= item.offsetWidth+1
-					}), can.page.style(can, target, html.WIDTH, width)
+					can.core.Timer(10, function() {
+						var width = target.parentNode.offsetWidth
+						can.page.Select(can, target.parentNode, html.DIV_LAYOUT_LEFT, function(item) {
+							width -= item.offsetWidth+1
+						}), can.page.style(can, target, html.WIDTH, width)
+					})
 
 					can.page.ClassList.add(can, target, html.LAYOUT)
 					can.core.Timer(10, function() { var height = target.parentNode.offsetHeight
