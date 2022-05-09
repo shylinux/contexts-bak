@@ -7,9 +7,9 @@ refer `
 
 chapter "实践"
 label `
-code wiki chat team
-linux nginx context redis
-bash git golang vim
+code wiki chat team mall
+linux nginx context redis mysql
+bash git golang vim tmux
 ` fg blue bg yellow
 
 chapter "理论"

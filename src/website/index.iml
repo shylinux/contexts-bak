@@ -29,6 +29,7 @@ project "研发群"
 		web.code.vimer "编辑器"
 		web.code.git.status "代码库" name repos
 		web.team.plan "任务表"
+		web.team.todo "待办项"
 		web.wiki.word "上下文"
 	web "网页 web"
 		usr/icebergs/misc/chrome/chrome.shy "浏览器" name HTML5
