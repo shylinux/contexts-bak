@@ -6,8 +6,6 @@
 	role white void web.wiki.alpha.find
 	role white void web.wiki.word
 	role white void web.wiki.draw
-	user import
-	sess import
 
 ~web.code.input
 	# wubi import file usr/wubi-dict/wubi86

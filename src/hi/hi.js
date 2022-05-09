@@ -3,7 +3,7 @@ Volcanos("onimport", {help: "导入数据", list: [], _init: function(can, msg, 
 	can.onmotion.hidden(can, can._option)
 	can.onmotion.hidden(can, can._status)
 
-	can.ConfHeight(can.ConfHeight()+can.Conf(html.MARGIN_Y)-(can.user.isWindows? 17: 0))
+	can.ConfHeight(can.ConfHeight()+(can.Conf(html.MARGIN_Y)||0)-(can.user.isWindows? 17: 0))
 
 	can.onengine.listen(can, "menu", function(msg) { can.user.toast(can, msg.Option(html.ITEM)) })
 	can.onengine.listen(can, "高级配置", function(msg) { can.user.toast(can, msg.Option(html.ITEM)) })

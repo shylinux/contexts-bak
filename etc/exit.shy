@@ -1,9 +1,0 @@
-~aaa
-	sess export
-	user export
-
-~web.code.vim
-	sess prunes
-
-~web.code.bash
-	sess prunes

@@ -1,12 +1,13 @@
 head
-	基础配置 type menu
-	高级配置 type menu
+	基础配置
+	高级配置
 		h1
 		h2
 		h3
 		h4
-	导航配置 type menu
-left
+	导航配置
+	username
+left style.width 240
 	tabs
 		地址
 			山东省
