@@ -16,14 +16,15 @@ left style.width 240
 				青岛市
 			江苏省
 				徐州市 index cli.runtime
-				南京市 index web.code.git.repos action auto
+				南京市 index web.code.git.repos
 				苏州 index cli.qrcode
-				无锡 index cli.system
+				无锡 index web.code.git.trend args icebergs
 			北京市
-				海淀区
-				朝阳区
-				西城区
-				东城区
+				海淀区 index hi/hi.sh
+				昌平区 index hi/hi.shy
+				朝阳区 index hi/hi.py
+				西城区 index hi/hi.go
+				东城区 index hi/hi.js
 			广东省
 				深圳市
 					宝安区

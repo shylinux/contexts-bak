@@ -18,7 +18,6 @@ func (h hi) Command(m *ice.Message, arg ...string) {
 }
 func (h hi) Run(m *ice.Message, arg ...string) {
 	if m.Right(arg) && !m.PodCmd(arg) {
-		m.Debug("what %v", arg)
 		m.Cmdy(arg)
 	}
 }

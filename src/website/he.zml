@@ -3,10 +3,13 @@ left
 	江苏
 		徐州 index cli.system
 	山东
-		邹城 index cli.qrcode
-	广东 index web.code.git.trend args icebergs action auto 
-	北京 index src/hi/he.js
-	湖北 index src/website/hi.zml
-	湖南 index src/hi/hi.go
+		邹城 index cli.runtime
+		青岛 index cli.qrcode
+	广东
+		深圳 index web.code.git.trend args icebergs action auto 
+		广州 index web.code.git.spide args icebergs
+	湖南 index src/hi/hi.js action push
+	湖北 index src/hi/hi.go action open
+	上海 index src/website/hi.iml
+	北京 index src/website/hi.zml
 main
-	

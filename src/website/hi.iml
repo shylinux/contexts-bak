@@ -1,7 +1,15 @@
-hi
-	he
-		cli.runtime
-		cli.system
+系统
+	命令
 		hi/hi.sh
+		hi/hi.shy
+		hi/hi.py
 		hi/hi.go
+		hi/hi.js
+	环境
+		cli.runtime
+开发
+	模块
+		hi/hi.go
+	脚本
+		hi/hi.sh
 		hi/hi.js
