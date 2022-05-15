@@ -1,5 +1,31 @@
 chapter "hi"
 
-field "hi" web.code.hi.hi
-field "hi" web.code.hi.hi
-field "hi" web.code.hi.hi
+chain `
+contexts
+	volcanos
+	volcanos
+		lib
+		page
+		panel
+		publish
+	icebergs
+		base
+		core
+		misc
+	toolkits
+` ship.stroke-width 1 line.stroke-width 1
+
+field cli.system
+
+field cli.qrcode
+
+chart sequence `
+fe be os hd
+0 call 1 some 3
+0 call 1 some 3
+0 call 1 some 3
+0 call 1 some 3
+0 call 1 some 3
+` marginx 80
+
+field cli.system

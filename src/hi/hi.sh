@@ -1,13 +1,12 @@
 #! /bin/sh
 
-echo "*$#*"
-echo "*$@*"
-echo "*$**"
+_list
+echo
 
-date
-uptime
-uname
+_list hi
+echo
+
+_list hi 1
+echo
+
 echo "hello world"
-echo "hello world"
-echo "hello world"
-env

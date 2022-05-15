@@ -1,10 +1,6 @@
 系统
 	命令
-		hi/hi.sh
-		hi/hi.shy
-		hi/hi.py
-		hi/hi.go
-		hi/hi.js
+		cli.system
 	环境
 		cli.runtime
 开发
@@ -12,4 +8,7 @@
 		hi/hi.go
 	脚本
 		hi/hi.sh
+		hi/hi.shy
+		hi/hi.py
+		hi/hi.go
 		hi/hi.js

@@ -1,40 +1,15 @@
-head
-	基础配置
-	高级配置
-		h1
-		h2
-		h3
-		h4
-	导航配置
+left
 	username
-left style.width 240
-	tabs
-		地址
-			山东省
-				邹城市
-				济南市
-				青岛市
-			江苏省
-				徐州市 index cli.runtime
-				南京市 index web.code.git.repos
-				苏州 index cli.qrcode
-				无锡 index web.code.git.trend args icebergs
-			北京市
-				海淀区 index hi/hi.sh
-				昌平区 index hi/hi.shy
-				朝阳区 index hi/hi.py
-				西城区 index hi/hi.go
-				东城区 index hi/hi.js
-			广东省
-				深圳市
-					宝安区
-					南山区
-					福田区
-					龙华区
-				茂名市
-		组件
-			列表 index cli.runtime
-			卡片 index cli.qrcode
-		数据
+	系统
+		命令 index cli.system
+		共享 index cli.qrcode
+	代码
+		趋势 index web.code.git.trend args icebergs action auto 
+		状态 index web.code.git.status args icebergs
+	脚本
+		终端 index hi/hi.sh
+		文档 index hi/hi.shy
+		数据 index hi/hi.py
+		后端 index hi/hi.go
+		前端 index hi/hi.js
 main
-
