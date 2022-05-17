@@ -1,10 +1,6 @@
 src/binpack.go
 src/version.go
-etc/local.shy
-etc/local.sh
-etc/path
-*.swp
-*.swo
+etc/
 bin/
 var/
 usr/
