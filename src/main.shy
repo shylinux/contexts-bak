@@ -37,3 +37,6 @@ field "架构图" web.code.git.spide args `intshell`
 
 spark md README.md
 
+chapter "项目开发"
+source "../usr/icebergs/misc/java/spring.shy"
+source "../usr/icebergs/misc/node/vue.shy"
