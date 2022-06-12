@@ -15,10 +15,6 @@ contexts
 	toolkits
 ` ship.stroke-width 1 line.stroke-width 1
 
-field cli.system
-
-field cli.qrcode
-
 chart sequence `
 fe be os hd
 0 call 1 some 3
