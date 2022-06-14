@@ -6,7 +6,7 @@ publish = usr/publish/ice.$(shell go env GOOS).$(shell go env GOARCH)
 all: def
 	@echo && date
 	go build -v -o ${binarys} src/main.go src/version.go src/binpack.go && ./${binarys} forever restart &>/dev/null
-	mkdir $(dir ${publish}) &>/dev/null; rm ${publish} &>/dev/null; cp ${binarys} ${publish}
+	mkdir -p $(dir ${publish}) &>/dev/null; rm ${publish} &>/dev/null; cp ${binarys} ${publish}
 
 def:
 	@ [ -f src/version.go ] || echo "package main" > src/version.go
