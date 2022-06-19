@@ -1,7 +1,7 @@
 export CGO_ENABLED=0
 
-binarys = bin/ice.bin
 publish = usr/publish/ice.$(shell go env GOOS).$(shell go env GOARCH)
+binarys = bin/ice.bin
 
 all: def
 	@echo && date

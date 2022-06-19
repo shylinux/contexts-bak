@@ -41,7 +41,4 @@ chapter "项目开发"
 source "../usr/icebergs/misc/node/vue.shy"
 source "../usr/icebergs/misc/java/spring.shy"
 source "../usr/icebergs/core/chat/oauth/oauth.shy"
-source "../usr/golang-story/src/grafana/grafana.shy"
-source "../usr/golang-story/src/prometheus/prometheus.shy"
-source "../usr/golang-story/src/kubernetes/kubernetes.shy"
 
