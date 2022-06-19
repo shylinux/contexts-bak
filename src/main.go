@@ -4,9 +4,9 @@ import (
 	"shylinux.com/x/ice"
 	_ "shylinux.com/x/icebergs/misc/alpha"
 	_ "shylinux.com/x/icebergs/misc/chrome"
+	_ "shylinux.com/x/icebergs/misc/coder"
 	_ "shylinux.com/x/icebergs/misc/input"
 
-	_ "shylinux.com/x/icebergs/misc/coder"
 	_ "shylinux.com/x/icebergs/misc/java"
 	_ "shylinux.com/x/icebergs/misc/lark"
 	_ "shylinux.com/x/icebergs/misc/mp"
@@ -17,6 +17,9 @@ import (
 	_ "shylinux.com/x/golang-story/src/compile"
 	_ "shylinux.com/x/golang-story/src/project"
 	_ "shylinux.com/x/golang-story/src/runtime"
+
+	_ "shylinux.com/x/golang-story/src/grafana"
+	_ "shylinux.com/x/golang-story/src/prometheus"
 
 	_ "shylinux.com/x/nginx-story/src/server"
 	_ "shylinux.com/x/redis-story/src/client"

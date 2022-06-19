@@ -8,8 +8,8 @@
 	role white void web.wiki.draw
 
 ~web.code.input
-	# wubi import file usr/wubi-dict/wubi86
-	wubi import file usr/wubi-dict/person zone person
+	# wubi load file usr/wubi-dict/wubi86
+	wubi load file usr/wubi-dict/person zone person
 
 ~gdb
 	event action listen event dream.create cmd web.code.tmux.session

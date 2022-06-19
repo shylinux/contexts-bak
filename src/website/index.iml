@@ -69,6 +69,6 @@ operate "运维群"
 		- broad serve space dream route
 		- share spide cache story
 	cli "系统 cli"
-		- qrcode daemon system runtime
+		- qrcode daemon system runtime mirrors forever port
 	nfs "文件 nfs"
 		- cat dir tail trash
