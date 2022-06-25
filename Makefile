@@ -8,6 +8,12 @@ all: def
 	go build -v -o ${binarys} src/main.go src/version.go src/binpack.go && ./${binarys} forever restart &>/dev/null
 	mkdir -p $(dir ${publish}) &>/dev/null; rm ${publish} &>/dev/null; cp ${binarys} ${publish}
 
+mipsle:
+	GOOS=linux GOARCH=mipsle go build -o usr/publish/ice.linux.mipsle src/main.go src/version.go src/binpack.go
+
+arm:
+	GOOS=linux GOARCH=arm go build -o usr/publish/ice.linux.arm src/main.go src/version.go src/binpack.go
+
 def:
 	@ [ -f src/version.go ] || echo "package main" > src/version.go
 	@ [ -f src/binpack.go ] || echo "package main" > src/binpack.go
