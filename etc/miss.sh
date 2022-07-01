@@ -1,8 +1,7 @@
 #!/bin/bash
 
-[ -f $PWD/.ish/plug.sh ] || [ -f $HOME/.ish/plug.sh ] || git clone ${ISH_CONF_HUB_PROXY:="https://"}shylinux.com/x/intshell $PWD/.ish
-if [ "$ISH_CONF_PRE" = "" ]; then
-    source $PWD/.ish/plug.sh || source $HOME/.ish/plug.sh
+require &>/dev/null || if [ -f $PWD/.ish/plug.sh ]; then source $PWD/.ish/plug.sh; elif [ -f $HOME/.ish/plug.sh ]; then source $HOME/.ish/plug.sh; else
+	ctx_temp=$(mktemp); if curl -h &>/dev/null; then curl -o $ctx_temp -fsSL https://shylinux.com; else wget -O $ctx_temp -q http://shylinux.com; fi; source $ctx_temp intshell
 fi
 
 require sys/cli/file.sh

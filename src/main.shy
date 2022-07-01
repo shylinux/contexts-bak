@@ -42,3 +42,7 @@ source "../usr/icebergs/misc/node/vue.shy"
 source "../usr/icebergs/misc/java/spring.shy"
 source "../usr/icebergs/core/chat/oauth/oauth.shy"
 
+label `
+Windows MacOSX Linux iOS Android
+c/c++ golang python java javascript
+`
