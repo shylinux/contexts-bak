@@ -13,6 +13,7 @@
 	# config inner meta.show.exts "inner/search.js?a=1,inner/favor.js,inner/template.js"
 	config inner meta.show.exts "inner/search.js?a=1,inner/favor.js"
 	config inner meta.show.tabs "src/:main.go:1,src/:main.shy:1"
+	config inner meta.show.tabs ""
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
