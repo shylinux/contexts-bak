@@ -40,6 +40,8 @@ import (
 	_ "shylinux.com/x/linux-story/src/qemu"
 
 	_ "shylinux.com/x/contexts/src/hi"
+
+	_ "shylinux.com/x/contexts/src/h2"
 )
 
 func main() { print(ice.Run()) }

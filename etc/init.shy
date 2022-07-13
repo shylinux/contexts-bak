@@ -8,12 +8,9 @@
 	role white void web.wiki.draw
 
 ~web.code
-	# config inner meta.show.plug "web.chat.website,web.dream"
-	config inner meta.show.plug "cli.system,web.dream"
-	# config inner meta.show.exts "inner/search.js?a=1,inner/favor.js,inner/template.js"
-	config inner meta.show.exts "inner/search.js?a=1,inner/favor.js"
-	config inner meta.show.tabs "src/:main.go:1,src/:main.shy:1"
 	config inner meta.show.tabs ""
+	config inner meta.show.exts "inner/search.js?a=1,inner/favor.js"
+	config inner meta.show.plug "web.dream,cli.system"
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
