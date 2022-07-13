@@ -9,8 +9,11 @@
 
 ~web.code
 	config inner meta.show.tabs ""
-	config inner meta.show.exts "inner/search.js?a=1,inner/favor.js"
-	config inner meta.show.plug "web.dream,cli.system"
+	config inner meta.show.exts "inner/search.js?a=1"
+	config inner meta.show.plug ""
+	config vimer meta.show.tabs ""
+	config vimer meta.show.exts "inner/search.js?a=1,inner/favor.js"
+	config vimer meta.show.plug "cli.system"
 
 ~web.code.input
 	# wubi load file usr/wubi-dict/wubi86
