@@ -59,21 +59,3 @@ chapter "项目开发"
 source "../usr/icebergs/misc/node/vue.shy"
 source "../usr/icebergs/misc/java/spring.shy"
 source "../usr/icebergs/core/chat/oauth/oauth.shy"
-
-label `
-Windows MacOSX Linux iOS Android
-c/c++ golang python java javascript
-`
-
-source h2/h2.shy
-source h4/h4.shy
-source h5/h5.shy
-source h6/h6.shy
-source h7/h7.shy
-source h8/h8.shy
-source h9/h9.shy
-source h10/h10.shy
-source h1/h1.shy
-source h2/h2.shy
-source h3/h3.shy
-source h4/h4.shy

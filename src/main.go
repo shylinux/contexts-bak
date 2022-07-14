@@ -38,6 +38,8 @@ import (
 	_ "shylinux.com/x/linux-story/src/busybox"
 	_ "shylinux.com/x/linux-story/src/kernel"
 	_ "shylinux.com/x/linux-story/src/qemu"
+
+	_ "shylinux.com/x/contexts/src/hi"
 )
 
 func main() { print(ice.Run()) }

@@ -12,6 +12,7 @@ type hi struct {
 
 func (s hi) Show(m *ice.Message, arg ...string) {
 	m.Echo("hello world")
+	m.StatusTime()
 }
 
 func (s hi) List(m *ice.Message, arg ...string) {
