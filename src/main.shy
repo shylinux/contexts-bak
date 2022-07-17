@@ -1,21 +1,3 @@
-field "src/hi/hi.go" web.code.inner spark `
-package hi
-
-import (
-	"shylinux.com/x/ice"
-)
-
-type hi struct {
-	ice.Zone
-}
-
-func (h hi) List(m *ice.Message, arg ...string) {
-	h.Zone.List(m, arg...)
-}
-
-func init() { ice.Cmd("web.code.hi.hi", hi{}) }
-`
-
 title "contexts"
 refer `
 官网 https://contexts.com.cn
@@ -54,8 +36,3 @@ field "趋势图" web.code.git.trend args `intshell`
 field "架构图" web.code.git.spide args `intshell`
 
 spark md README.md
-
-chapter "项目开发"
-source "../usr/icebergs/misc/node/vue.shy"
-source "../usr/icebergs/misc/java/spring.shy"
-source "../usr/icebergs/core/chat/oauth/oauth.shy"
