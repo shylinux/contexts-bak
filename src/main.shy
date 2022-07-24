@@ -38,3 +38,4 @@ field "架构图" web.code.git.spide args `intshell`
 spark md README.md
 
 source "../usr/icebergs/core/chat/location.shy"
+source "../usr/icebergs/core/code/xterm.shy"

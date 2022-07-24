@@ -8,6 +8,11 @@
 	role white void web.wiki.draw
 
 ~web.code
+	binpack insert usr/volcanos/node_modules/xterm/lib/xterm.js
+	binpack insert usr/volcanos/node_modules/xterm/css/xterm.css
+	binpack insert usr/volcanos/node_modules/xterm-addon-fit/lib/xterm-addon-fit.js
+
+~web.code
 	config inner meta.show.tabs ""
 	config inner meta.show.exts "inner/search.js?a=1"
 	config inner meta.show.plug ""
