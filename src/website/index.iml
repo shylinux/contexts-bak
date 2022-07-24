@@ -10,7 +10,7 @@ product "产品群"
 		web.wiki.feel "影音媒体"
 		web.wiki.draw "思维导图"
 		web.wiki.data "数据表格"
-		web.team.plan "计划任务"
+		web.chat.location "地图导航"
 		web.wiki.word "智库" args usr/learning/
 		usr/learning/index.shy "索引"
 		src/main.shy "编程"
@@ -61,7 +61,7 @@ profile "测试群"
 		~ web.code install upgrade publish compile autogen binpack webpack
 		~ web.code.git status server
 	research "测试 research"
-		~ web.code favor bench pprof case
+		~ web.code favor bench pprof case xterm
 operate "运维群"
 	aaa "权限 aaa"
 		- user totp sess role

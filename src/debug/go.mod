@@ -11,6 +11,7 @@ require (
 )
 
 require (
+	github.com/creack/pty v1.1.18 // indirect
 	shylinux.com/x/ice v1.0.1
 	shylinux.com/x/icebergs v1.2.7
 	shylinux.com/x/toolkits v0.6.2

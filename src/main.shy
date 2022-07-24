@@ -37,8 +37,4 @@ field "架构图" web.code.git.spide args `intshell`
 
 spark md README.md
 
-section "LBS"
-refer `
-管理 https://lbs.qq.com/dev/console/application/mine
-文档 https://lbs.qq.com/webApi/javascriptGL/glGuide/glBasic
-`
+source "../usr/icebergs/core/chat/location.shy"
