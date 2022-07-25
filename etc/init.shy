@@ -8,10 +8,10 @@
 	role white void web.wiki.draw
 
 ~web.code
-	binpack insert usr/volcanos/node_modules/xterm/lib/xterm.js
-	binpack insert usr/volcanos/node_modules/xterm/css/xterm.css
-	binpack insert usr/volcanos/node_modules/xterm-addon-fit/lib/xterm-addon-fit.js
-	binpack insert usr/volcanos/node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js
+	webpack insert xterm/css/xterm.css
+	webpack insert xterm
+	webpack insert xterm-addon-fit
+	webpack insert xterm-addon-web-links
 
 ~web.code
 	config inner meta.show.tabs ""
