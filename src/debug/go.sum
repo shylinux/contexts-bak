@@ -1,4 +1,3 @@
-github.com/creack/pty v1.1.18/go.mod h1:MOBLtS5ELjhRRrroQr9kyvTxUAFNvYEK993ew/Vr4O4=
 shylinux.com/x/creackpty v0.0.1 h1:o+qDE39jFsHLZB9BRAm0EI6qScjw5PuvdkROqhTcupM=
 shylinux.com/x/creackpty v0.0.1/go.mod h1:d7DnPv3oGc23WlzrN8hW7p88wNLPAO/XG4ICVEq96i0=
 shylinux.com/x/go-qrcode v0.0.1 h1:/eOGqMj1qtgs9Ymd12zTUa1gcJZs9S92kj2lb0QzKsE=
