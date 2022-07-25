@@ -11,6 +11,7 @@
 	binpack insert usr/volcanos/node_modules/xterm/lib/xterm.js
 	binpack insert usr/volcanos/node_modules/xterm/css/xterm.css
 	binpack insert usr/volcanos/node_modules/xterm-addon-fit/lib/xterm-addon-fit.js
+	binpack insert usr/volcanos/node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js
 
 ~web.code
 	config inner meta.show.tabs ""
