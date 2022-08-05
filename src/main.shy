@@ -39,3 +39,14 @@ spark md README.md
 
 source "../usr/icebergs/core/chat/location.shy"
 source "../usr/icebergs/core/code/xterm.shy"
+
+source hash/hash.shy
+source h3/h3.shy
+source h4/h4.shy
+source h5/h5.shy
+source h2/h2.shy
+source h3/h3.shy
+source h4/h4.shy
+source h5/h5.shy
+source h6/h6.shy
+source h1/h1.shy

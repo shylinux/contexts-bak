@@ -1,3 +1,6 @@
+~cli 
+	# runtime maxprocs 1
+
 ~aaa 
 	role white void web.code.inner
 	role white void web.code.git.spide
@@ -26,10 +29,16 @@
 	wubi load file usr/wubi-dict/person zone person
 
 ~gdb
+	# config timer meta.enable true
 	event action listen event dream.create cmd web.code.tmux.session
 
 ~ssh
-	target web.chat
 	target web.code
+	target web.chat
 	source local.shy
 
+~mdb
+
+~nfs
+
+~tcp

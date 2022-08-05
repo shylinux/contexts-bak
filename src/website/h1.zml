@@ -1,0 +1,15 @@
+{
+	username
+	系统
+		命令 index cli.system
+		共享 index cli.qrcode
+	代码
+		趋势 index web.code.git.trend args icebergs action auto 
+		状态 index web.code.git.status args icebergs
+	脚本
+		终端 index hi/hi.sh
+		文档 index hi/hi.shy
+		数据 index hi/hi.py
+		后端 index hi/hi.go
+		前端 index hi/hi.js
+}

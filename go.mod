@@ -11,9 +11,10 @@ require (
 )
 
 require (
-	shylinux.com/x/ice v1.0.1
-	shylinux.com/x/icebergs v1.2.8
-	shylinux.com/x/toolkits v0.6.3
+	github.com/toolkits/file v0.0.0-20160325033739-a5b3c5147e07 // indirect
+	shylinux.com/x/ice v1.0.4
+	shylinux.com/x/icebergs v1.2.9
+	shylinux.com/x/toolkits v0.6.4
 )
 
 replace (

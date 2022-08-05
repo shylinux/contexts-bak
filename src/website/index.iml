@@ -71,4 +71,4 @@ operate "运维群"
 	cli "系统 cli"
 		- qrcode daemon system runtime mirrors forever port
 	nfs "文件 nfs"
-		- cat dir tail trash
+		- cat dir pack tail trash
