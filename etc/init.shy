@@ -1,20 +1,14 @@
-~cli 
-	# runtime maxprocs 1
-
 ~aaa 
-	role white void web.code.inner
 	role white void web.code.git.spide
 	role white void web.code.git.trend
 	role white void web.code.input.find
 	role white void web.wiki.alpha.find
-	role white void web.wiki.word
-	role white void web.wiki.draw
 
 ~web.code
-	webpack insert xterm/css/xterm.css
 	webpack insert xterm
 	webpack insert xterm-addon-fit
 	webpack insert xterm-addon-web-links
+	webpack insert xterm/css/xterm.css
 
 ~web.code
 	config inner meta.show.tabs ""
@@ -36,9 +30,3 @@
 	target web.code
 	target web.chat
 	source local.shy
-
-~mdb
-
-~nfs
-
-~tcp
